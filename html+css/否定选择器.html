@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*为所有p元素设置背景颜色为黄色，除了class值为hello的
+		not里面只能填一个属性值
+		*/
+		p:not(.hello){
+			background-color: red;
+		}
+	
+		/*否定伪类：
+			作用:可以从已选择的元素中剔除出某些元素*/
+	</style>
+
+</head>
+<body>
+	<p class="he">我是一个p标签</p>
+	<p>我是一个p标签</p>
+	<p class="hello">我是一个p标签</p>
+	<span>我是一个span</span>
+	<p>我是一个p标签</p>
+	<span>我是一个span</span>
+	<p>我是一个p标签</p>
+	<p>我是一个p标签</p>
+	<p>我是一个p标签</p>
+	<div>我是一个p标签</div>
+	<p>我是一个p标签</p>
+	<span>史蒂芬p<p>我是一个p标签</p></span>
+	<p>我是一个p标签</p>
+</body>
+</html>

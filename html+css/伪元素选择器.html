@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>伪元素选择器</title>
+	<style type="text/css">
+		
+		/*使用伪元素来表示元素中的一些特殊位置*/
+
+		/*为p中的第一个字符来设置特殊样式（也可用span括住第一个字实现，不过复用性不好）*/
+
+/*		p:first-letter{
+			font-size: 20px;
+			color:red;
+		}
+
+		为p中的第一行来设置特殊样式
+
+		p:first-line{
+			background-color: yellow;	
+		}*/
+
+		/*:before表述元素最前边的部分（紧随p标签、文字前的部分）
+		一般before都要结合content这个样式一起
+		使用
+		通过content可以向before和after的位置添加一些内容
+
+		注意，before和after的内容无法选中
+
+		*/
+
+		p:before{
+			content: "我会出现在段落的最前边";
+		}
+		
+		/*：after表示元素的最后边*/
+
+		p:after{
+			content: "我会出现在段落的最后边";
+		}
+
+		/*为所有具有title属性的p元素，设置背景颜色为黄色*/
+
+		/*属性选择器 作用：可以根据元素中国男的属性
+		或属性值来选择指定元素
+		语法：[属性名]选取含有指定属性的元素，
+		没设定的title值就是blank
+		*/
+		/*注意：title加符号（^$...）时，与后面的等于号之间不能空格，否则会出错	*/
+/*		p[title]{
+			background-color: pink;
+		}*/
+
+		p[title="hello"]{
+			background-color: black;
+		}
+		/*选取值title值为hello的p标签*/
+
+		p[title^="bc"]{
+			background-color: purple;
+		}
+		/*选取值title值以bc开头的p标签*/
+
+		p[title*="lo"]{
+			background-color: greenyellow;
+		}
+
+		/*选取值title值中有lo的p标签*/
+
+		p[title$="ol"]{
+			background-color: green;
+		}
+		/*选取值title值以ol结尾的p标签*/
+
+
+		/*这里的背景样式覆盖顺序，后面出现的会覆盖前面出现的*/
+		/*更具体的研究，见css的覆盖规则*/
+
+		/*还有title~和title|，可查教材*/
+
+	</style>
+
+</head>
+<body>
+
+	<!-- title属性；这个属性可以给任何标签指定，和id一样
+		当鼠标移到元素上时，元素中的title属性的值将会作为提示文字显示
+	-->
+
+<p title="我是title中的文字">我是一个段落</p>
+<p title="hello">我是一个段落</p>
+<p>我是一个段落</p>
+<p>我是一个段落</p>
+<p title="lol">我是一个段落</p>
+</body>
+</html>

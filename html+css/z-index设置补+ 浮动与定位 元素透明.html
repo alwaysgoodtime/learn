@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>定位与浮动的关系</title>
+	<style type="text/css">
+
+		.s2{
+			width:100px;
+			height:200px;
+			float:left;
+			background-color: blue;
+		}
+		.s1{
+			width:100px;
+			height:200px;
+			position:relative;
+			background-color: red; 
+		}
+		/*显示的是红色，定位比浮动的层级高*/
+
+		.s3{
+			width:100px;
+			height:200px;
+			position:relative;
+			background-color: pink; 
+			z-index: 30;
+		}
+
+		.s31{
+			width:100px;
+			height:200px;
+			position:relative;
+			background-color: pink; 
+			z-index: 25;
+
+		}
+
+		.s4{
+			width:100px;
+			height:200px;
+			position:relative;
+			background-color: yellow; 
+			z-index: 20;
+		}
+
+		.s5{
+			width:100px;
+			height:200px;
+			position:fixed;
+			background-color: black;
+			left:0px;
+			top:300px;
+			z-index: 30;
+			opacity: 0.5;
+		}
+		/*opacity可以设置元素背景的透明
+		 它需要一个0-1之间的值
+		 	默认值为1，不透明
+		 	0表示完全透明
+		 	1表示完全不透明
+		 	0.5表示半透明
+		*/
+
+		/*opacity属性在ie8及以下的浏览器中不支持
+		 ie8及以下浏览器需要使用如下属性代替
+
+		filter：alpha（opacity=50）;
+		这是一个过滤器，透明度需要0-100的值
+		0表示完全透明，100表示完全透明，50表示半透明
+
+		这种方式支持ie6，但是这种效果在ie tester中无法测试，是测试工具的bug
+
+		 */
+/*z-index设置规则
+
+如果两个元素index设置相同，那么结构中在后的层级默认更高。
+但如果一个元素是子元素，它的祖先元素比它更高，那么z-index默认是祖先元素中最高的那个。
+*/
+
+	</style>
+</head>
+<body>
+	<div class="s2"></div>
+	<div class="s1"></div>
+	<div class="s3">
+		<div class="s31">
+			<div class="s4"></div>
+		</div>
+		
+	</div>
+	<div class="s5"></div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!-- 网页有两种布局：固定布局和自适应布局
+前者网页不会随浏览器变化大小，后者可以变化 -->
+<!-- 简单布局，就是大盒子套小盒子 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>简单布局示例</title>
+	<style type="text/css">
+		/*清除浏览器默认样式*/
+		*{
+			margin:0;
+			/*写0和写0px是一个效果*/
+			padding:0;
+		}
+
+		/*预先统一页面的字体，保证浏览器字体的统一性，字体到元素中再另行设置*/
+		body{
+			font:{12px/1 宋体};
+		}
+		/*设置头部*/
+		.header{
+			width:1000px;
+			height:80px;
+			background-color: yellowgreen;
+			margin:0 auto;
+		}
+		/*设置content*/
+		.content{
+			width:1000px;
+			height:600px;
+			background-color: orange;
+			margin:10px auto;
+		}
+
+
+		/*设置content中小div的格式*/
+		.news{
+			float:left;
+			width:200px;
+			height: 100%;
+			/*子元素和父元素的宽高比用%挂钩后，如果content的宽高变更，总比例不变，比设置数值更好*/
+			background-color: skyblue; 
+		}
+
+		.im{
+			float:left;
+			width:580px;
+			height:100%;
+			background-color: yellow; 
+			/*设置左右外边距*/
+			/*margin不会影响可见框的大小，但会影响盒子的布局，margin也会占地方，只是不显示而已*/
+			margin:0 10px;
+		}
+
+		.mark{
+			float:left;
+			width:200px;
+			height:100%;
+			background-color: pink; 
+		}
+
+
+
+
+
+		/*设置footer*/
+		.footer{
+			width:1000px;
+			height:50px;
+			background-color: gray;
+			margin:0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="header"></div>
+	<div class="content">
+		<div class="news">
+		</div>
+		<!-- 最好根据具体内容写div的类名 -->
+		<div class="im"></div>
+		<div class="mark"></div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>

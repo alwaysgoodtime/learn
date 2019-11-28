@@ -1,0 +1,57 @@
+<!-- 2019年11月24日17:24:27
+	测试first-child伪类的用法 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>子元素选择器（伪类）</title>
+	<style type="text/css">
+		p:first-child{
+			background-color:yellow; 
+		}
+		/*为第一个p标签（任何标签中的第一个子标签为p的标签）设置一个背景颜色为黄色
+		其实省略了body 写全应该是 
+		body p:first-child{
+			background-color:yellow; 
+		}
+		*/
+
+		/*如果只想要body作为父标签时，p为第一个子标签，然后设置背景颜色，可以写成：
+		body > p:first-child{
+			background-color:yellow; 
+		}
+		*/
+
+		span p:first-child{
+			font-size:20px;
+		}
+	/*	x y:first-child可以选中x中任何一级标签z里，y作为其第一个子元素出现的情况,换句话说，x和y的关系，只是祖先标签和子孙标签的关系*/
+		div p:first-child{
+			background-color: blue;
+		}
+
+		:first-child{
+			background-color: pink;
+		}
+	/* 等于选中所有的标签：
+       *:first-child{
+			background-color:yellow; 
+		}*/
+
+		body *:first-child{
+			background-color:yellow; 
+		}
+
+		/* 选中body里，任何一个标签中作为第一个标签出现的标签*/
+	</style>
+</head>
+<body>
+	<p>1</p>
+	<p>2</p>
+	<div><p>1.1</p></div>
+	<div><span>2.1</span></div>
+	<div><span><p>3.1.1</p></span></div>
+	<p>3</p>
+	<p>4</p>
+	<p>5</p>
+</body>
+</html>

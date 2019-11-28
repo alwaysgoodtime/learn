@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<style type="text/css">
+	table{
+	 	width:300px;
+	 	margin:0 auto;
+	 	border:1px solid black;
+	 	/*table和td、td和td边框之间默认有一个距离（不是margin）
+	 	通过border-space可以控制该距离*/
+	 	border-spacing:0px;
+	 	/*border-collapse可以用来设置表格的边框合并
+		如果设置了边框合并，则border-spacing的设置自动失效
+		如果想要合并边框，只需要给table写个border-class，然后给td指定一个border就行了
+	 	*/
+	 	border-class:collapse;
+	}
+	td,th{
+		border:1px solid black;
+	}	
+
+	tr:nth-child(even){
+		background-color: pink;
+		/*表格的隔行变色效果*/
+	}
+	/*ie8以下的浏览器不支持nth-child伪类*/
+
+	tr:hover{
+		background-color: #ff0;
+		/*用伪类hover，让鼠标移到哪里，哪里就变色*/
+	}
+	/*ie6只支持a标签的hover和active伪类，其他都不支持，要想实现这个效果，只能用js
+	ie8支持表格的这种伪类*/
+
+	</style>
+
+</head>
+<body>
+	<!-- 表格在日常生活中使用的非常多，比如excel就是，
+	表格用来存储格式化的数据，比如课程表，银行对账单、工资条 在网页中也可以创建不同的表格 -->
+
+	<!-- 在html中,使用table标签来创建一个表格 -->
+	<table border="1" width="40%" align="center">
+		<!-- 上面是table标签自带的属性，我们工作中用css控制表现 -->
+		<!-- -->
+		<!-- 使用tr来表示表格中的一行
+		 -->
+		 <tr>
+		 	<!-- 在tr中使用td来创建一个单元格，有几个单元格就几个td -->
+		 	<td>a1</td>
+		 	<td>a2</td>
+		 	<td>a3</td>
+		 </tr>
+		 <tr>
+		 	<!-- 在tr中使用td来创建一个单元格，有几个单元格就几个td -->
+		 	<td>b1</td>
+		 	<!-- colspan表示横向合并单元格
+			想多合并一个，就写2
+		 	-->
+		 	<td colspan="2">b2</td>
+		 	<!-- 还有rowspan 表示纵向合并单元格 -->
+		 </tr>
+
+	</table>
+	<table>
+		<tr>
+			<!-- th是表头的意思，和td类似，里面有两种特殊效果，加粗，居中-->
+			<th>学号</th>
+			<th>姓名</th>
+			<th>性别</th>
+			<th>住址</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>swk</td>
+			<td>nan</td>
+			<td>huaguoshan</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>zhu</td>
+			<td>nan</td>
+			<td>gaolaozhuang</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>sha</td>
+			<td>nan</td>
+			<td>liushahe</td>
+		</tr>
+	</table>
+	<table>
+		<!-- 表格如果很长，需要分为三个部分：
+		表头，表格的主题，表格底部
+		在html中为我们提供了三个标签
+		thead 表头
+		tbody 表格主体
+		tfoot 表格底部
+		这三个标签的作用，就来区分表格的不同部分，他们都是table的子标签,需要直接写在table中，tr需要写在这三个标签中 -->
+		<thead>
+			<tr>
+				<th>1</th>
+				<th>2</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td>12</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+		</tbody>
+
+		<!-- 第一：通过把表头和底部区分开，如果打印好几页，比较好处理。
+
+		第二：thead中的永远会显示在表格头部，tfoot中的内容永远显示在表格尾部，无论它们在结构中谁前谁后
+
+
+		如果源代码表格中没有写tbody、thead和tfoot，浏览器会自动在表格中添加tbody，并且将所有的tr放到tbody中，所以tr永远不是table的子标签
+
+		所以注意，tr并不是table的子元素，而是tbody、thead和tfoot的子元素
+		 -->
+
+	</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>常用选择器</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		p{
+			color: red;
+		}
+		h1{
+			color:red;
+		}
+	 	/*作用：通过元素选择器可以选中页面中的
+	 	所有元素
+		语法：标签名{}
+	 	*/
+
+	 	/*id选择器：通过元素的id选择器可以选中唯一的一个元素
+	 	  语法： #id属性值{}
+	 	*/
+	 	#p1{
+	 		color:green;
+	 	}
+	 	/*class选择器：通过元素的class选择器可以选中一组元素
+	 	   语法：.class属性值{}
+	 	*/
+	 	.sd{
+	 		font-size: 60px;
+	 	}
+	 	/*为id为p1，class为sd，所有h1的元素来设置背景颜色
+
+			选择器分组（并集选择器）：选中多个选择器对应的元素
+			一个标签具有标签选择器1和2两种身份时设置相关属性。
+				语法：选择器1,选择器2,...选择器n{
+	
+				}
+	 	*/
+	 	p1,.sd,h1{
+	 		background-color: yellow;
+	 	}
+	 	/*交集选择器（复合选择器）：选择页面中同时满足多个选择器的元素
+	 		语法：选择器1选择器2...选择器n{
+	 			}
+	 	*/
+	 	span span.lala{
+	 		background-color: pink;
+	 	}
+
+	 	/*对于id选择器，不必要用交集选择器，因为id是唯一的
+
+		交集选择器，前面先标签、后面写它的属性,也可以和后代选择器一起用
+	 	*/
+
+	 	/*这里是祖先选择器和交集选择器一起用*/
+
+	 	/*通配选择器：选择页面中的所有元素
+	 		语法：*{}
+
+	 	*/
+		/*	 	*{
+	 	 		font-size: 30px;
+	 	 		/*其他选择器会覆盖这个字体大小，也即，没设置过字体大小的元素是30px，设置过字体大小的元素不变*/
+	 			background-color:blue; 
+	 			/*同上，其他选择器会覆盖在背景颜色之上
+	 	}
+		*/
+
+	</style> 
+</head>
+<body>
+	<h1>我是一个标题</h1>
+	<p>锄禾日当午</p>
+	<p id="p1">锄禾日当午</p>
+	<p>锄禾日当午</p>
+	<p>锄禾日当午</p>
+	<p>锄禾日当午</p>
+	<!-- 我们可以为元素设置class属性
+		 class属性和id属性类似 拥有相同class属性的是一组
+		 元素
+
+		 可以同时为一个元素设置多个class属性值，多个值中间用空格隔开 -->
+	<p class="sd sdf sdfc">锄禾日当午</p>
+	<p class="sd">锄禾日当午</p>
+	<p class="sd">锄禾日当午</p>
+
+	<p>锄禾日当午</p>
+	<p>锄禾日当午</p>
+	<p>锄禾日当午</p>
+	<span class="sd"><span class="sd lala">haha</span>我是span</span>
+</body>
+</html>

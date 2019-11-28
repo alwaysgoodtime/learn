@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>继承</title>
+	<!-- 祖先元素上的样式，也会被他的后代元素继承 
+
+	不是祖先元素的所有样式，都会被它的后代元素继承，比如：背景相关的样式、eg：背景颜色
+	边框相关的样式、定位相关的样式-->
+	<style type="text/css">
+		p{
+			font-size: 30px;
+		}
+	/*p中的样式，p中的后代元素也会继承*/
+	</style>
+</head>
+<body style="background-color: yellow;">
+	<p>dfd<span style="color:red;" >span1<span>woshispasn</span></span></p>
+	<!-- dfd和woshispasn等字，显示为黄色的原因是，它们的背景颜色默认为透明
+	如果你把背景颜色设为一张图片，那它子元素也继承的话，会很恐怖。
+	 -->
+	
+</body>
+</html>

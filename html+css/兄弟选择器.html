@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*选中span后面的p*/
+		span+p{
+			background-color: yellow;
+		}
+		/*后一个兄弟元素选择器
+			作用：可以选中一个元素后紧挨着的指定的兄弟元素
+			语法：前一个+后一个*/
+		/*选中div后边所有的兄弟元素
+		    语法:前一个~后一个*/
+		div~p{
+			background-color: red;
+		}
+
+	</style>
+
+</head>
+<body>
+	<p>我是一个p标签</p>
+	<p>我是一个p标签</p>
+	<p>我是一个p标签</p>
+	<span>我是一个span</span>
+	<p>我是一个p标签</p>
+	<span>我是一个span</span>
+	<p>我是一个p标签</p>
+	<p>我是一个p标签</p>
+	<p>我是一个p标签</p>
+	<div>我是一个p标签</div>
+	<p>我是一个p标签</p>
+	<span>史蒂芬p<p>我是一个p标签</p></span>
+	<p>我是一个p标签</p>
+</body>
+</html>

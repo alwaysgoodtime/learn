@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>a的伪类</title>
+	<style type="text/css">
+		a:link{
+			color: yellowgreen;
+		}
+		a:visited{
+			color: blue;
+		}
+		/*鼠标移入*/
+		a:hover{
+			color: red;
+		}
+		/*正在点击*/
+		a:active{
+			color:pink;
+		}
+		/*涉及到a的伪类一共有4个：
+			:link
+			:visited
+			:hover
+			:active
+			这四个选择器的优先级是一样的，所以最后出现的样式会覆盖前面的
+			这四个伪类表示四个超链接的特殊状态，
+			hover和active的特殊状态会同时出现，所以active必须写到hover的后面，否则active样式就被覆盖了
+			link和visited写到hover和active的后面，hover和active的样式也不会出现了，一个链接要不就是link，要不就是visited。link和visited的顺序无所谓，两者是互斥的。
+			所以，写伪类的顺序一般都是lvha（就是上面的顺序）。
+
+		*/
+	</style>	
+</head>
+<body>
+	<a href="https://www.badu.com">访问过的链接</a>
+	<a href="https://www.baidu123.com">未访问链接</a>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 如果定位元素的层级是一样的（absolute和relative是一个层级的），则结构中处于下边的元素会盖住上边的元素 -->
+
+	<!-- 通过z-index属性可以用来设置元素的层级
+	可以为z-index指定一个正整数作为值，该值将会作为当前元素的层级，层级越高，越优先显示
+
+	对于没有开启定位的元素，不能使用z-index，设置也会自动忽略，不起作用
+	
+	设置z-index的元素比不设置的高，默认是0。
+
+	特别注意:父元素的层级再高，也不会盖住子元素。比如父元素设置20，子元素设置10，照样是子元素高。
+
+	 -->
+	<title></title>
+	<style type="text/css">
+		.box1{
+			width:100px;
+			height:200px;
+			background-color: red;
+		}		
+		.box2{
+			width:100px;
+			height:200px;
+			background-color: yellow;
+			/*定位，通过position属性，可以设置元素的任意定位
+				可选值：static 默认值，元素没有开启定位，在文档流的默认位置
+				relatvie 开启元素的相对定位
+				absolute 开启元素的绝对定位
+				fixed 开启元素的固定定位（也是绝对定位的一种）
+			*/
+
+			/*开启相对定位
+			1.当开始了元素的相对定位，而不设置偏移量，元素不会发生任何变化
+			2.相对定位是相对于元素在文档流中原来的位置进行定位
+			3.相对定位的元素不会脱离文档流（相当于肉身还在，灵魂出窍）
+			4.相对定位会使元素提升一个层级（重叠时会盖住原来的文档流元素）
+			5.相对定位不会改变元素的性质，块还是块，内联还是内联，块元素的默认宽度还是auto（可近似为父元素的宽度）
+
+			*/
+			position:relative;
+			left:200px;
+			top:200px;
+
+
+			/*当开启了元素的定位（非static）时，可以通过left right top bottom四个属性来设置元素的偏移量
+
+
+				left：元素相对于其定位位置的左侧偏移量（往右偏移）
+				right:元素相对于其定位位置的右边偏移量（往左偏移）
+				top:元素相对于其定位位置的上边偏移量（往下偏移）
+				bottom:;元素相对于其定位位置的下边偏移量（往上偏移）
+
+				通常偏移量只需要使用两个就可以对一个元素进行定位，一般选择一水平方向和一垂直方向的偏移量来进行定位
+			*/
+
+
+
+		}		
+		.box3{
+			width:100px;  
+			height:200px;
+			background-color: green;
+			/*绝对定位 
+				1.开启绝对定位，会使元素脱离文档流
+				2.开启绝对定位以后，如果不设置偏移量，元素位置不会发生变化
+				3.绝对定位是相对于离他最近的开启了定位（position非static）的祖先元素来定位（一般情况下，开启了子元素的绝对定位都会同时开启父元素的相对定位）
+				3.1如果所有的祖先元素没有开启定位，则会相对于浏览器窗口进行定位
+				4.绝对定位会使元素提升一个层级
+				5.绝对定位会改变元素的性质
+						内联元素会变成块元素
+						块元素的默认宽度和高度都默认被内容撑开
+				
+			*/
+			position: absolute;
+			left:0px;
+			top:0px;
+		}
+
+		.box3{
+			width:100px;  
+			height:200px;
+			background-color: black;
+		}
+
+		.box4{
+			width:100px;  
+			height:200px;
+			background-color: black;
+		}
+
+		.box5{
+			width:100px;  
+			height:200px;
+			background-color: yellow;
+
+			/*固定定位
+			固定定位也是一种绝对定位，它的大部分特点都和绝对定位一样，不同的是：
+				固定定位永远都会相对于浏览器窗口进行定位
+			
+			固定定位会固定在浏览器窗口的某个位置，不会随滚动条滚动（右下角小广告，回到顶部，视频固定某个位置）
+
+			注意：ie6不支持固定定位，得用js实现了
+
+			*/
+
+			positon:fixed;
+			left:0px;
+			top:0px;
+		}
+
+		.box6{
+			width:100px;  
+			height:200px;
+			background-color: black;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="box3"></div>
+	<div class="box5"></div>
+	<div class="box6"></div>
+</body>
+</html>

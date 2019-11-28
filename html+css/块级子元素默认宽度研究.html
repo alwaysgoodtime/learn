@@ -1,0 +1,40 @@
+<!-- 可参见文档流 浮动 块和内联元素的属性那个文件 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.box1{
+			width:100px;
+			height:200px;
+			background-color: yellow;
+			float:right;
+			/*float属性是可继承的*/
+		}
+		.box2{
+			height:100px;
+			background-color: green;
+			margin:0 auto;
+			/*默认的width属性，不是100%，而是auto，它的计算方式如下父元素的content width - 子元素的margin-left - 子元素的margin-right -子元素的border-left-width - 子元素的border-left-width - 子元素的padding-left - 子元素的padding-right
+			也就是说，子元素的width是父元素的content width-子元素的盒子挤剩下的东西*/
+			/*注意：如果不写宽度，margin设置为auto是无法发挥作用的(也可能起作用了，没看出来...)*/
+		}
+
+/*		.box3{
+			width: 50px;
+			height:100px;
+			background-color: blue;
+			margin:0 auto;
+		}*/
+
+
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</div>
+</body>
+
+</html>

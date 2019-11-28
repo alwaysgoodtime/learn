@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>navigation</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*清除默认样式*/
+		*{
+			padding:0;
+			margin:0;
+			/*它并不能清除ul中li的项目符号•*/
+		}
+		.nav{
+			/*去除项目符号*/
+			list-style:none;
+			/*为url设置背景颜色*/
+			background-color: yellow;
+			/*设置居中*/
+			margin:60px auto;
+			/*设置宽度*/
+			width:500px;
+			/*解决高度塌陷*/
+			overflow: hidden;
+			/*兼容IE6 这里不用设置zoom:1
+			在IE6中，如果为元素指定了一个宽度，则会默认开启hasLayout，这里已经设定了此元素的width。
+			*/
+			background-color: #6495ED;
+			
+
+		}
+		li{
+			/*让它浮动横过来*/
+			float: left;  
+			/*为li指定一个宽度 
+			光有它还不够好，因为把超链接指定了，鼠标移进去，整个25%都可以点,指定li则不行*/
+			width:25%;
+			background-color: #6495ED;
+			
+		}
+
+		.nav a{
+			/*将a转换为块元素，从而指定宽度*/
+			display:block;
+			/*为a指定一个宽度*/
+			width:100%;
+			/*设置文字居中*/
+			text-align: center;
+			/*设置一个上下内边距*/
+			padding: 5px 0;
+			/*margin:5px 0;在设置a的背景颜色时，即可看出区别*/
+			/*去掉下划线*/
+			text-decoration: none;
+			/*字体颜色、粗细*/
+			color:white;
+			font-weight: bold;
+
+		}
+
+		.nav a:hover{
+			background-color: #c00;
+			/*一种选中需要鼠标移入才能显示的颜色
+			可以用chrome按f12调试，就是style的filter那里，有个hov，可以选择鼠标滑过和点击的状态
+			*/
+
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<!-- 导航条最好用无序列表实现，div也行 -->
+	<!-- 创建导航条结构-->
+	<ul class="nav">
+		<li><a href="">首页</a></li>
+		<li><a href="">新闻</a></li>
+		<li><a href="">联系</a></li>
+		<li><a href="">关于</a></li>
+
+	</ul>
+</body>
+</html>

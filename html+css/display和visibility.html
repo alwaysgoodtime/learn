@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		a{
+			/*内联元素不能用width和height控制宽和高 */
+			/*将一个内联元素变成块元素
+			通过display可以将内联元素变成块元素
+				可选值：
+
+					none 此元素不会被显示，并且该元素不会在页面中不会继续占有位置
+
+					inline 可以将一个元素作为内联元素显示
+
+					block 可以将一个元素作为块元素显示
+
+					inline-block 将一个元素转换为行内块元素
+					它既有行内元素的特点，又有块元素的特点，既可以设置宽高，又不会独占一行。比如iframe和img，就是行内块元素
+			*/
+
+			display:inline-block;
+			/*display无论在width和height前还是后，都会起转换作用*/
+			width:100px;
+			height:100px;
+			background-color:blue; 
+
+
+
+
+		}
+		div{
+			/*visibility 可以用来设置元素的隐藏和显示的状态
+			 可选值 visible 默认值 元素是可见的
+			 	   hidden  隐藏 虽然该元素不在页面中显示，但是它的位置会依然保持。
+			 	   ...
+			*/
+			visibility:hidden;
+			width:100px;
+			height:100px;
+			background-color: pink;
+		}
+		
+	</style>
+</head>
+<body>
+	<div></div>
+	<a href="#">我是一个大大的超链接</a>
+</body>
+</html>

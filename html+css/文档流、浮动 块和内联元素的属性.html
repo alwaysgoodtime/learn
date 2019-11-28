@@ -1,0 +1,111 @@
+<!-- 网页就是一个一个的html文档
+文档流 
+	文档流处在网页的最底层，它表示的是一个页面中的位置，我们所创建的元素默认都处在文档流中
+	文档流=normal flow
+	元素在文档流中的特点 
+
+		块元素
+			1.块元素在文档流中会独占一行，默认自上向下排列
+			2.块元素在文档流中默认宽度是父元素的100%，它的width默认值是auto，也就是和父元素一样。
+			3.块元素在文档流中的高度默认被内容（子元素）撑开，它里边的内容有多高，他就多高
+
+		内联元素-
+			1.内联元素在文档流中只占自身大小，会默认从左向右排列，如果一行不足以容纳所有内联元素，则换到下一行，继续自左向右
+			2.在文档流中，内联元素的默认宽度和高度都被内容撑开，而且不能设置内联元素的width和height属性
+		
+			-->
+
+<!-- 当块元素的宽度为auto时，此时指定元素的内边距不会应该影响可见框的大小，而是自动修改宽度，以影响内边距。 -->
+
+<!-- 当块元素脱离文档流以后，高度和宽度的默认值是被内容撑开，没有内容就没有高和宽-->
+
+<!-- 当内联元素脱离文档流以后，会变成块元素，也能设置宽和高（width和height）也就是说，浮动的元素都是块元素 -->
+
+<!-- 浮动的元素 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>浮动</title>
+	<style type="text/css">
+		.box1{
+			width:100px;
+			height: 100px;
+			background-color: red;
+			display: inline-block;
+		}
+		.box2{
+			width:100px;
+			height: 100px;
+			background-color: red;
+			display: inline-block;
+		}
+		.box3{
+			width:100px;
+			height: 100px;
+			background-color: blue;
+			display: inline-block;
+		}
+		/*块在文档流中默认垂直排列，想要水平排列，一种方法是用dispaly改变三个块的性质，改成内联元素，但注意，如果内联元素换行（enter）和空格（无论几个），则两者中默认会有一个空格
+		这种方法太麻烦，我们常用浮动的方法
+		*/
+
+		/*使用float来使元素浮动，从而脱离文档流
+
+			可选值： none 默认值：元素默认在文档流中
+					right 元素会脱离文档流，向页面的左侧浮动
+					left 元素会脱离文档流，向页面的右侧浮动 
+			此属性默认不继承，就是父元素浮动，子元素不会自动继承，还是none值
+		当一个元素设置浮动以后（float属性是一个非none的值），
+
+			浮动比文档流要高一层，会盖住文档流中的元素。文档流中元素也会忽略浮动的元素布局。
+
+			元素会脱离文档流，元素脱离文档流以后，它下边的元素会自动会立即向上移动
+			元素浮动以后，会尽量向页面的左上或者是右上漂浮，直到遇到父元素的边框或者其他的浮动元素，如果浮动元素上边是一个没有浮动的块元素，则浮动元素不会超过块元素。
+
+			浮动元素一行要容不下，会自动换到下一行
+
+			浮动元素不会超过它正上边的兄弟块元素，最多最多是同样高
+
+			如果浮动元素上边是一个没有浮动的内联元素，则块元素与浮动元素互不影响。但在IE6中，浮动元素也不能超过上边不浮动的兄弟内联元素，需要另做处理
+
+		*/
+
+		/*浮动的元素不会盖住文字，文字会自动环绕在浮动元素的周围
+		
+		所以我们可以通过浮动来设置文字环绕图片的效果
+		*/
+
+		.box4{
+			width:100px;
+			height: 100px;
+			background-color: blue;
+			flow:right;
+			
+		}
+		.box5{
+			width:100px;
+			height: 100px;
+			background-color: blue;
+			display: inline-block;
+			flow:right;
+		}
+		.box6{
+			width:100px;
+			height: 100px;
+			background-color: blue;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">1</div><div class="box2">2</div><div class="box3">3</div>
+
+	<div class="box4"></div>
+	<div class="box5"></div>
+	<div class="box6"></div>
+
+
+</body>
+</html>

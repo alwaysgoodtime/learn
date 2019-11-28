@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>css hack 条件hack 属性hack 元素hack</title>
+  <link rel="stylesheet" type="text/css" href="其他浏览器.css">
+  <!-- [if IE 8] 
+  <link rel="stylesheet" type="text/css" href="ie8特供.css">
+  <![end if]-->
+  <!-- 以上在工作中常常为兼容iex（6.7.8...）而特别设置 -->
+  <style type="text/css">
+     body{
+      background-color: red;
+
+      /*属性hack*/
+
+      /*在样式前添加一个下划线，该样式只有ie6及以下的浏览器才可以识别*/
+      _background-color: yellow;
+      /*只有id7以下浏览器才可以识别*/
+      *background-color: yellow;
+      /*在样式最后添加一个\0则只有IE8及以上的浏览器才能识别*/
+      background-color: yellow\0;
+
+      /*css hack不到万不得已的情况下尽量不要使用，代码维护时候一改，改的东西太多*/
+
+     }
+
+      /*选择符级hack 在选择器前添加 * huml 则该选择器只有IE6可以识别
+      * + html 只有IE7可以识别
+      */
+      * html body{
+        background-color: green;
+      }
+  </style>
+
+
+</head>
+<body>
+    <!-- 有一些情况，有一些特殊的代码我们只需要在某些特殊的浏览器中执行，而在其他的浏览器中不需要执行，这时就可以使用css hack来解决该问题
+    css hack实际上指的是一个特殊的代码，这段代码侄子啊某些浏览器中可以识别，而其他浏览器不能识别，通过这种方式，来为一些浏览器设置特殊的代码
+
+    这种方式只支持ie10以下的浏览器，其他浏览器都不支持
+    
+    -->
+    <!-- 以下代码只会出现在IE6中 -->
+    <!-- [if IE 6]>
+      <p>为了您和家人的情况，请远离IE6</p> 
+    <![endif] -->
+    <!-- 以下代码只会出现在IE8中 -->
+    <!-- [if IE 6]>
+      <p>为了您和家人的情况，请远离IE6</p> 
+    <![endif] -->
+    <!-- 以下标签会在IE9以下的浏览器中显示
+
+    lt 是 less than的缩写 -->
+
+    <!-- [if lt IE 6]>
+      <p>为了您和家人的情况，请远离IE6</p> 
+    <![endif] -->
+
+     <!-- gt 大于  lte 小于和等于 ! 不等于 -->
+
+     <!-- 兼容浏览器，不一定需要完美兼 -->
+</body>
+</html>

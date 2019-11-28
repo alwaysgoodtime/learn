@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="">
+	<style type="text/css">
+		div{
+			/*
+			所有背景相关样式都不会继承
+		
+			使用background-image来设置背景图片
+
+			语法:background-image:url(相对路径或者绝对路径);
+			相对路径写在哪，就相对于那个文件夹
+			eg. 
+			<link rel="stylesheet" type="text/css" href="xx.css">,如果用外部样式表写，则相对于外部的css样式表的路径填image路径。
+
+			如果背景图片大于元素，默认会显示图片左上角
+			如果背景图片和元素一样大，则会将背景图片全部显示
+			如果背景图片小于元素，则会平铺图片以充满元素
+
+			可以同时为一个元素设置背景颜色和背景图片
+			这样背景颜色将会作为背景图片的底色
+			一般情况下设置背景图片时都会同时指定一个背景颜色（图片加载需要时间，用户可以先看看背景颜色，以免看到看空白）
+
+			background-repeat用于设置背景图片的重复方式
+			可选值：
+				repeat:默认值 双方向重复（平铺）
+				no-repeat 背景图片不会重复，图片有多大就显示多大
+				repeat-x
+				背景图片沿水平方向重复
+				repeay-y 背景图片沿垂直方向重复
+
+			background-attachment: 背景图片的定位
+			
+			有几种定位方式：
+
+			模糊定位：top center bottom left
+
+			center right  在元素九宫格里组合
+
+			如果只写一个参数，第二个参数默认是center
+			
+			eg.background-position:center center;
+
+			精确定位:相对于块元素的左上角，进行x轴和y轴的偏移，可以设置成负数
+
+			eg.
+			background-position:1px -5px;
+
+			background-attachment 用来设置背景图片是否随浏览器页面一起滚动
+
+			默认值： scroll 随浏览器窗口一起滚动
+
+			fixed 固定在浏览器窗口某一位置，不随窗口滚动
+
+			可以给body设置一个fixed的背景图片，作为网站背景
+			最好不要把单个块元素的背景图片设置fixed，否则块元素滚动消失了，背景图片也会消失
+
+			雪碧图：减少浏览器访问服务器的次数，加快加载速度，增加用户体验。
+			否则用户要加载几次，按按钮时会闪烁
+
+			背景的简写样式：
+
+			background: {color image  repeat position  attachment}
+			这五个属性都能简写到background中
+			没有顺序要求，也没数量要求，不写就会使用默认值
+
+
+
+			*/
+
+			background-image:url(这里先相对或者绝对路径);
+			
+			background-attachment: 
+
+
+
+		}
+
+	</style>
+</head>
+<body>
+	<!-- 一个小技巧，如果背景要设置渐变色，一种是用css3的特性，一种就是先截个渐变色的图，然后平铺它 -->
+	<div></div>
+</body>
+</html>

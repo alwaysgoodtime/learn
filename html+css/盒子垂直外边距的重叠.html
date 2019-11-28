@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.p1{
+			width:100px;
+			height:100px;
+			background-color: red;
+			margin-bottom: 100px;
+		}
+		.p2{
+			width:100px;
+			height:100px;
+			background-color: green;
+			margin-top: 100px;
+		}
+		/*垂直外边距的重叠
+			在网页中垂直方向的相邻外边距会发生外边距的重叠
+				所谓的外边距重叠指兄弟元素之间的相邻外边距会取最大值而不是取和
+				
+				有两个必要条件：一个是相邻、一个是兄弟元素
+
+				如果父子元素的垂直外边距相邻，则子元素的垂直外边距会设置给父元素。（如果父元素也设置了，会取最大值）
+		*/
+		.box3{
+			width:200px;
+			height:200px;
+			background-color: yellow;
+
+			border-top: 1px red solid;
+			padding-top: 1px;
+
+			/*也可以用padding-top:100px;
+			把box4往下挤100px*/
+
+
+		}
+		.box4{
+			width:100px;
+			height:100px;
+			background-color: green;
+			margin-top: 100px;
+			/*为子元素设置一个上外边距，使子元素的位置下移,但父元素也同时下移
+			*/
+
+			/*有三种解决方案，一是插入个字母或者div（但div不能为空），让两者不相邻，二是为父元素设置一个上边框或者内边距,让两者的外边距不相邻，三是中间插入一个table，可以为空*/
+		}
+
+		.box5:before{
+			content:"";
+			display:table;
+			/*将box5变成表格形式*/
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box3"><div class="box4"></div></div>
+	<div class="p1"></div>
+	<!-- 中间加个其他div（非空）和字符就不会发生垂直外边距重叠 -->
+	<!-- <table></table> 直接写一个空的表格也是解决方法，这种最好在css中实现，这样就不影响原来的html结构 eg为box5-->
+	<div class="p2"></div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<em>用于一段内容中的重点，有语义。在浏览器中默认显示为斜体（不重要，因为表现都是css控制的）</em>
+<strong>一个内容整体的重要，比em更强烈，有语义。在浏览器默认显示为粗体</strong>
+<!-- h5规范中规定，对不不需要着重的内容而是单纯的加粗或者是斜体，就可是使用b和i标签 -->
+<i>作用是斜体，纯控制内容表现的标签</i>
+<b>作用是加粗，纯控制内容表现的标签</b>
+<p>我是<small>small，里面的内容比父标签的内容小一些，h5中它有语义，用它来表示一些细则一类的内容，比如合同的小字（图片仅供参考），网站的版权声明。</small></p>
+
+<big>把文字变大一些，现在是纯表现，无语义，已被淘汰</big>
+
+<cite>它的语义是，网页中所有加书名号的内容都可以用cite标签，表示参考的标签，表现为斜体。比如书名、歌名、电影名等</cite>
+
+<p><cite>《论语》</cite>是我喜欢的东西</p> 
+
+<q>语义是，表示一个短的引用（行内引用），内联元素它的表现为，浏览器会默认加上引号，就是通过css的before和after的样式控制来加的。不同浏览器的表现可能不同，默认的样式我们得自己用css控制。</q>
+<p>子曰：<q>学而时习之不亦说乎！</q>></p>
+
+<blockquote>blockqoute的标签表示一个长引用（块级引用），块元素</blockquote>
+
+<div>
+子曰：
+<blockquote>有朋自远方来，乐呵乐呵！</blockquote>
+</div>
+
+<p>使用sup标签来设置一个上标</p>
+
+<p>赵薇<sup><a href="#">1</a></sup></p>
+
+<p>使用sub标签来设置一个下标</p>
+
+<p>H<sup>2</sup>o</p>
+
+<p>ins标签表示一个插入的内容,表现为自动添加一个下划线，关键是看语义，表现可以css加。内联元素</p>
+
+<p>我们的老师真<ins>好</ins>啊！</p>
+<p>del标签表示一个删除的内容,表现为自动添加一个删除线，内联元素</p>
+
+<p>pre是一个预格式标签，会将代码中的格式保存，不会忽略多个空格、缩进、换行等。块元素</p>
+
+<pre>
+	window.onload = function(){
+	alert("Hello World");
+</pre>
+
+<p>code也是语义标签，专门用来表示代码，但不会保留原始格式，纯语义标签。我们一般结合使用pre和code，pre中套code
+</p>
+
+<code>
+	window.onload = function(){
+	alert("Hello World");
+</code>
+
+<pre>
+	<code>
+	window.onload = function(){
+	alert("Hello World");
+	</code>
+</pre>
+
+<p> <del>17.75</del> <br/>15.64</p>
+</body>
+</html>

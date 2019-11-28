@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单</title>
+	<!-- 表单就是将我们的信息提供给别人
+	网页中的表单就是用户来向远程服务器提交信息的，我们最常用的就是baidu搜索框、比如注册登录账号密码、贴吧发帖-->
+</head>
+<body>
+	<!-- 使用form创建一个表单 -->
+	<!-- form标签必须指定一个action属性，该属性指向的是一个服务器的地址 
+		当我们提交表单时会提交到action属性对应 的地址 -->
+	<form action="">
+		<!-- 使用form创建的仅仅是一个空白的表但，我们还需要想form中添加不同的表单
+		 -->
+
+		 <!-- 文本框创建 使用input来创建一个文本框 它的type属性是text 本身是行内块元素
+		如果希望表单项中的书会提交到服务器中，还必须给表单项指定一个name属性 name表示提交内容的名字
+
+		input是自结束标签，注意结尾写法
+
+		用户填写的信息会附在url地址的后便以查询字符串的形式发送给服务器
+		url?属性名=属性值%属性名=属性值（查询字符串）
+		格式: 属性名=属性值 这一般是后台决定的
+
+		不写name属性的表单项不会被提交
+
+
+		在文本框中也可以指定value属性值，该值将会作为文本框的默认值显示（不是提示文字，不会被清除）
+
+		 -->
+
+
+		 <!-- 在表单中可以用fieldset来进行分组 ，将一个组放到一个fieldset中-->
+
+		 <fieldset>
+
+
+		 		<legend>用户信息</legend>
+		 		<!-- 用来给表单的组取个名字 -->
+
+         用户名<input type="text" name="username" />
+         <!-- text是单行文本框 -->
+
+         用户名<input type="text" name="hello" />
+
+         <!-- 在html中还为我们提供了一个label标签，专门用来选中表单中的提示文字 
+
+			
+		上面的也可以写成
+
+		<label for="um">用户名</label><input type="text" name="hello" id="um"/>
+
+		这种更好一些，方便css控制格式，语义也清楚
+
+		该标签可以指定一个for属性，该属性值需要指定一个表单项的id值,这样一点label中的文字，就可以选中，可以用到男女单选框中。
+
+         -->
+
+
+         <!-- 密码框
+		 	使用input创建一个密码框，type属性是password（用text会明文显示密码，用password可以隐藏输入）
+
+		 	如果想提交给服务器，name属性是必须的
+          -->
+  
+  		密码框<input type="password" name="password" />
+
+         <!-- 提交按钮可以将表单中的信息提交给服务器，
+         使用input创建一个提交按钮，它的type属性是submit
+		 在提交按钮中可以通过value属性来指定按钮上的文字
+          -->
+         <input type="submit" value="哈哈" />
+         <!-- 不创建的话，在网页按enter键也可以提交 -->
+
+         <!-- 单选按钮 
+         			-使用input来创建单选按钮，它的type属性使用radio
+         			-单选按钮通过name属性进行分组，name属性相同是一组，（否则就能多选）
+					-像这种用户只能选择但是不需要用户直接填写内容的表单，这样被选中的表单小的value属性值将会最终提交给服务器（否则只会提交个gender=on）-->
+
+		<!-- 如果希望单选按钮或者多选框中指定默认选中的选项:则可以在希望选中的项中添加checked="checked" -->
+         性别<input type="radio" name="gender" 	value="male" checked="checked">男<input type="radio" name="gender" value="female">女
+
+         </fieldset>
+
+
+         <!-- 多选框
+         			-使用input来创建多选框，它的type属性使用checkbox
+         			-也必须加上name和value
+         -->
+         		爱好<input type="checkbox" name="hobby" value="1">羽毛球
+         		<input type="checkbox" name="hobby" value="2">篮球
+         		<input type="checkbox" name="hobby" value="3" checked="checked">台球
+         		<input type="checkbox" name="hobby" value="4">电脑
+
+
+         <!-- 下拉列表
+         		-使用select来创建一个下拉列表 
+				name指定给select value指定给option
+
+				可以通过添加select="selected"来设置默认选中的option
+
+				注意：它不需要用input
+         -->
+         	<!-- 当为下拉列表添加multiple="mutiple"，则下拉列表变为多选的下拉列表 -->
+
+         	<!-- optgroup，为下拉选框创建分组，同一个optgroup是一组，避免选项看花眼 -->
+         	<select name="sd" multiple="mutiple">
+	         	<optgroup label="女">
+	         		<option value="sdf">34</option>
+	         	</optgroup>
+	         	<optgroup label="男">
+	         		<!--不写label不会创建分组 -->
+					<option value="sdf">34</option>
+	         	 	<option value="sdf" select="selected">3</option>
+	         	 	<option value="sdf">5</option>
+	         	</optgroup>	
+         	 </select>
+
+         	 <!-- 自我介绍 -->
+
+         	 <!-- 使用textarea创建一个多行文本框（文本域） -->
+
+         	 <!-- 最好还是用css控制它的高度宽度等 -->
+
+         	 自我介绍<textarea name="intro" ></textarea>
+
+         	 <!-- 重置按钮 
+				
+			点击后将表单中内容重置为默认值
+         	  -->
+
+         	 <input type="reset"/>
+
+         	 <!-- 纯按钮 -->
+         	 <!-- 使用button属性可以创建一个单纯按钮，没有任何功能，只能被点击 
+			但它的功能是无限的，可以结合js扩展它的功能
+         	 -->
+         	 <input type="button" >
+
+
+         	 <!-- 另外的按钮创建方式 -->
+         	 <button type="submit">提交</button>
+         	 <button type="reset">重置</button>
+         	 <button type="buttom">纯按钮</button>
+
+         	 <!-- 这种方式和上面input的三个功能都一样，但更推荐使用你下面的，因为它不是自结束标签，有开始有结束，中间的内容可以放文字，也可以放图片，使用起来更灵活一些-->
+
+
+</form>
+</body>
+</html>
+
+
+
+
+
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>使用表格布局</title>
+</head>
+<body>
+	<!-- 以前表格更多的情况实际上是用来对页面进行布局的，但是这样的方式，不方便维护(耦合非常严重，层次特别多（表格嵌套）)，而且标签无语义，不方便浏览器搜索，现在基本已经被淘汰了
+	-->
+	<!-- 表格的列数由td最多的那行决定 
+
+		表格可以嵌套，在td中能再创建一个表格-->
+
+	<table border="1" width="100%" height="500px">
+		<tr>
+			<td colspan="2"></td>
+		</tr>
+		<tr>
+			<td width="20%"></td>
+			<td width="80%">
+				<table border="1" width="100%" height=100%>
+					<td></td>
+					<td></td>
+				</table>
+				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+		</tr>
+
+		
+	</table>
+
+
+</body>
+</html>

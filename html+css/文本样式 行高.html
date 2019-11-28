@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <style type="text/css">
+	 
+	 	/*在css并没有为我们提供一个直接设置行间距的方式，我们只能通过设置行高来间接设置行间距，行高越大行间距越大
+
+	 	使用line-height来设置行高
+
+	 	行高类似于我们上学时做笔记的单线本，单线本是一行一行，线与线之间的距离就是行高。
+
+		网页中的文字实际上也是写在一个看不见的线中的，文字会默认在行高中垂直居中显示。
+
+		行间距=行高-字体大小
+	
+
+	 	*/
+	 	.p1{
+	 		font-size: 20px;
+	 		line-height: 40px;
+	 	/*行间距就是20px*/
+	 	/*如何字体大小比行高大，行间距就是负数，字会叠到一起
+		通过设置line-height可以间接设置行间距
+		可以接受的值：
+			1.直接接收一个大小
+			2.可以指定一个百分数，则会相对于字体去计算行高，（100%，表示行高和字体大小相同）
+			line-height:100%;
+			3.可以直接传一个数值，则行高会设置成字体大小相应的倍数（1就是100%）
+			line-height:2;
+	 		*/
+	 	}
+	 	.box{
+	 		width:200px;
+	 		height：200px;
+	 		background-color: #bfa;
+	 		/*
+	 		对于单行文本来说，可以将行高设置为和父元素的高度一致，这样可以使单行文本在父元素中垂直居中
+	 		*/
+	 		line-height: 200px;
+	 	}
+	 	.p2{
+	 		/*
+	 		*在font中也可以指定行高
+	 		在字体大小后可以添加/行高，来指定行高，该值是可选的，如果不指定则会使用默认值
+	 		*
+	 		*/
+	 		font:30px/50px "微软雅黑";
+	 		/*字体大小30px，行高50px*/
+	 	}
+
+	 	
+		/*		
+		.p2{
+			line-height:50px;
+			font:30px "微软雅黑";
+		}
+		这样line-height的值还是默认值，把50px的值给覆盖掉了。可以把line-height放font下面，最好是在font中就写上行高。
+		*/
+	 	
+	 	/*text-transform样式用语将元素中的字母全部变成大小写
+			可选值：none 默认 字母不处理
+				   capitalize 首字母大写
+				   它是通过单词边界（空格、标点等）识别单词的
+				   uppercase 全部变成大写字母
+				   lowercase 全部变成小写字母
+
+	 	*/
+
+	 	.p4{
+	 		text-transform:capitalize;
+	 	}
+
+	 	/*text-decoration
+		可选值 ：none 默认值 定义标准文本
+				underline 为文本添加下划线
+				overline  为文本添加上划线
+				linethrough 为文本添加删除线
+	 	*/
+
+	 	/*text-overflow
+		可选值：ellipsis 让溢出的单行文字结尾加省略号
+
+		注意：还需要与overflow:hidden配合使用
+		，还有多行文本的截断。
+	 	*/
+	 	.p4{
+	 		text-decoration: underline;
+	 	}
+	 	
+	 	a{
+	 		/*超链接会默认添加下划线，也就是超链接的text-decoration的默认值是underline
+	 		如果需要去除下划线，则需要将该样式设置为none	*/
+	 		text-decoration: none;
+	 	}
+
+	    /* letter-spacing 增加或减少字符间的空白，中文字也通用。
+	    可选值： normal 默认值
+			    inherit 从父元素那里继承属性值
+				length 具体的数值，可以是负值
+			word-spacing
+		增加或减少单词间的距离,实际上就是设置词与词之间空格的距离。对中文不怎么好用。
+
+
+	    */
+
+	    .p4{
+	    	letter-spacing: 10px;
+	    	/*默认是0px*/
+
+	    	word-spacing:10px;
+
+	    }
+
+	    .p4{
+	    	/*text-align 用于设置文本的对齐方式
+			可选值：left 默认值 靠左对齐
+				   right 靠右对齐
+				   center 居中对齐
+				   justify 两端对齐
+				   -通过调整文本之间的空格大小，来达到两端对齐的目的
+	    	*/
+
+	    	text-align:right;
+	    }
+
+	    .p4{
+
+	    	/*text-indent 用来设置首行缩进
+	    	当给它指定一个正值时，会自动向右缩进指定的像素
+	    	
+	    	当给它指定一个负值事，会自动向左缩进指定像素，通过这种方式可以将一些不想显示的文字隐藏起来*/
+	    	font-size: 16px;
+	    	text-indent: 32px;
+	    	/*最后写成text-indent:2em;
+	    	这样无论如果变字体大小，都是首行缩进两个字*/
+	    }
+
+	 </style>
+</head>
+<body>
+	<a href="#">我是超链接</a>
+	<div class="box">
+		<a href="#">hahah我要居中</a>
+	</div>
+	<p class="p1">我是一行dfdskfaldsjflkdjfldjfkladjflkajdlfjadlfjakldfjklasfjl
+	</p>
+	<p class="p4">wedf adfW MSDAD 哈哈哈</p>
+	<p class="p2"></p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+
+		.box1{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+		p{
+		 	background-color: yellow; 
+		}
+		/*浏览器为了在页面中没有样式时，也可以有一个比较好的显示效果，所以为很多的元素都设置了一些默认的margin和padding，而它的这些默认样式，正常情况下我们不需要使用
+
+		所以我们往往在编写样式之前，需要将浏览器中的默认的margin和padding通通去掉
+		*/
+
+		/*清除浏览器的默认样式*/
+
+		*{
+			margin:0px;
+			padding:0px;
+		}
+
+		/*	相当于把所有元素的margin和padding都清除了	body{
+			margin:0px;
+		}
+		p{
+			padding:0px;
+		}
+		...*/
+
+
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<p>我是一个段落</p>
+	<p>我是一个段落</p>
+	<p>我是一个段落</p>
+	<ul>
+		<li>无序列表</li>
+		<li>无序列表</li>
+		<li>无序列表</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ie6png图片</title>
+  <style type="text/css">
+    div{
+      background-image: url(png24.png);
+
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <!-- 在ie6，对图片格式png24支持度不高，如果使用了png24图片，则会导致透明效果无法正常显示
+
+  
+  解决方法：
+    1.使用png8格式的图片代替png24，即可解决问题
+     但是代替后，图片清晰度会有所下降，边缘有锯齿
+    2.使用JavaScript来解决该问题，需要向页面中引入一个外部的js文件，然后再写一下简单的js代码，来解决该问题
+   -->
+   <!-- 在body标签的最后引入外部的js文件 -->
+   <script type="text/javascript" src="js文件的地址"></script>
+    <img src="png24.jpg">
+   <!-- 在创建一个新的script标签，并且编写一些js代码 -->
+   DD_delatedPNG.fix("div，img"(需要修复的元素));
+   
+</body>
+</html>
