@@ -130,15 +130,14 @@
 			
 			        document.write("<table  align='center'>");
 
-
-​			
-			        //1.完成基本的for循环嵌套，展示乘法表
-			        for (var i = 1; i <= 9 ; i++) {
-			            document.write("<tr>");
-			            for (var j = 1; j <=i ; j++) {
-			                document.write("<td>");
-			
-			                //输出  1 * 1 = 1
+	     			        //1.完成基本的for循环嵌套，展示乘法表
+				        for (var i = 1; i <= 9 ; i++) {
+				            document.write("<tr>");
+				            for (var j = 1; j <=i ; j++) {
+				                document.write("<td>");
+				
+	                   
+	                   //输出  1 * 1 = 1
 			                document.write(i + " * " + j + " = " + ( i*j) +"&nbsp;&nbsp;&nbsp;");
 			
 			                document.write("</td>");

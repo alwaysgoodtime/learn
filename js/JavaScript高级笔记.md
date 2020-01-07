@@ -35,8 +35,7 @@
 		* 代码：
 			<body>
 				<img id="light" src="img/off.gif"  onclick="fun();">
-				<img id="light2" src="img/off.gif">
-				
+				<img id="light2" src="img/off.gif">			
 				<script>
 				    function fun(){
 				        alert('我被点了');
@@ -50,13 +49,13 @@
 				    //1.获取light2对象
 				    var light2 = document.getElementById("light2");
 				    //2.绑定事件
-				    light2.onclick = fun2;
+				    light2.onclick = fun2;		    
+					</script>
+				</body>
 
 
-​				
-				</script>
-			</body>
-	
+​	
+​	
 	* 案例1：电灯开关
 		<!DOCTYPE html>
 		<html lang="en">
@@ -99,12 +98,8 @@
 		            light.src = "img/on.gif";
 		            flag = true;
 		        }
-
-
-​		
-		    }
-		    
-		</script>
+	        }
+	 	</script>
 		</body>
 		</html>
 
@@ -282,15 +277,14 @@
 			2. onmouseup	鼠标按键被松开。
 			3. onmousemove	鼠标被移动。
 			4. onmouseover	鼠标移到某元素之上。
-			5. onmouseout	鼠标从某元素移开。
-
-
-​			
+			5. onmouseout	鼠标从某元素移开
+			
 		5. 键盘事件：
-			1. onkeydown	某个键盘按键被按下。	
-			2. onkeyup		某个键盘按键被松开。
-			3. onkeypress	某个键盘按键被按下并松开。
-	
+				1. onkeydown	某个键盘按键被按下。	
+				2. onkeyup		某个键盘按键被松开。
+				3. onkeypress	某个键盘按键被按下并松开。
+		
+
 		6. 选择和改变
 			1. onchange	域的内容被改变。
 			2. onselect	文本被选中。

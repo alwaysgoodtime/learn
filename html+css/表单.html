@@ -8,25 +8,20 @@
 <body>
 	<!-- 使用form创建一个表单 -->
 	<!-- form标签必须指定一个action属性，该属性指向的是一个服务器的地址 
-		当我们提交表单时会提交到action属性对应 的地址 -->
+		当我们提交表单时会提交到action属性对应的地址 -->
 	<form action="">
-		<!-- 使用form创建的仅仅是一个空白的表但，我们还需要想form中添加不同的表单
+		<!-- 使用form创建的仅仅是一个空白的表但，我们还需要向form中添加不同的表单
 		 -->
 
-		 <!-- 文本框创建 使用input来创建一个文本框 它的type属性是text 本身是行内块元素
+		 <!-- 文本框创建 
+      使用input来创建一个文本框，它的type属性是text，本身是行内块元素
 		如果希望表单项中的书会提交到服务器中，还必须给表单项指定一个name属性 name表示提交内容的名字
-
 		input是自结束标签，注意结尾写法
-
 		用户填写的信息会附在url地址的后便以查询字符串的形式发送给服务器
 		url?属性名=属性值%属性名=属性值（查询字符串）
 		格式: 属性名=属性值 这一般是后台决定的
-
 		不写name属性的表单项不会被提交
-
-
 		在文本框中也可以指定value属性值，该值将会作为文本框的默认值显示（不是提示文字，不会被清除）
-
 		 -->
 
 
@@ -46,13 +41,13 @@
          <!-- 在html中还为我们提供了一个label标签，专门用来选中表单中的提示文字 
 
 			
-		上面的也可以写成
+		    上面的也可以写成
 
-		<label for="um">用户名</label><input type="text" name="hello" id="um"/>
+		    <label for="um">用户名</label><input type="text" name="hello" id="um"/>
 
-		这种更好一些，方便css控制格式，语义也清楚
+		    这种更好一些，方便css控制格式，语义也清楚
 
-		该标签可以指定一个for属性，该属性值需要指定一个表单项的id值,这样一点label中的文字，就可以选中，可以用到男女单选框中。
+		    该标签可以指定一个for属性，该属性值需要指定一个表单项的id值,这样一点label中的文字，就可以选中，可以用到男女单选框中。
 
          -->
 
@@ -63,7 +58,7 @@
 		 	如果想提交给服务器，name属性是必须的
           -->
   
-  		密码框<input type="password" name="password" />
+  		密码框<input type="password" name="password" value = "jaa"/>
 
          <!-- 提交按钮可以将表单中的信息提交给服务器，
          使用input创建一个提交按钮，它的type属性是submit
@@ -75,7 +70,7 @@
          <!-- 单选按钮 
          			-使用input来创建单选按钮，它的type属性使用radio
          			-单选按钮通过name属性进行分组，name属性相同是一组，（否则就能多选）
-					-像这种用户只能选择但是不需要用户直接填写内容的表单，这样被选中的表单小的value属性值将会最终提交给服务器（否则只会提交个gender=on）-->
+					-像这种用户只能选择但是不需要用户直接填写内容的表单，这样被选中的表单项的value属性值将会最终提交给服务器（否则只会提交个gender=on）-->
 
 		<!-- 如果希望单选按钮或者多选框中指定默认选中的选项:则可以在希望选中的项中添加checked="checked" -->
          性别<input type="radio" name="gender" 	value="male" checked="checked">男<input type="radio" name="gender" value="female">女
@@ -95,7 +90,7 @@
 
          <!-- 下拉列表
          		-使用select来创建一个下拉列表 
-				name指定给select value指定给option
+				  name指定给select value指定给option
 
 				可以通过添加select="selected"来设置默认选中的option
 
@@ -104,13 +99,17 @@
          	<!-- 当为下拉列表添加multiple="mutiple"，则下拉列表变为多选的下拉列表 -->
 
          	<!-- optgroup，为下拉选框创建分组，同一个optgroup是一组，避免选项看花眼 -->
+            <!--不写label不会创建分组 -->
          	<select name="sd" multiple="mutiple">
 	         	<optgroup label="女">
 	         		<option value="sdf">34</option>
+                  <option value="asd">35</option>
+                  <option value="af">35</option>
+                  <option value="asdfg">35</option>
+                  <option value="adfg">35</option>
 	         	</optgroup>
 	         	<optgroup label="男">
-	         		<!--不写label不会创建分组 -->
-					<option value="sdf">34</option>
+					<option value="sd">34</option>
 	         	 	<option value="sdf" select="selected">3</option>
 	         	 	<option value="sdf">5</option>
 	         	</optgroup>	
@@ -145,16 +144,6 @@
 
          	 <!-- 这种方式和上面input的三个功能都一样，但更推荐使用你下面的，因为它不是自结束标签，有开始有结束，中间的内容可以放文字，也可以放图片，使用起来更灵活一些-->
 
-
-</form>
-</body>
-</html>
-
-
-
-
-
 	</form>
-
 </body>
 </html>

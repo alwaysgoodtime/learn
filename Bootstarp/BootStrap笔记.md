@@ -1,10 +1,5 @@
-# 今日内容
-	1. Bootstrap
+Bootstrap：
 
-
-
-
-## Bootstrap：
 	1. 概念： 一个前端开发的框架，Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。
 		* 框架:一个半成品软件，开发人员可以在框架基础上，在进行开发，简化编码。
 		* 好处：
@@ -15,7 +10,7 @@
 
 	2. 快速入门
 		1. 下载Bootstrap
-		2. 在项目中将这三个文件夹复制
+		2. 在项目中将解压后文件中的三个文件夹（CSS、FONTS、JS）复制进去
 		3. 创建html页面，引入必要的资源文件
 
 
@@ -30,8 +25,9 @@
 		
 		    <!-- Bootstrap -->
 		    <link href="css/bootstrap.min.css" rel="stylesheet">
-		
-		
+
+
+​		
 		    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 		    <script src="js/jquery-3.2.1.min.js"></script>
 		    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
@@ -58,7 +54,7 @@
 				2. sm：小屏幕 平板 (≥768px)
 				3. md：中等屏幕 桌面显示器 (≥992px)
 				4. lg：大屏幕 大桌面显示器 (≥1200px)
-
+	
 		* 注意：
 			1. 一行中如果格子数目超过12，则超出部分自动换行。
 			2. 栅格类属性可以向上兼容。栅格类适用于与屏幕宽度大于或等于分界点大小的设备。
@@ -97,8 +93,9 @@
 	
 	    <!-- Bootstrap -->
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
-	
-	
+
+
+​	
 	    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 	    <script src="js/jquery-3.2.1.min.js"></script>
 	    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
@@ -226,9 +223,10 @@
 	                   <span class="sr-only">Next</span>
 	               </a>
 	           </div>
-	
-	
-	
+
+
+​	
+​	
 	       </div>
 	
 	   </header>
@@ -271,8 +269,9 @@
 	                   <font color="red">&yen; 699</font>
 	               </div>
 	           </div>
-	
-	
+
+
+​	
 	       </div>
 	       <div class="row jx">
 	           <img src="img/icon_6.jpg">
@@ -333,8 +332,9 @@
 	                           <font color="red">&yen; 699</font>
 	                       </div>
 	                   </div>
-	
-	
+
+
+​	
 	               </div>
 	
 	           </div>
@@ -351,7 +351,8 @@
 	       </div>
 	
 	   </footer>
-	
-	
+
+
+​	
 	</body>
 	</html>
