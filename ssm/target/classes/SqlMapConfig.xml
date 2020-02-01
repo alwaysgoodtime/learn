@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- 可以省略，因为spring已经接管了mybatis -->
+<!--    <environments default="mysql">-->
+<!--        <environment id="mysql">-->
+<!--            <transactionManager type="JDBC"></transactionManager>-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql:///ssm"/>-->
+<!--                <property name="username" value="goodtime"/>-->
+<!--                <property name="password" value="haojianyu"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+
+<!--    <mappers>-->
+<!--&lt;!&ndash;        这是对注解的支持&ndash;&gt;-->
+<!--&lt;!&ndash;        <mapper class="cn.itcast.dao.AccountDao"></mapper>&ndash;&gt;-->
+<!--        <package name="cn.itcast.dao"/>-->
+<!--    </mappers>-->
+
+
+</configuration>
