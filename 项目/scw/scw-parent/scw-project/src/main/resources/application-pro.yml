@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    username: goodtime
+    password: haojianyu
+    url: jdbc:mysql:///atcrowdfunding190401?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    #type: com.alibaba.druid.pool.DruidDataSource
+    #filters: stat
+    #应用的名字
+  application:
+    name: SCW-PROJECT
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+  #配置文件上传大小
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+mybatis:
+  config-location: classpath:/mybatis/mybatis-config.xml
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    appname: SCW-PROJECT
+    prefer-ip-address: true
+
+server:
+  port: 8000
+
+swagger2:
+  enable: true
+
+#用feign进行远程调用
+feign:
+  hystrix:
+    enabled: true

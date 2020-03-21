@@ -23,10 +23,16 @@ public class AccountController {
     @Autowired
     private AccountService accountService;
 
+    @Autowired
+    private AccountService accountService2;
+
     @RequestMapping("/findAll")
     public String findAll(Model model){
         List<Account> all = accountService.findAll();
+        List<Account> all2 = accountService2.findAll();
         model.addAttribute("list",all);
+        System.out.println("很好奇");
+        System.out.println(accountService == accountService2);
         return "list";
     }
 

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <!--   特别注意：targetpackage和targetproject中的目录
+     在windows中是\,在macos和linux上是/-->
+
+    <context id="MySQLTables" targetRuntime="MyBatis3">
+
+
+        <!--抑制注释生成，不生成注释	-->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+
+        <!--        我配的是本地机器上的-->
+        <!-- mvn mybatis-generator:generate 配置数据库位置 ，配置虚拟机上的mysql ip地址；不采用安全协议连接，否则无法逆向生成 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql:///atcrowdfunding190401?useSSL=false"
+                        userId="goodtime" password="haojianyu">
+        </jdbcConnection>
+
+        <!--		数据库表的字段是整数型或浮点型，不强制把它映射成BigDicimal类型的-->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+
+        <!-- javaBean生成在哪里 -->
+        <javaModelGenerator
+                targetPackage="com.atguigu.scw.project.bean"
+                targetProject="../scw-project/src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <!-- sqlMap sql映射文件（xml mapper文件） -->
+        <!--	包的点对应创建文件夹的深度    -->
+        <sqlMapGenerator targetPackage="mybatis.mapper"
+                         targetProject="../scw-project/src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- javaClient：java接口生成的地方 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.atguigu.scw.project.mapper"
+                             targetProject="../scw-project/src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!--   要生成的数据库的表，%表示生成所有的表		-->
+        <!-- <table schema="" tableName="%"></table> -->
+        <table tableName="t_project_images"></table>
+        <table tableName="t_project"></table>
+        <table tableName="t_project_tag"></table>
+        <table tableName="t_project_type"></table>
+        <table tableName="t_member_project_follow"></table>
+        <table tableName="t_type"></table>
+        <table tableName="t_tag"></table>
+        <table tableName="t_return"></table>
+        <table tableName="t_project_initiator"></table>
+
+    </context>
+</generatorConfiguration> 

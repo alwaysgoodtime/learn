@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--将对象注册到spring工厂中，交给spring管理-->
+
+<!-- 三种bean的创建方式   -->
+
+<!--第一种创建方式： 这种是依赖默认构造函数来创建，如果UserServiceImpl或者UserMapperImpl没有默认构造函数，就会报错-->
+    <bean id="UserService" class="com.goodtime.service.impl.UserServiceImpl" scope="prototype">
+    </bean>
+    <bean id="UserMapper" class="com.goodtime.mapper.impl.UserMapperImpl" scope="singleton">
+<!--依赖注入，第一种：构造函数注入
+    可以自动转换一些基本类型，但是无法转换java.util.date等其他包装类
+    value,用于提供基本类型和String类型
+            优势:不会遗忘数值
+            劣势:构造函数设置麻烦，而且就算我们不用其中的参数，也得全部注入数值
+    -->
+<!--ref 用于指定其他的包装类  -->
+        <constructor-arg name="name" value="zhangsan"></constructor-arg>
+        <constructor-arg name="id" value="1"></constructor-arg>
+        <constructor-arg name="date" ref="222"></constructor-arg>
+    </bean>
+
+<!--依赖注入第二种 ： set方法注入，原来的UserMapperImpl要对其中的方法加set方法
+,注意，属性是set方法后面跟的值，跟成员变量不同（属性和字段不同）
+    优势：创建对象时没有明确限制，可以使用默认构造函数
+    弊端：如果某个成员必须有值，则获取对象时成员可能没有值
+-->
+    <bean id="UserMapper2" class="com.goodtime.mapper.impl.UserMapperImpl">
+        <property name="date" ref="222"></property>
+        <property name="name" value="aaaa"></property>
+        <property name="id" value="2"></property>
+    </bean>
+
+<!-- 依赖注入：复杂类型注入
+    用于给list结构（list、set、array）注入的标签有：list、set、array
+    用于给map结构注入的标签有：map、prop
+
+-->
+
+    <bean id="UserService3" class="com.goodtime.service.impl.UserServiceImpl2">
+        <property name="strings">
+            <array>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </array>
+        </property>
+
+        <property name="mystrs">
+            <array>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </array>
+        </property>
+
+        <property name="a">
+            <set>
+                <value>aaa</value>
+                <value>aaa</value>
+                <value>ccc</value>
+            </set>
+        </property>
+
+<!--set和list标签可以互换，当然，set中不允许重复的值-->
+
+        <property name="maps">
+            <map>
+<!-- 两种注入方式-->
+                <entry key="1" value="23"></entry>
+                <entry key="2">
+                    <value>222</value>
+                </entry>
+                <entry key="3" value="23"></entry>
+            </map>
+        </property>
+        
+        <property name="properties">
+            <props>
+                <prop key="test">123</prop>
+                <prop key="test2">456</prop>
+            </props>
+        </property>
+    </bean>
+
+
+
+
+    <!--我们注册了一个Date对象，默认这个data对象是当前时间-->
+    <bean id="222" class="java.util.Date"></bean>
+
+<!--第二种创建方式：假设UserService没有默认构造函数，用对应工厂中的方法创建,并存入spring容器-->
+    <bean id="BeanFactory" class="com.goodtime.factory.BeanFactory"></bean>
+    <bean id="UserServiceImpl" factory-bean="BeanFactory" factory-method="getUserService"></bean>
+
+<!--第三种创建方式：使用工厂中的静态方法创建对象，或者用类中的静态方法创建对象，并存入spring容器
+    类为工厂类，方法为静态方法，id可以随便取，注入和取的时候注意即可-->
+    <bean id="UserServiceImpl2" class="com.goodtime.factory.StatiFactory" factory-method="getUserService"></bean>
+</beans>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--基于xml的配置，非注解-->
+    <!--配置service-->
+    <bean id="accountService" class="com.good.service.service.impl.AccountServiceImpl">
+        <property name="accountMapper" ref="accountMapper"></property>
+    </bean>
+
+    <!--配置mapper-->
+    <bean id="accountMapper" class="com.good.mapper.mapper.impl.AccountMapperImpl">
+        <property name="queryRunner" ref="queryRunner"></property>
+    </bean>
+
+    <!--配置queryRunner,因为这个对象要在多个地方使用，所以我们要把它做成多例的，否则不同线程会互相干扰-->
+    <bean id="queryRunner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">
+        <!--注入数据源-->
+        <!-- 这里只能用构造函数注入-->
+        <constructor-arg name="ds" ref="c3p0"></constructor-arg>
+    </bean>
+
+    <bean id="c3p0" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <!--配置数据库四大基本属性-->
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="user" value="goodtime"></property>
+        <property name="password" value="haojianyu"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/ssm"></property>
+    </bean>
+
+</beans>

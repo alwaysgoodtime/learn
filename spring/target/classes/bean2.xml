@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--spring注解的方法，首先告知spring在创建容器时要扫描的包，配置所需要的标签不是在一个bean的约束中
+而是一个名称为context的名称空间和约束中
+
+注意：它和原来用xml注册bean时，引入的名称空间不一样，引入约束的作用，方便一些xml解析器解析我们写入的标签
+-->
+<!--如果写的包大，确实可以扫描的多，但相应地，加载时候应为扫描了某些没有注解的包，也会变慢，在类的时候特别明显-->
+    <context:component-scan base-package="com.goodtime.mapper"></context:component-scan>
+    <context:component-scan base-package="com.goodtime.service"></context:component-scan>
+
+</beans>

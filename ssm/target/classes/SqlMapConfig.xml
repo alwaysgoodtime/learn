@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-<!-- 可以省略，因为spring已经接管了mybatis -->
 <!--    <environments default="mysql">-->
 <!--        <environment id="mysql">-->
 <!--            <transactionManager type="JDBC"></transactionManager>-->

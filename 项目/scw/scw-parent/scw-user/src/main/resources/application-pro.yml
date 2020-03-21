@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    username: goodtime
+    password: haojianyu
+    url: jdbc:mysql:///atcrowdfunding190401?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    driver-class-name: com.mysql.jdbc.Driver
+    #type: com.alibaba.druid.pool.DruidDataSource
+    #filters: stat
+    #应用的名字
+  application:
+    name: SCW-USER
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+mybatis:
+  config-location: classpath:/mybatis/mybatis-config.xml
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    appname: SCW-USER
+    prefer-ip-address: true
+
+server:
+  port: 7000
+
+swagger2:
+  enable: true

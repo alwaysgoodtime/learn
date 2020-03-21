@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        https://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--基于注解的配置-->
+    <context:component-scan base-package="mapper.impl"></context:component-scan>
+    <context:component-scan base-package="service.impl"></context:component-scan>
+
+    <!--开启AOP-->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+    <tx:annotation-driven></tx:annotation-driven>
+
+    <!--配置jdbcTemplate,QueryRunner好像无法回滚事务,因为这个对象要在多个地方使用，所以我们要把它做成多例的，否则不同线程会互相干扰-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" scope="prototype">
+<!--        注入数据源-->
+<!--         这里只能用构造函数注入-->
+        <constructor-arg name="dataSource" ref="c3p0"></constructor-arg>
+    </bean>
+
+    <bean id="c3p0" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <!--配置数据库四大基本属性-->
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="user" value="goodtime"></property>
+        <property name="password" value="haojianyu"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/ssm"></property>
+    </bean>
+
+    <!--配置事务管理器
+        1.配置事务管理器
+        2.配置事务通知
+            此时我们需要导入事务的约束，分别是aop的约束，和tx的约束
+            使用tx:advice标签，配置事务通知
+                属性：id 给事务通知唯一标识
+                     transaction-manager 给事务通知一个事务管理器引用
+        3.配置AOP的通用切入点表达式
+        4.建立AOP和事务的对应管理
+        5.配置事务的属性
+
+    -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="c3p0"></property>
+    </bean>
+
+    <!--配置事务通知-->
+    <tx:advice id="txadvice"  transaction-manager="transactionManager">
+    <!--配置事务属性-->
+        <tx:attributes>
+            <!-- timeout为-1，为永不超时，如果写其他数字，单位为秒 read-only:表示读写
+            no-rollback-for:表示产生该异常时，不回滚，其他时候回滚，没有默认值，表示任何异常都回滚
+            rollback-for:用于指定一个异常，当产生该异常时，会回滚，其他异常不回滚，默认为任何异常都回滚
+            name:就是我们需要加事务的方法
+            -->
+            <tx:method name="*" isolation="REPEATABLE_READ" read-only="false" rollback-for="Exception"/>
+<!--  按照匹配的规则，后面的会更高一些，因为更具体，所以这里的配置，是让所有find开头的方法都为只读-->
+            <tx:method name="find*" propagation="SUPPORTS"></tx:method>
+        </tx:attributes>
+        
+    </tx:advice>
+
+    <!--配置aop-->
+    <aop:config>
+<!--        配置切入点表达式-->
+        <aop:pointcut id="pt" expression="execution(* service.impl.*.*(..))"/>
+<!--        建立切入点表达式和事务通知的对应关系-->
+        <aop:advisor advice-ref="txadvice" pointcut-ref="pt"></aop:advisor>
+    </aop:config>
+
+</beans>

@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * @author goodtime
@@ -6,7 +6,7 @@ import java.util.ArrayList;
  */
 public class Number3 {
     public static void main(String[] args) {
-        Solution3 solution3 = new Solution3();
+        Solution3s solution3 = new Solution3s();
         ListNode listNode  = new ListNode(1);
         ListNode listNode1 = new ListNode(3);
         ListNode listNode2 = new ListNode(4);
@@ -63,3 +63,23 @@ public class Number3 {
         }
     }
 
+    class Solution3s {
+    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+        Map map = new HashMap<Integer,Integer>();
+        int i = 0;
+        while(listNode.next != null){
+           map.put(i++,listNode.val);
+           listNode = listNode.next;
+        }
+        map.put(i,listNode.val);
+        Set set = map.keySet();
+        ArrayList<Integer> result = new ArrayList<>();
+        for (Object a:set
+             ) {
+            result.add((Integer)map.get(a));
+
+        }
+
+        return  result;
+    }
+}

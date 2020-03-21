@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--注意命名空间，要有aop-->
+
+    <!--配置spring的IOC-->
+    <bean id="service" class="service.impl.UserServiceImpl"></bean>
+
+    <!--Spring基于XML的AOP配置步骤-->
+    <!--1.把通知bean也交给IOC管理-->
+    <bean id="logger" class="utils.Logger"></bean>
+    <!--2.使用aop:config标签表明开始aop的配置-->
+    <aop:config>
+        <!--3.使用aop:aspect标签表明开始配置切面
+               id属性：给切面指定一个唯一标志
+               ref属性：指定通知类的beanid（这里就是日志logger类）
+        -->
+        <aop:aspect id="logAdvice" ref="logger">
+
+            <!--4.在aop:aspect标签内部，使用对应标签，来配置通知的类型-->
+            <!--aop:before 前置通知，method，配置logger的哪个方法为前置通知-->
+            <!--pointcut标签：用于指定切入点表达式，表示该前置通知是对哪个切入点方法增强
+            切入点表达式的写法：
+            关键字：exeution(表达式)
+            表达式： 访问修饰符 返回值 包名.包名.包名......类名.方法名（参数列表）
+
+            访问修饰符可以省略
+
+            返回值可以用通配符*，表示任意返回值
+
+            包名可以使用*，表示任意包，但是有几级包，就得写几次*
+            eg.四级包*.*.*.*.类名.方法名（参数）
+
+            ..可以表示当前包以及子包
+
+            类名和方法名都可以用*表示通配
+
+            参数列表：基本数据类型可以直接写 eg. int 引用数据类型写全包名+类名 eg. java.lang.String
+
+            *可以表示任意有参的列表，不包括无参的
+
+            ..可以表示任意参数列表,包括无参
+
+            通常业务中，我们只会给service配置切面，mapper和controller全配置切面的话，没必要，一般写法是 * service.impl..*.*(..)
+
+
+            全通配写法： * *..*.*(..)
+            -->
+
+<!--通知顺序
+try{
+    try{
+        //@Before
+        method.invoke(..);
+    }finally{
+        //@After
+    }
+    //@AfterReturning
+}catch(){
+    //@AfterThrowing
+}
+-->
+
+            <!--让前置通知，和我们的切入点方法结合-->
+            <!--            <aop:before method="printlog" pointcut="execution(public int service.impl.UserServiceImpl.findAll())"></aop:before>-->
+            <!--注意：前置通知不要配两次，如果我们即给所有的方法配了切面，又给某个其中的方法赔了切面，切面的方法会执行两次-->
+<!--            <aop:before method="printlog" pointcut="execution(* service.impl.*.*(..))"></aop:before>-->
+
+<!--            &lt;!&ndash;最终通知&ndash;&gt;-->
+<!--            <aop:after method="printlog" pointcut="execution(* service.impl.*.*(..))"></aop:after>-->
+
+<!--            &lt;!&ndash;异常通知&ndash;&gt;-->
+<!--            <aop:after-throwing method="printlog" pointcut="execution(* service.impl.*.*(..))"></aop:after-throwing>-->
+<!--            &lt;!&ndash;            后置通知&ndash;&gt;-->
+<!--            <aop:after-returning method="printlog" pointcut="execution(* service.impl.*.*(..))"></aop:after-returning>-->
+            <!--  环绕通知 必须自己实现  -->
+            <aop:around method="printlogaround" pointcut="execution(* service.impl.*.*(..))"></aop:around>
+        </aop:aspect>
+
+    </aop:config>
+
+</beans>

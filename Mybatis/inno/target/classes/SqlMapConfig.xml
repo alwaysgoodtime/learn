@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!--   配置properties，让数据库参数独立出去 -->
+    <properties resource="jdbcConfig.properties">
+<!--      resource引用的路径为类路径，可以看target生成的真实路径，而非我们编写代码的路径
+          resource="jdbcConfig.properties"
+          url属性：
+          是要求按照url的写法来写地址
+            需要写成 协议+主机+端口+uri
+            url="file:/Users/goodtime/Documents/git/Mybatis/src/main/resources/jdbcConfig.properties"
+            协议不止http协议，file也是个协议，也能加载我们的资源
+            file协议就是我们磁盘的地址，只不过我们不常用file这个协议，一旦换电脑和部署环境，可能就失效了
+-->
+    </properties>
+
+<!-- 开启mybatis支持延迟加载-->
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
+    <typeAliases>
+<!--        用于配置别名，type属性指定的是实体类全限定类名，alias属性指定别名，alias中的名字不区分大小写-->
+<!--        <typeAlias type="com.goodtime.domain.Account" alias="account"></typeAlias>-->
+        <!--    用于指定要配置别名的包，当指定之后，该包下的实体类都会注册别名，并且类名就是别名，不再区分大小写-->
+        <package name="com.goodtime.domain"/>
+
+
+    </typeAliases>
+
+
+    <!--    配置环境-->
+    <environments default="mysql">
+        <!--default没有要求，但要和id对应-->
+        <environment id="mysql">
+            <!--配置事务类型-->
+            <transactionManager type="JDBC"></transactionManager>
+            <!--           配置连接池-->
+            <dataSource type="POOLED">
+<!--                有三种连接池的配置方式：POOLED 采用javax.sql.DataSource规范的连接池
+                    UNPOOLED 采用传统的获取连接的方式，一次使用获取一个连接
+                    JNDI 采用服务器提供的JNDI技术实现，来获取DataSource对象，不同服务器所能拿到的对象不同
+                    注意：如果不是web或者maven的war工程，是不能使用的
+                    tomcat服务器，采用的是dbcp连接池
+
+
+-->
+
+                <!--  配置数据库四个参数 这里是直接引用配置文件中的数据-->
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+<!-- 指定映射配置文件的位置，映射配置文件用resource，指的是每个mapper独立的配置文件
+    如果使用注解来配置的话，此处应该使用class属性指定被注解的mapper全限定列名-->
+<!--    注意，如果用注解，不能保留com/goodtime/mapper/AccountMapper.xml这个文件，否则会覆盖
+注解的配置，报错-->
+    <mappers>
+<!--这里的package用于指定dao接口所在的包，当指定了之后，就不需要再写mapper、resource以及class了
+会扫描该包下所有的类,可以统一扫描
+可以写成 name="com.goodtime.mapper" ，也可以写成 name="com/goodtime/mapper"
+-->
+       <package name="com.good.mapper"></package>
+
+<!--       <mapper resource="com/goodtime/mapper/AccountMapper.xml"></mapper>-->
+<!--        <mapper class="com.goodtime.mapper.AccountMapper"></mapper>-->
+    </mappers>
+</configuration>

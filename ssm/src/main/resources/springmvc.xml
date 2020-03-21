@@ -10,7 +10,7 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
         <property name="suffix" value=".jsp"/>
     </bean>
 
-
+<!--只扫描带controller的注解-->
     <context:component-scan base-package="cn.itcast">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
@@ -18,5 +18,6 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
     <!-- 过滤静态资源 -->
     <mvc:resources location="/css/" mapping="css/**"/>
 
+<!-- 开启对注解的支持-->
     <mvc:annotation-driven></mvc:annotation-driven>
 </beans>

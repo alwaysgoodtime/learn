@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="75aae0dc-4ddc-4505-b46d-d4f5136805c3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Z1LfHZgymAkr9dqT5DJuSBou1N" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/interview2" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="interview2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/interview2" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Pingduoduo3">
+    <configuration name="Battle2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview2.Battle2" />
+      <module name="dataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interview2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BattleWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview2.BattleWorld" />
+      <module name="dataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interview2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Pingduoduo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview2.Pingduoduo2" />
+      <module name="dataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interview2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Pingduoduo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview2.Pingduoduo3" />
+      <module name="dataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interview2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TowerOfHanoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="classic.TowerOfHanoi" />
+      <module name="dataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Pingduoduo3" />
+        <item itemvalue="Application.Pingduoduo2" />
+        <item itemvalue="Application.Battle2" />
+        <item itemvalue="Application.BattleWorld" />
+        <item itemvalue="Application.TowerOfHanoi" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75aae0dc-4ddc-4505-b46d-d4f5136805c3" name="Default Changelist" comment="" />
+      <created>1584001755284</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584001755284</updated>
+      <workItem from="1584001758950" duration="1748000" />
+      <workItem from="1584006941999" duration="497000" />
+      <workItem from="1584017459334" duration="1029000" />
+      <workItem from="1584019176827" duration="407000" />
+      <workItem from="1584103396494" duration="193000" />
+      <workItem from="1584177345807" duration="5000000" />
+      <workItem from="1584512319294" duration="25000" />
+      <workItem from="1584591539689" duration="1145000" />
+      <workItem from="1584701860150" duration="5287000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="609" y="176" key="#com.intellij.ide.util.MemberChooser" timestamp="1584006865176">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="609" y="176" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1584006865176" />
+    <state width="1628" height="337" key="GridCell.Tab.0.bottom" timestamp="1584710020482">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1628" height="337" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584710020482" />
+    <state width="1628" height="337" key="GridCell.Tab.0.center" timestamp="1584710020481">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1628" height="337" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584710020481" />
+    <state width="1628" height="337" key="GridCell.Tab.0.left" timestamp="1584710020480">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1628" height="337" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584710020480" />
+    <state width="1628" height="337" key="GridCell.Tab.0.right" timestamp="1584710020481">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1628" height="337" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584710020481" />
+    <state width="1628" height="337" key="GridCell.Tab.1.bottom" timestamp="1584710020484">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1628" height="337" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584710020484" />
+    <state width="1628" height="337" key="GridCell.Tab.1.center" timestamp="1584710020483">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1628" height="337" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584710020483" />
+    <state width="1628" height="337" key="GridCell.Tab.1.left" timestamp="1584710020482">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1628" height="337" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584710020482" />
+    <state width="1628" height="337" key="GridCell.Tab.1.right" timestamp="1584710020483">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1628" height="337" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584710020483" />
+    <state x="225" y="23" key="SettingsEditor" timestamp="1584001926015">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="225" y="23" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1584001926015" />
+    <state x="421" y="-6" width="838" height="1154" key="search.everywhere.popup" timestamp="1584002369467">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="421" y="-6" width="838" height="1154" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1584002369467" />
+    <state x="421" y="18" width="838" height="1032" key="search.everywhere.popup/0.23.1680.939@0.23.1680.939" timestamp="1584002344551" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/interview2/Pingduoduo2.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

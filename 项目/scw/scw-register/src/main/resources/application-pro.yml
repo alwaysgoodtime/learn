@@ -1,0 +1,15 @@
+pring:
+  application:
+    name: SCW-REGISTER
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #自己就是注册中心，不用注册自己，如果集群的话需要注册
+    fetch-registry: false #要不要去注册中心获取其他服务的地址
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+

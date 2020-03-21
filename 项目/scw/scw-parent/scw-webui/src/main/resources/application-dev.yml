@@ -1,0 +1,56 @@
+spring:
+# 前端项目可以连redis、oss、跳转页面，但绝对不会连数据库，后端项目连数据库，返回json，但绝不跳转页面
+  application:
+    name: SCW-UI
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+#用缓存解决session一致性，配置springsession
+  session:
+    store-type: redis
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false #开发的时候禁用缓存
+
+#用feign进行远程调用
+feign:
+  hystrix:
+    enabled: true
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    appname: SCW-UI
+    prefer-ip-address: true
+
+server:
+  port: 10088
+#为了内网穿透测试
+
+alipay:
+  app_id: 2016101800717229
+  merchant_private_key: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDNM54eBvvM1U0+L7HHzyVyaE2SXbYbfI7x28F8n83ZknkAEnn4KSOaqV270e6u29numN2LY31sI3y+uU8TeweigXerx8ddFNhNV0Mabln04wWJoBnl/qNf++9nmmrbqy83LCHGl6wtEIgkYir5aTV7tJOSCVGwrQOju7goY2zUxLc7esek3+dM9HtGuRUfs2AX9roADLhr9w5RS4sxhlowMbChpLHt4HZA8jLvXYky8cQIJZfqB+Fpf+Qti6FbhFHhqQXBgx4q3X0KKRZxYJcKSi3L3n1wBGHbNvELdVp12s/U6WZ9kK/d4XifqT4xYp5Xw2b3R603iRFMnD5fHyEvAgMBAAECggEAdTviQAF5ZkMOyFJzXVZJbJ2Og+qqGfYFrMQCPPMHph/6pUHpERBf2QKeHKoJlTjhv2DyYapLg7aalFRGizik2gDhn/CZQ+Ke2UDbg4Q8PJ5fEYu4gCAEste6pRQhrLKWXQ0HlvAcW/qv7Slwp+GlvrEiBjLwyuFtzON4iQqUqNFcYRXLweJ1LJLfdUe+hhEEETgcjAzOIxawGbqZSG6pxw3vPScUEtwokRejecIucCYPdlGNscANv7q3M7umZFKtwHVJhP2cNKwMNFvXftTOo6qJpZ2rF49YfTRs+BZ754QiWX5/EFcGF5VELB75pmCS+KM9O5z76BxdBmIMtf7woQKBgQDseopXWhDF/xnDVxiJUBlSfSIo/NTVodIqF8ChVpsUBmbmNnXdI+TWSRy9/DKetgmRV8pe7o7pJh9cgD1p48UjMusrIZWkqY3lpQwIJ06ruYsGO9yOMLyayaFn5np5oW+oMCWX5FkAHMuhIrcf5sHTViKt9KlnYcK9zg1U2/LDOQKBgQDeJBr5ZRAJHt5Xjqc0+rF2g4qdz49/PXgUNKfzgJX1IVRhn6nWpi54dDcruiW7ZAecZ1rhcWqrcQFx53UQpWYJsvI9uMe2EUYtZroNtd0nKlc4MIz4zBjjMX5+Nww3sKjXY/8qBTfOgQZWKLP/KL2/D2yHMDGeXq6J2GfrMaz/pwKBgQDjEIbleUXB2EEUn/yfXJnz6tNyJ9L1jnwOjuAYCuC9SahkRMbHoD+Kwokmo5K3cnOda36VyNrQZBqY50oQ8vPH6IyGzaiyg1wMtX3oFlYj7fTf93q/zWxL9G9XJKdVQv3DsPdn8YrD4OJlxr+vkhNqqbqC7fn7mpMzTTbf1JI1gQKBgB8gUgNGDPQqNh9wpq8+vWUM03x/W+0JUO0L38i36Ms7S1aOh77C9Fn+dsiSwby7LHHW7Z4PRVIWeIxcUUPu2Rhc0aKiZKF3VC0CaumG5SEaxrPh4a7u8kHLap0G25hmEZJ0uYlKx+IQpDGobGhBbiz6XUuoDhvRyoUYJJ+JC2ObAoGAaKariVoefN3k718ymLCLK5i4WaOgh7KnHcSuVFoao65PcgymVueGIrArji6IyUxYjinzhIKW3x2tf/A8xDjlYdRBCQJhAGh9QE8EM8Lc4arOePkcgdpHEGXsjAq2lusRPOUiTqtR/mhweldBf2j9vNdBpngy06VaF5iEYhtvDus=
+  alipay_public_key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmaFjNwtmHej3o8HPP97RSTRjFb56lybkT6A04wiInix7kKC8s/Yd/otH1K6kEDNZZYhyx6WNcsGHDmPl5uj5LBdfgdyPyc0W0PSi2EA7AfoEuAYuu2aLnzy9NC3Q1IcNtAIw/FNhxh4TtqPiYkrfj22T2Zmeu4ruvhjn6LkyuAW4qRvVP/pv8K3uImIHTDKEHNoYgKq7+Vtvr5VR62IT795502TESsT161rXbHEhLN/rc7AWDqpMsCnlLxO/sHdnGynUYPkrgs0UlpVbZBDFB08tp3D6hBWrPkixKvzupJ+ikdlk12gna+dVaNIsVFR5nOKkXw6MObQrHRPHeSSKGwIDAQAB
+  #异步通知，一般是返回给服务器
+  notify_url: http://47.95.147.76:7080/order/updateOrderStatus
+  #支付成功的跳转页面
+  return_url: http://47.95.147.76:7080/member/minecrowdfunding
+  sign_type: RSA2
+  charset: utf-8
+  gatewayUrl: https://openapi.alipaydev.com/gateway.do
+
+
+#屏蔽重试机制
+
+ribbon:
+  ReadTimeout: 3000 #连接到其他服务器端口后，会等待3秒
+  ConnectTimeout: 3000 #3秒内连接其他服务器即可
+  MaxAutoRetries: 0 #不允许当前服务器和其他服务器重试
+  MaxAutoRetriesNextServer: 0 #不允许访问除该服务器之外的别的提供同样服务的服务器
+  OkToRetryOnAllOperations: false #取消重试机制

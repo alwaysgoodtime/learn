@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>MindNode</string>
+	<key>id</key>
+	<string>4CEAD706-606F-4901-B656-13525AA3B25D</string>
+	<key>title</key>
+	<string>MindJet MindManager</string>
+	<key>version</key>
+	<integer>3</integer>
+</dict>
+</plist>

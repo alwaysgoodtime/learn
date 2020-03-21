@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--基于注解的配置-->
+    <context:component-scan base-package="com.good.mapper.impl"></context:component-scan>
+    <context:component-scan base-package="com.good.service.impl"></context:component-scan>
+
+
+    <!--配置queryRunner,因为这个对象要在多个地方使用，所以我们要把它做成多例的，否则不同线程会互相干扰-->
+<!--    <bean id="queryRunner" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">-->
+        <!--注入数据源-->
+        <!-- 这里只能用构造函数注入-->
+<!--如果开启事务控制，就不能给queryRunner注入数据源了，它需要从ConnectionUtils获取数据源-->
+<!--        <constructor-arg name="ds" ref="c3p0"></constructor-arg>-->
+<!--    </bean>-->
+
+<!--    <bean id="c3p0" class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+<!--        &lt;!&ndash;配置数据库四大基本属性&ndash;&gt;-->
+<!--        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>-->
+<!--        <property name="user" value="goodtime"></property>-->
+<!--        <property name="password" value="haojianyu"></property>-->
+<!--        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/ssm"></property>-->
+<!--    </bean>-->
+
+</beans>

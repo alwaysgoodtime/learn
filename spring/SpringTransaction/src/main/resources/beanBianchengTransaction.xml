@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        https://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--基于注解的配置-->
+    <context:component-scan base-package="mapper.impl"></context:component-scan>
+    <context:component-scan base-package="service.impl"></context:component-scan>
+
+    <!--开启AOP-->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+<!-- 开启注解支持事务-->
+    <tx:annotation-driven></tx:annotation-driven>
+
+    <!--配置jdbcTemplate,QueryRunner好像无法回滚事务,因为这个对象要在多个地方使用，所以我们要把它做成多例的，否则不同线程会互相干扰-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" scope="prototype">
+<!--        注入数据源-->
+<!--         这里只能用构造函数注入-->
+        <constructor-arg name="dataSource" ref="c3p0"></constructor-arg>
+    </bean>
+
+    <bean id="c3p0" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <!--配置数据库四大基本属性-->
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="user" value="goodtime"></property>
+        <property name="password" value="haojianyu"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/ssm"></property>
+    </bean>
+
+
+    <!--配置事务管理器
+        1.配置事务管理器
+        2.配置事务模板对象,记得注入事务管理器
+
+    -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="c3p0"></property>
+    </bean>
+
+
+    <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">
+        <property name="transactionManager" ref="transactionManager"></property>
+    </bean>
+
+</beans>

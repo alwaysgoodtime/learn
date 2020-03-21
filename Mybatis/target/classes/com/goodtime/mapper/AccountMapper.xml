@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace指的是你的dao接口-->
+<mapper namespace="com.goodtime.mapper.AccountMapper">
+
+    <cache></cache>
+
+<!--    抽取重复SQL语句,千万别写分号-->
+    <sql id="selectAll">
+        select * from account
+    </sql>
+
+
+
+<!-- 配置 查询结果的列名和实体类的属性名的对应关系
+     现在好像更只能了，只要配了resultMap，如果一般的resultType无法封装，就会找到配置的resultMap-->
+    <resultMap id="accountMap" type="com.goodtime.domain.Account">
+<!--            主键字段的对应,前面是实体类中的属性，后面是数据库中列的属性，还可以映射类型-->
+    <id property="accountid" column="id" ></id>
+<!--        非主键字段的对应-->
+        <result property="accountname" column="name"></result>
+        <result property="accountmoney" column="money"></result>
+    </resultMap>
+
+
+    <!--  一对一的关系映射，配置封装account的内容-->
+    <resultMap id="accountUserMap" type="user">
+        <id property="id" column="id"></id>
+        <result property="uid" column="uid"></result>
+        <result property="password" column="password"></result>
+        <!-- 这里的column填的是user的外键，对应的就是account的主键,如果不是延迟加载，可以不写，延迟加载必须写-->
+<!--    select属性指定的内容，是查询用户的唯一标识，是一个方法（命名空间+方法）;column属性指定的内容，用户根据id查询时，所需要的参数的值    -->
+        <association property="account" column="uid" javaType="account" select="com.goodtime.mapper.AccountMapper.findAccountById">
+        </association>
+<!--        <association property="account" column="uid">-->
+<!--            <id property="id" column="id"></id>-->
+<!--            <result property="name" column="name"></result>-->
+<!--            <result property="money" column="money"></result>-->
+<!--        </association>-->
+    </resultMap>
+
+
+<!--    一对多的关系映射-->
+    <resultMap id="AccountUser" type="account">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+        <result property="money" column="money"></result>
+        <collection property="user" column="id" select="com.goodtime.mapper.AccountMapper.findUserById"></collection>
+<!--        同样，如果不延迟加载，column可有可无，延迟加载则必须有-->
+<!--        <collection property="user" ofType="user">-->
+<!--&lt;!&ndash; property,是account中对应的属性，user，是属性对应的类， 要给两张表中名字相同的列起别名，如果不起，b的id就会封装a的id的值  &ndash;&gt;-->
+<!--            <id column="userid"  property="id"></id>-->
+<!--            <result column="uid"   property="uid"></result>-->
+<!--            <result column="password"   property="password"></result>-->
+<!--&lt;!&ndash;      这里还可以套娃，让因为a对b是一对多，b对a是一对1，所以我们可以凭借b（user）中a（account）的外键uid，查出a的值      &ndash;&gt;-->
+<!--            <association property="account" column="uid">-->
+<!--                <id property="id" column="id"></id>-->
+<!--                <result property="name" column="name"></result>-->
+<!--                <result property="money" column="money"></result>-->
+<!--            </association>-->
+<!--        </collection>-->
+    </resultMap>
+
+<!--    一对多的语句-->
+    <select id="findAllAcconut" resultMap="AccountUser">
+        select * from account
+    </select>
+
+
+    <select id="findAccountById"  parameterType="int" resultType="Account" useCache="true">
+        select * from account where id = #{id}
+    </select>
+
+
+    <select id="findUserById" parameterType="int" resultType="User"  useCache="false">
+        select * from user where id = #{id}
+    </select>
+
+
+    <!--    一对一级联操作-->
+<!--    <select id="findAccountAndUser" resultType="AccountUser">-->
+<!--        select a.id as id, a.name as name, a.money as money, b.id as userid, b.password as password from account a,user b where a.id = b.uid;-->
+<!--    </select>-->
+        <select id="findAccountAndUser" resultMap="accountUserMap">
+            select * from user
+        </select>
+
+
+    <!--配置查询所有  其中id不能乱写必须是mapper接口中的方法  resultType写的是实体类的全路径-->
+    <!-- 给列起别名，从而让数据库中的数据能封装到对应实体类的属性中-->
+    <select id="findAll" resultMap="accountMap">
+--         select id as accountid,name as accountname,money as accountmoney from account
+    select * from account
+    </select>
+    <!--sql语句的分号写不写都可以，一般不用写-->
+
+    <insert id="saveAccount" parameterType="com.goodtime.domain.Account" useGeneratedKeys="true" keyProperty="accountid">
+        <!--配置插入数据后，获取插入数据的id  keyProperty是类的属性 keyColumn是数据库的列 order是after，表示插入之后获得插入的键-->
+        <selectKey keyProperty="accountid" keyColumn="id"  resultType="int" order="AFTER">
+            select last_insert_id();
+        </selectKey>
+        insert into account(name,money) values(#{accountname},#{accountmoney})
+    </insert>
+
+    <update id="updateAccount" parameterType="com.goodtime.domain.Account">
+        update account set name = #{name},money = #{money} where id = #{id}
+    </update>
+
+<!--  占位符#{}中的值此时可以随便写  -->
+    <delete id="deleteAccount" parameterType="int">
+        delete from account where id = #{id}
+    </delete>
+
+    <select id="findByName" parameterType="String" resultType="Account">
+
+         select * from account where name like #{name}
+--         select * from account where name like '%${value}%'
+    </select>
+
+    <select id="findTotal" resultType="int">
+        select count(id) from account
+    </select>
+
+
+    <select id="findAccountByVo" parameterType="com.goodtime.domain.QueryVo" resultType="com.goodtime.domain.Account">
+        select * from account where name = #{account.name}
+    </select>
+
+<!--   不写where，就得写where 1=1 写了where就没必要了-->
+    <select id="findAccountByCondition" parameterType="account" resultMap="accountMap">
+        select * from account
+        <where>
+        <if test="accountname != null">
+           and name = #{accountname}
+        </if>
+        <if test="accountmoney != null">
+        and money = #{accountmoney}
+        </if>
+        </where>
+    </select>
+
+
+
+    <select id="findAccountByIds" parameterType="QueryVo" resultMap="accountMap">
+        <include refid="selectAll"></include>
+        <where>
+            <if test="ids != null and ids.size()>0 ">
+                <foreach collection="ids" open="and id in(" close=")" item="id" separator=","  >
+                    #{id}
+                </foreach>
+            </if>
+        </where>
+
+    </select>
+
+</mapper>
+

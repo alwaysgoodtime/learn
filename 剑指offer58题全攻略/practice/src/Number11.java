@@ -4,8 +4,9 @@
  */
 public class Number11 {
     public static void main(String[] args) {
-        Solution11 solution11 = new Solution11();
-        solution11.NumberOf1(3);
+        Solution11s solution11 = new Solution11s();
+        int i = solution11.NumberOf1(-2);
+        System.out.println(i);
     }
 }
 
@@ -13,18 +14,20 @@ class Solution11 {
     public int NumberOf1(int n) {
 //        下面两个都是自带的函数实现
 //        return Integer.toBinaryString(n).replace("0","").length();
-//        return Integer.bitCount(n);
-
-        int count = 0;
-        if(n == 0){
-            return 0;
-        }
-        if (n != 0){
-            count ++;
-            n = n&(n-1);
-        }
-        return  count;
-
-
+        return Integer.bitCount(n);
     }
 }
+
+class Solution11s {
+    public int NumberOf1(int n) {
+        int count = 0;
+        do{
+            if(n % 2 == 1 || n % 2 == -1){//负数%2,都是-1
+                count++;
+            }
+        }
+        while ((n = n >>> 1)!= 0);
+        return count;
+    }
+}
+

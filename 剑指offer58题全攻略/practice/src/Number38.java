@@ -46,7 +46,7 @@ class Solution38 {
         ArrayList<TreeNode38> treeNode38s = new ArrayList<TreeNode38>();
         treeNode38s.add(root);
         TreeNode38 node = root;
-        while (i != -1) {
+        while (true) {//其实是三个指针，然后三个指针来回进行切换
             if (node == null) {
             } else {
                 if (node.left != null) {

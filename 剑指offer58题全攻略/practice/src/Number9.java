@@ -31,3 +31,21 @@ class Solution9 {
 }
 
 //也可直接写2的（n-1）次方，因为除了最后一个格子，每个格子要么走，要么不走。
+
+
+//如果青蛙一次跳一级，或三级呢？
+class Solution9diff {
+    public int JumpFloor(int target) {
+        if(target == 1){
+            return 1;
+        }
+        if(target == 2){
+            return 1;
+        }
+        if(target == 3){
+            return 2;
+        }
+        return  JumpFloor(target-1) + JumpFloor(target -3);
+
+    }
+}

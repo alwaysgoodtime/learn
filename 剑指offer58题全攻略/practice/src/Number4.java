@@ -1,6 +1,10 @@
 import javax.swing.tree.TreeNode;
 
 /**
+ * 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。
+ * 假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
+ * 例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。
+ *
  * @author goodtime
  * @create 2020-01-18 12:16 上午
  */
@@ -8,8 +12,8 @@ public class Number4 {
     public static void main(String[] args) {
         Solution4 solution4 = new Solution4();
         SolutionFromNet solutionFromNet = new SolutionFromNet();
-        int a[] = {1,2,4,7,3,5,6,8};
-        int b[] = {4,7,2,1,5,3,8,6};
+        int a[] = {1, 2, 4, 7, 3, 5, 6, 8};
+        int b[] = {4, 7, 2, 1, 5, 3, 8, 6};
 
 //        TreeNod treeNod = solution4.reConstructBinaryTree(a, b);
 //        System.out.println(treeNod);
@@ -17,19 +21,21 @@ public class Number4 {
         System.out.println(treeNod1);
     }
 }
+
 //    这里用TreeNode，是因为javax中有TreeNode这个类
-class TreeNod{
-          int val;
-          TreeNod left;
-          TreeNod right;
-          TreeNod(int x) {
-              val = x;
-          }
+class TreeNod {
+    int val;
+    TreeNod left;
+    TreeNod right;
+
+    TreeNod(int x) {
+        val = x;
+    }
 
 }
 
 //      我的不知道为什么无法通过测试，原因不明，可能是内存占用过多？
-    class Solution4 {
+class Solution4 {
     public TreeNod reConstructBinaryTree(int[] pre, int[] in) {
         TreeNod treeNod = new TreeNod(pre[0]);//初始根节点
         if (pre.length == 0) {
@@ -125,36 +131,40 @@ class TreeNod{
         }
     }
 }
-//                网上找的方法
-class SolutionFromNet{
-        public TreeNod reConstructBinaryTree(int [] pre, int [] in) {
-            if(pre.length == 0){
-                return null;
+
+//网上找的方法
+class SolutionFromNet {
+    public TreeNod reConstructBinaryTree(int[] pre, int[] in) {
+        if (pre.length == 0) {
+            return null;
+        }
+        TreeNod root = find(pre, 0, pre.length - 1, in, 0, in.length - 1);
+        return root;
+    }
+
+    public TreeNod find(int[] pre, int start, int end, int[] in, int start2, int end2) {
+        if (start > end || start2 > end2) {
+            return null;
+        }
+        TreeNod root = new TreeNod(pre[start]);
+        for (int i = start2; i < end2; i++) {
+            if (pre[start] == in[i]) {
+                root.left = find(pre, start + 1, start + i - start2, in, start2, i - 1);//srart+i-start2是相对的偏移量
+                root.right = find(pre, i - start2 + start + 1, end, in, i + 1, end2);//srart+1+i-start2是相对的偏移量，且不能简单改成i+1
+                break;
             }
-            TreeNod root = find(pre,0,pre.length-1,in,0,in.length-1);
-            return root;
         }
 
-        public TreeNod find(int[] pre,int start,int end, int[] in,int start2,int end2){
-            if(start > end || start2 > end2){
-                return null;
-            }
-            TreeNod root = new TreeNod(pre[start]);
-            for(int i = start2;i < end2;i++){
-                if(pre[start] == in[i]){
-                    root.left = find(pre,start+1,start+i-start2,in,start2,i-1);//srart+i-start2是相对的偏移量
-                    root.right= find(pre,i-start2+start+1,end,in,i+1,end2);//srart+1+i-start2是相对的偏移量，且不能简单改成i+1
-                    break;
-                }
-            }
+        return root;
 
-            return root;
-
-
-        }
 
     }
 
+}
 
-
+class Solution4s {
+    public TreeNod reConstructBinaryTree(int[] pre, int[] in) {
+        return null;//todo
+    }
+}
 

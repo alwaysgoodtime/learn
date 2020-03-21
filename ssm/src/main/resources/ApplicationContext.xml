@@ -24,6 +24,7 @@
         <property name="dataSource" ref="DataSource" />
     </bean>
 
+<!--扫描mybaits的注解-->
     <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="cn.itcast.dao"/>
     </bean>
