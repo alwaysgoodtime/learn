@@ -7,7 +7,7 @@
 
     <display-name>Archetype Created Web Application</display-name>
 
-    <!-- SpringMVC的核心控制器 -->
+    <!-- SpringMVC的核心控制器，本身就是一个servlet-->
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -20,11 +20,13 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
 
+<!-- 核心控制器拦截所有请求，但是为/，不能是/*-->
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+<!--字符集编码过滤器-->
     <filter>
         <filter-name>EncodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -43,6 +45,7 @@
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+
 <!-- 设置配置文件的路径-->
     <context-param>
         <param-name>contextConfigLocation</param-name>

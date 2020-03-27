@@ -19,10 +19,9 @@ public class AppWebmvcConfig implements WebMvcConfigurer {
 //    public void addInterceptors(InterceptorRegistry registry) {
 //
 //    }
+    //不需要配置静态资源的原因是：放在static下的静态资源默认已经放行，约定大于配置
 
-
-
-    //如果这个方法只负责映射页面跳转，不负责其他业务逻辑，以前可以直接在springmvc文件中
+    //如果这个方法只负责映射页面跳转，不负责其他业务逻辑，以前可以直接在springmvc.xml文件中
     //做此配置，现在没有配置文件，可以在配置类中进行配置
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {

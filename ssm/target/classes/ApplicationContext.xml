@@ -6,13 +6,18 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop
 	http://www.springframework.org/schema/aop/spring-aop.xsd
 	 http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
-    <!-- 开启注解扫描，要扫描的是service和dao层的注解，要忽略web层注解，因为web层让SpringMVC框架去管理 -->
+
+<!-- 这是spring的配置文档-->
+
+
+
+    <!-- 开启注解扫描，要扫描的是service和dao层的注解，要忽略web层注解（controller），因为web层让SpringMVC框架去管理 -->
     <context:component-scan base-package="cn.itcast"> <!-- 配置要忽略的注解 -->
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
-<!--    spring 整合Mybatis框架-->
-<!--  配置连接池、sqlsessionfactory工厂、接口所在包-->
+    <!--    spring 整合Mybatis框架-->
+    <!--  配置连接池、sqlsessionfactory工厂、接口所在包-->
     <bean id="DataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
         <property name="jdbcUrl" value="jdbc:mysql:///ssm"/>
@@ -20,22 +25,24 @@
         <property name="password" value="haojianyu"/>
     </bean>
 
+    <!--配置mybatis的sqlSessionFactory-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="DataSource" />
     </bean>
 
+    <!--扫描mybaits的注解,用的是sprint-mybaits包-->
     <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="cn.itcast.dao"/>
     </bean>
 
 <!--    配置Spring声明式事务管理 Aop-->
 
-<!--    配置事物管理器-->
+<!-- 配置事务管理器-->
     <bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="DataSource"></property>
     </bean>
-<!--    配置事务通知-->
 
+<!--  配置事务通知-->
     <tx:advice id="txAdvice" transaction-manager="dataSourceTransactionManager">
         <tx:attributes>
             <tx:method name="find*" read-only="true"/>
@@ -47,7 +54,5 @@
     <aop:config>
         <aop:advisor advice-ref="txAdvice" pointcut="execution(* cn.itcast.service.impl.*ServiceImpl.*(..))" />
     </aop:config>
-
-
 
 </beans>

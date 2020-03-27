@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab9b81e4-6951-4a36-b7f2-0a158575b18b" name="Default Changelist" comment="" />
+    <list default="true" id="ab9b81e4-6951-4a36-b7f2-0a158575b18b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springMVC/springMVC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DesignModel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignModel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Singleton/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/DesignModel.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/Singleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bridge/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bridge/Apple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bridge/Lenovo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bridge/Lenovo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/src/main/resources/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/src/main/resources/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm/target/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/classes/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm/target/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/classes/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm.war" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +52,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1YtqFYvAwk6mLBcSz4Yv80nkRwl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -37,8 +71,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -49,7 +85,7 @@
       <recent name="memento" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client (3)">
+  <component name="RunManager" selected="Application.Singleton">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="state.Client" />
       <module name="DesignModel" />
@@ -115,8 +151,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Singleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Singleton.Singleton" />
+      <module name="DesignModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Singleton.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Singleton" />
         <item itemvalue="Application.Client (3)" />
         <item itemvalue="Application.Client (2)" />
         <item itemvalue="Application.Client (1)" />
@@ -138,6 +188,7 @@
       <workItem from="1583901848885" duration="1453000" />
       <workItem from="1584099718116" duration="63000" />
       <workItem from="1584518004638" duration="899000" />
+      <workItem from="1584884699228" duration="906000" />
     </task>
     <servers />
   </component>
@@ -153,21 +204,25 @@
       <screen x="0" y="23" width="1680" height="932" />
     </state>
     <state x="892" y="140" key="#com.intellij.ide.util.MemberChooser/0.23.1680.932@0.23.1680.932" timestamp="1583905434454" />
-    <state width="1229" height="226" key="GridCell.Tab.0.bottom" timestamp="1583906016395">
-      <screen x="0" y="23" width="1680" height="932" />
+    <state width="1628" height="272" key="GridCell.Tab.0.bottom" timestamp="1584887445853">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1628" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584887445853" />
     <state width="1229" height="226" key="GridCell.Tab.0.bottom/0.23.1680.932@0.23.1680.932" timestamp="1583906016395" />
-    <state width="1229" height="226" key="GridCell.Tab.0.center" timestamp="1583906016395">
-      <screen x="0" y="23" width="1680" height="932" />
+    <state width="1628" height="272" key="GridCell.Tab.0.center" timestamp="1584887445852">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1628" height="272" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584887445852" />
     <state width="1229" height="226" key="GridCell.Tab.0.center/0.23.1680.932@0.23.1680.932" timestamp="1583906016395" />
-    <state width="1229" height="226" key="GridCell.Tab.0.left" timestamp="1583906016395">
-      <screen x="0" y="23" width="1680" height="932" />
+    <state width="1628" height="272" key="GridCell.Tab.0.left" timestamp="1584887445851">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1628" height="272" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584887445851" />
     <state width="1229" height="226" key="GridCell.Tab.0.left/0.23.1680.932@0.23.1680.932" timestamp="1583906016395" />
-    <state width="1229" height="226" key="GridCell.Tab.0.right" timestamp="1583906016395">
-      <screen x="0" y="23" width="1680" height="932" />
+    <state width="1628" height="272" key="GridCell.Tab.0.right" timestamp="1584887445853">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1628" height="272" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584887445853" />
     <state width="1229" height="226" key="GridCell.Tab.0.right/0.23.1680.932@0.23.1680.932" timestamp="1583906016395" />
     <state width="1018" height="281" key="GridCell.Tab.1.bottom" timestamp="1583861412346">
       <screen x="0" y="23" width="1680" height="932" />

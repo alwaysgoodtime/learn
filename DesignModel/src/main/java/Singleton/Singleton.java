@@ -54,6 +54,20 @@ class SingleDouble{
         return singleDouble;
     }
 }
+class Resource {
+    private static volatile Resource resource;
+    private Resource(){}
+    public static Resource getResource() {
+        if (resource == null) {
+            synchronized (Resource.class) {//这里不能用this，this已经实例化了，this.class也不能用，能用的只是Resource.class
+                if (resource == null) {
+                    resource = new Resource();
+                }
+            }
+        }
+        return resource;
+    }
+}
 
 public class Singleton{
     public static void main(String[] args) {
@@ -64,8 +78,13 @@ public class Singleton{
         Single single1 = Single.getSingle();
         System.out.println(single1.getName());
         System.out.println(single.getName());
+        SingleDouble singleDouble = SingleDouble.getSingleDouble();
+        SingleDouble singleDouble2 = SingleDouble.getSingleDouble();
+        System.out.println(singleDouble == singleDouble2);
         InnerClassSingle single2 = InnerClassSingle.getSingle();
         InnerClassSingle single3 = InnerClassSingle.getSingle();
+
+
 
         for (int i = 0;  i < 10; i++) {
             new Thread(() -> {

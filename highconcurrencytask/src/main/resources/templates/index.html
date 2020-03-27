@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh_CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>抢购产品测试页面</title>
+    <script src="jquery/jquery-2.1.1.min.js" th:src="@{/script/jquery-2.1.1.min.js}"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        for (var i = 0; i < 3000; i++) {
+            var params = {
+                userId: 1,
+                productId: 1,
+                quantity: 1
+            };
+            $.post("/purchaseRedis", params)
+        }
+    </script>
+    <h2>抢购产品测试</h2>
+</body>
+</html>

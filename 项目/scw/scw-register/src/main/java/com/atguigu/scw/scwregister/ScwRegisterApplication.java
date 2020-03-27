@@ -4,7 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
+//开启Eureka服务管理
 @EnableEurekaServer
+//启用自动配置等
 @SpringBootApplication
 public class ScwRegisterApplication {
 

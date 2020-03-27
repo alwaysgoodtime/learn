@@ -7,7 +7,7 @@
 
     <display-name>Archetype Created Web Application</display-name>
 
-    <!-- SpringMVC的核心控制器 -->
+    <!-- SpringMVC的核心控制器，本身就是一个servlet-->
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -20,11 +20,13 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
 
+<!-- 核心控制器拦截所有请求，但是为/，不能是/*-->
     <servlet-mapping>
         <servlet-name>dispatcherServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+<!--字符集编码过滤器-->
     <filter>
         <filter-name>EncodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -39,14 +41,18 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-<!--    配置spring监听器，加载spring的配置文件,默认加载web-inf下的配置文件，需要修改-->
+<!--配置spring监听器，这个监听器是监听ServletContest对象，tomcat一执行就加载spring的配置文件,默认是加载web-inf下的配置文件，需要修改-->
     <listener>
+<!--这个类在spring-web包中，记得引入依赖-->
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
-<!-- 设置配置文件的路径-->
+<!-- 设置spring的配置文件的路径-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
+        <!--classpath，表示在类路径下
+        classpath：只会到你的class路径中查找找文件;
+        classpath*：不仅包含class路径，还包括jar文件中(class路径)进行查找.-->
         <param-value>classpath*:ApplicationContext.xml</param-value>
     </context-param>
 

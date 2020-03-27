@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.goodtime.highconcurrencytask.mapper.ProductMapper">
+    <select id="getProduct" parameterType="int" resultType="com.goodtime.highconcurrencytask.bean.Product">
+        select
+          product_id as productId, product_name as productName, stock, price, version, note
+        from product
+        where
+          product_id = #{productId}
+    </select>
+
+    <select id="getProductPlus" parameterType="int" resultType="com.goodtime.highconcurrencytask.bean.Product">
+        select
+          product_id as productId, product_name as productName, stock, price, version, note
+        from product
+        where
+          product_id = #{productId}
+        for update
+    </select>
+
+
+    <update id="decreaseProduct">
+        update product
+        set stock = stock - #{quantity}
+        where
+          product_id = #{productId}
+    </update>
+
+    <update id="decreaseProductPlus">
+    update product
+       set stock = stock - #{quantity}, version = version + 1
+     where
+       product_id = #{productId} and version = #{version}
+    </update>
+
+</mapper>
+
+
+        <!-- 建表语言
+
+        create table product
+        (
+             product_id int primary key,
+             product_name varchar(32),
+             stock int,
+             version int,
+             price double,
+             note varchar(255)
+        ) CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+        drop table Purchase_Record;
+
+        create table Purchase_Record
+        (
+             pk int primary key auto_increment, // 自增的主键，无关业务，方便统计
+             product_id int,
+             user_id int,
+             price double,
+             quantity int,
+             total_price double,
+             purchase_date date,
+             note varchar(255)
+        ) CHARACTER SET utf8 COLLATE utf8_general_ci;-->

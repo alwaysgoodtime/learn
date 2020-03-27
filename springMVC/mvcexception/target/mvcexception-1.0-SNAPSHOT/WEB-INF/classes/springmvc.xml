@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- 开启注解扫描-->
+    <context:component-scan base-package="com.goodtime.controller"></context:component-scan>
+
+<!--配置视图解析器-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!--注意：这里写的是/WEB-INF，也就是整个项目的绝对路径，如果少了/,写成WEB-INF，就是相对路径
+比如我们在/user/add中return一个success，那么视图解析器会解析成/user/WEB-INF/pages/success.jsp
+也就是说，这里并非是相对路径，而是绝对路径-->
+        <property name="prefix" value="/WEB-INF/pages/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+<!--开启springmvc框架对注解的支持，如果把它配上，处理器映射器、处理器适配器都会默认添加-->
+<!--   mvc中会默认开启自带的conversionService，如果我们想自己注册类型转换器，就要让我们定理的类型转换器组件，
+代替原来它自带的conversionService-->
+    <mvc:annotation-driven></mvc:annotation-driven>
+
+<!--告诉前端控制器，哪些资源不拦截-->
+<!-- 可以配mapping和location,mapping，表示是对哪类请求放行，location，表示是请求去哪里找资源
+因为我们现在已经没有springmvc的前端总控制器那个处理器映射器进行映射了，所以要自己定义出来资源的路径-->
+<!--  /js/**表示js下面所有的文件，都不会被前端控制器dispatcherservlet拦截-->
+    <mvc:resources mapping="/js/**" location="/js/"></mvc:resources>
+
+<!-- 配置异常处理器-->
+<bean id="exception" class="com.goodtime.exceptions.SysExceptionReSolver"></bean>
+    
+<!--    配置拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+<!--        我们要拦截的方法-->
+            <mvc:mapping path="/user/*"/>
+<!--/** 就是所有的controller方法都拦截，但是注意，拦截器和过滤器不一样，过滤器连静态资源都能拦截，但是拦截器，只拦截controller中的方法
+对静态资源的请求是不拦截的-->
+<!--       我们不要拦截的方法，和两个互为补充，配一个即可-->
+<!--            <mvc:exclude-mapping path=""/>-->
+
+<!--            配置我们自定义的拦截器-->
+            <bean class="com.goodtime.interceptor.MyInterceptor"></bean>
+        </mvc:interceptor>
+
+<!--        配置第二个拦截器-->
+        <mvc:interceptor>
+            <!--        我们要拦截的方法-->
+            <mvc:mapping path="/user/*"/>
+            <!--/** 就是所有的controller方法都拦截，但是注意，拦截器和过滤器不一样，过滤器连静态资源都能拦截，但是拦截器，只拦截controller中的方法
+            对静态资源的请求是不拦截的-->
+            <!--       我们不要拦截的方法，和两个互为补充，配一个即可-->
+            <!--            <mvc:exclude-mapping path=""/>-->
+
+            <!--            配置我们自定义的拦截器-->
+            <bean class="com.goodtime.interceptor.MyInterceptor2"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+</beans>

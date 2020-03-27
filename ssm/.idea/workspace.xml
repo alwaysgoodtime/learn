@@ -7,40 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd7a4d97-06fd-477f-a41c-03f78ce03652" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itcast/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itcast/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itcast/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itcast/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/springmvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ssm.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/itcast/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/itcast/controller/AccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/itcast/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/cn/itcast/service/impl/AccountServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number11.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number12.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number29.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number29.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number38.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number38.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number8.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number9.java" beforeDir="false" afterPath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/src/Number9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据库/SQl语法.mindnode/QuickLook/Preview.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../数据库/SQl语法.mindnode/QuickLook/Preview.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据库/SQl语法.mindnode/contents.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../数据库/SQl语法.mindnode/contents.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../数据库/SQl语法.mindnode/viewState.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../数据库/SQl语法.mindnode/viewState.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../计算机网络/计算机网络.mindnode/QuickLook/Preview.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../计算机网络/计算机网络.mindnode/QuickLook/Preview.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../计算机网络/计算机网络.mindnode/contents.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../计算机网络/计算机网络.mindnode/contents.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../计算机网络/计算机网络.mindnode/viewState.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../计算机网络/计算机网络.mindnode/viewState.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/ApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +76,7 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestMybatis.run3">
+  <component name="RunManager" selected="Tomcat Server.tomcat7">
     <configuration name="TestMybatis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ssm" />
       <extension name="coverage">
@@ -158,6 +135,22 @@
       <option name="PACKAGE_NAME" value="cn.itcast.test" />
       <option name="MAIN_CLASS_NAME" value="cn.itcast.test.TestSpring" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSpring.run1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.itcast.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.test.TestSpring" />
+      <option name="METHOD_NAME" value="run1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -240,11 +233,13 @@
       <item itemvalue="JUnit.TestMybatis" />
       <item itemvalue="JUnit.TestMybatis.run3" />
       <item itemvalue="Tomcat Server.tomcat7" />
+      <item itemvalue="JUnit.TestSpring.run1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestMybatis.run3" />
+        <item itemvalue="JUnit.TestSpring.run1" />
         <item itemvalue="JUnit.TestMybatis.run2" />
+        <item itemvalue="JUnit.TestMybatis.run3" />
         <item itemvalue="JUnit.TestMybatis" />
         <item itemvalue="JUnit.TestSpring" />
       </list>
@@ -284,6 +279,7 @@
       <workItem from="1583906022449" duration="100000" />
       <workItem from="1583907560857" duration="43000" />
       <workItem from="1584175332236" duration="1180000" />
+      <workItem from="1584775221519" duration="1938000" />
     </task>
     <servers />
   </component>
@@ -291,10 +287,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="369" y="143" width="1203" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583582443129">
+    <state x="369" y="143" width="1203" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584776180433">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="369" y="143" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1583582443129" />
+    <state x="369" y="143" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1584776180433" />
     <state x="369" y="151" width="1203" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.942@0.23.1680.942" timestamp="1580542363456" />
     <state x="921" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1580547247266">
       <screen x="0" y="23" width="1680" height="942" />
@@ -304,31 +300,31 @@
       <screen x="0" y="23" width="1680" height="942" />
     </state>
     <state x="587" y="392" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.23.1680.942@0.23.1680.942" timestamp="1580541820864" />
-    <state width="1628" height="225" key="GridCell.Tab.0.bottom" timestamp="1583906122111">
-      <screen x="0" y="23" width="1680" height="932" />
+    <state width="1628" height="271" key="GridCell.Tab.0.bottom" timestamp="1584789624007">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1419" height="264" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1583584923246" />
+    <state width="1628" height="271" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584789624007" />
     <state width="1628" height="225" key="GridCell.Tab.0.bottom/0.23.1680.932@0.23.1680.932" timestamp="1583906122111" />
     <state width="1202" height="229" key="GridCell.Tab.0.bottom/0.23.1680.942@0.23.1680.942" timestamp="1580547120166" />
     <state width="815" height="229" key="GridCell.Tab.0.bottom/0.23.1680.945@0.23.1680.945" timestamp="1580552211332" />
-    <state width="1628" height="225" key="GridCell.Tab.0.center" timestamp="1583906122110">
-      <screen x="0" y="23" width="1680" height="932" />
+    <state width="1628" height="271" key="GridCell.Tab.0.center" timestamp="1584789624005">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1419" height="264" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1583584923245" />
+    <state width="1628" height="271" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584789624005" />
     <state width="1628" height="225" key="GridCell.Tab.0.center/0.23.1680.932@0.23.1680.932" timestamp="1583906122110" />
     <state width="1202" height="229" key="GridCell.Tab.0.center/0.23.1680.942@0.23.1680.942" timestamp="1580547120165" />
     <state width="815" height="229" key="GridCell.Tab.0.center/0.23.1680.945@0.23.1680.945" timestamp="1580552211332" />
-    <state width="1628" height="225" key="GridCell.Tab.0.left" timestamp="1583906122110">
-      <screen x="0" y="23" width="1680" height="932" />
+    <state width="1628" height="271" key="GridCell.Tab.0.left" timestamp="1584789624005">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1419" height="264" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1583584923245" />
+    <state width="1628" height="271" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584789624005" />
     <state width="1628" height="225" key="GridCell.Tab.0.left/0.23.1680.932@0.23.1680.932" timestamp="1583906122110" />
     <state width="1202" height="229" key="GridCell.Tab.0.left/0.23.1680.942@0.23.1680.942" timestamp="1580547120164" />
     <state width="815" height="229" key="GridCell.Tab.0.left/0.23.1680.945@0.23.1680.945" timestamp="1580552211331" />
-    <state width="1628" height="225" key="GridCell.Tab.0.right" timestamp="1583906122111">
-      <screen x="0" y="23" width="1680" height="932" />
+    <state width="1628" height="271" key="GridCell.Tab.0.right" timestamp="1584789624006">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1419" height="264" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1583584923246" />
+    <state width="1628" height="271" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584789624006" />
     <state width="1628" height="225" key="GridCell.Tab.0.right/0.23.1680.932@0.23.1680.932" timestamp="1583906122111" />
     <state width="1202" height="229" key="GridCell.Tab.0.right/0.23.1680.942@0.23.1680.942" timestamp="1580547120165" />
     <state width="815" height="229" key="GridCell.Tab.0.right/0.23.1680.945@0.23.1680.945" timestamp="1580552211332" />

@@ -19,9 +19,9 @@ public class smallBall {
                     nums[i] = sc.nextInt();
                 }
 
-                List<String> result = new LinkedList<>();
-                help(result,n,0,nums,"");
-                result.forEach(System.out::println);
+//                List<String> result = new LinkedList<>();
+//                help(result,n,0,nums,"");
+//                result.forEach(System.out::println);
             }
         }
 
