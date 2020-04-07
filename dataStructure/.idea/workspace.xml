@@ -2,198 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75aae0dc-4ddc-4505-b46d-d4f5136805c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../DesignModel/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cache/LRULinkedHashMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cache/MyLRU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cache/MyLRUtest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cache/SimpleLRU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interview2/HUAWEI1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interview2/HUAWEI2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/interview2/HUAWEI3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springMVC/springMVC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignModel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignModel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignModel/DesignModel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignModel/DesignModel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignModel/src/main/java/Singleton/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignModel/src/main/java/Singleton/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignModel/target/classes/META-INF/DesignModel.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignModel/target/classes/Singleton/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignModel/target/classes/Singleton/Singleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignModel/target/classes/bridge/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignModel/target/classes/bridge/Apple.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DesignModel/target/classes/bridge/Lenovo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DesignModel/target/classes/bridge/Lenovo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interview2/Shopee1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/interview2/VIP1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interview2/smallBall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interview2/smallBall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interview2/PingDuoduo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/interview2/PingDuoduo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interview2/Pingduoduo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/interview2/Pingduoduo3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/interview2/smallBall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/interview2/smallBall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/src/main/resources/ApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/src/main/resources/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/classes/ApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/classes/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm.war" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/ApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/ListNode2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/ListNode3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/ListNode36.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/ListNode4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/ListNode55.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/ListNode56.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number25.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number26.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number27.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number28.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number29.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number30.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number31.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number32.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number33.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number34.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number35.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number36.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number37.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number38.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number39.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number40.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number41.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number42.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number43.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number44.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number45.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number46.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number47.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number48.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number49.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number50.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number51.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number52.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number53.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number54.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number55.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number56.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number57.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number58.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Number9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/RandomListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution11s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution16s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution23.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution24$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution25.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution26.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution26plus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution27$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution27.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution28.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution29s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution2s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution30.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution31.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution32.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution33.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution34s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution35.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution36.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution37.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution38.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution39plus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution3s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution40.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution41.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution42.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution43.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution43plus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution44.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution45.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution46.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution47.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution47p.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution48.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution49.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution4s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution50.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution50s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution51.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution51plus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution51s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution52.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution53.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution53s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution54.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution55.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution55s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution56.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution57.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution58.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution5s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution6s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution7s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solution9diff.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/SolutionFromNet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/Solutions1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/TreeLinkNode57.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/TreeNod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/TreeNode2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/TreeNode26.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/TreeNode3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/TreeNode38.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/TreeNode39.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/TreeNode4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/TreeNode5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../剑指offer58题全攻略/practice/out/production/practice/TreeNode58.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../项目/scw/scw-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../项目/scw/scw-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../项目/scw/scw-parent/scw-webui/src/main/java/com/atguigu/scw/webui/config/AppWebmvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../项目/scw/scw-parent/scw-webui/src/main/java/com/atguigu/scw/webui/config/AppWebmvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../项目/scw/scw-register/src/main/java/com/atguigu/scw/scwregister/ScwRegisterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../项目/scw/scw-register/src/main/java/com/atguigu/scw/scwregister/ScwRegisterApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,33 +62,7 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyLRUtest">
-    <configuration name="HUAWEI2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="interview2.HUAWEI2" />
-      <module name="dataStructure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="interview2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HUAWEI3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="interview2.HUAWEI3" />
-      <module name="dataStructure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="interview2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.VIP1">
     <configuration name="MyLRU" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cache.MyLRU" />
       <module name="dataStructure" />
@@ -304,6 +89,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Shopee1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview2.Shopee1" />
+      <module name="dataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interview2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SimpleLRU" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cache.SimpleLRU" />
       <module name="dataStructure" />
@@ -317,13 +115,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VIP1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview2.VIP1" />
+      <module name="dataStructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interview2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VIP1" />
+        <item itemvalue="Application.Shopee1" />
         <item itemvalue="Application.MyLRUtest" />
         <item itemvalue="Application.SimpleLRU" />
         <item itemvalue="Application.MyLRU" />
-        <item itemvalue="Application.HUAWEI3" />
-        <item itemvalue="Application.HUAWEI2" />
       </list>
     </recent_temporary>
   </component>
@@ -349,6 +160,8 @@
       <workItem from="1584884663598" duration="15000" />
       <workItem from="1585133773795" duration="15026000" />
       <workItem from="1585159085711" duration="826000" />
+      <workItem from="1585374949200" duration="5887000" />
+      <workItem from="1585916937553" duration="1844000" />
     </task>
     <servers />
   </component>
@@ -360,38 +173,38 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="609" y="176" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1585151101745" />
-    <state width="1628" height="272" key="GridCell.Tab.0.bottom" timestamp="1585159913636">
+    <state width="1628" height="337" key="GridCell.Tab.0.bottom" timestamp="1585924901564">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1628" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585159913636" />
-    <state width="1628" height="272" key="GridCell.Tab.0.center" timestamp="1585159913636">
+    <state width="1628" height="337" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585924901564" />
+    <state width="1628" height="337" key="GridCell.Tab.0.center" timestamp="1585924901563">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1628" height="272" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585159913636" />
-    <state width="1628" height="272" key="GridCell.Tab.0.left" timestamp="1585159913635">
+    <state width="1628" height="337" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585924901563" />
+    <state width="1628" height="337" key="GridCell.Tab.0.left" timestamp="1585924901562">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1628" height="272" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585159913635" />
-    <state width="1628" height="272" key="GridCell.Tab.0.right" timestamp="1585159913636">
+    <state width="1628" height="337" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585924901562" />
+    <state width="1628" height="337" key="GridCell.Tab.0.right" timestamp="1585924901564">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1628" height="272" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585159913636" />
-    <state width="1628" height="337" key="GridCell.Tab.1.bottom" timestamp="1585159058810">
+    <state width="1628" height="337" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585924901564" />
+    <state width="1628" height="337" key="GridCell.Tab.1.bottom" timestamp="1585924901566">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1628" height="337" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585159058810" />
-    <state width="1628" height="337" key="GridCell.Tab.1.center" timestamp="1585159058810">
+    <state width="1628" height="337" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585924901566" />
+    <state width="1628" height="337" key="GridCell.Tab.1.center" timestamp="1585924901565">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1628" height="337" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585159058810" />
-    <state width="1628" height="337" key="GridCell.Tab.1.left" timestamp="1585159058809">
+    <state width="1628" height="337" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585924901565" />
+    <state width="1628" height="337" key="GridCell.Tab.1.left" timestamp="1585924901565">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1628" height="337" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585159058809" />
-    <state width="1628" height="337" key="GridCell.Tab.1.right" timestamp="1585159058810">
+    <state width="1628" height="337" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585924901565" />
+    <state width="1628" height="337" key="GridCell.Tab.1.right" timestamp="1585924901566">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1628" height="337" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585159058810" />
+    <state width="1628" height="337" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585924901566" />
     <state x="225" y="23" key="SettingsEditor" timestamp="1584001926015">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

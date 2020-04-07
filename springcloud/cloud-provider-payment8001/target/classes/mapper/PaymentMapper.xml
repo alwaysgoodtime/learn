@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.goodtime.springcloud.dao.PaymentDao">
+
+<!--返回值为int，即为主键，userGeneratedKeys,keyproperty，插入的时候，最好返回自增列主键，这样，返回的值大于0，表示插入成功，小于等于0，表示插入失败-->
+    <insert id="create" parameterType="Payment" useGeneratedKeys="true" keyProperty="id">
+        insert into payment(serial) values(#{serial});
+    </insert>
+
+<!--返回集最好用resultmap，就算返回的是一个类，也不要用resulttype，这样可以自定义其中的数据封装，避免出错-->
+    <resultMap id="BaseResultMap" type="com.goodtime.springcloud.entities.Payment">
+        <id column="id" property="id" jdbcType="BIGINT"></id>
+        <id column="serial" property="serial" jdbcType="VARCHAR"></id>
+    </resultMap>
+
+    <select id="getPaymentById" parameterType="Long" resultMap="BaseResultMap">
+        select * from payment where id = #{id};
+    </select>
+
+</mapper>
