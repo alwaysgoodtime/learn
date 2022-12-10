@@ -16,7 +16,7 @@
 
     <!-- 版本锁定 -->
     <properties>
-        <spring.version>5.0.2.RELEASE</spring.version>
+        <spring.version>6.0.0</spring.version>
     </properties>
 
     <!--依赖配置 -->
