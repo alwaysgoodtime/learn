@@ -2,139 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2085dfe8-5423-4fe5-9e0b-e49134c095b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../dataStructure/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../dataStructure/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../leetcode/src/main/java/array/Four.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../leetcode/src/main/java/array/TwoSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number59.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number60.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number61.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number62.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number63.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number64.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number65.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number66.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number67.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number68.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number69.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Number70.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/META-INF/dataStructure.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/LRULinkedHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/LRULinkedHashMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/MyLRU$CacheNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/MyLRU$CacheNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/MyLRU.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/MyLRU.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/MyLRUtest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/MyLRUtest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/SimpleLRU$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/SimpleLRU$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/SimpleLRU$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/SimpleLRU$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/SimpleLRU.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/cache/SimpleLRU.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Broadcast.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Broadcast.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Dijkstra.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Dijkstra.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/EightQueen.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/EightQueen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Floyd.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Floyd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/HorseChessBoard$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/HorseChessBoard$Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/HorseChessBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/HorseChessBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/KMP.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/KMP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/KnapsackProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/KnapsackProblem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Kruskal$EdgePlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Kruskal$EdgePlugin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Kruskal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Kruskal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Prim.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/Prim.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/TowerOfHanoi.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/classic/TowerOfHanoi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BSTNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BSTNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BinarySelfbalancedTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BinarySelfbalancedTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BinarySortTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BinarySortTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BinarySortTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BinarySortTreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BinaryTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/BinaryTreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/HuffmanTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/HuffmanTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/HuffmanTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/HuffmanTreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/RedBlackTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/RedBlackTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/RedBlackTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/RedBlackTreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/SkipList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/SkipList$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/SkipList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/SkipList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/ThreadedBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/ThreadedBinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/ThreadedBinaryTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/ThreadedBinaryTreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/UnweightedUndirectedConnectedGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/UnweightedUndirectedConnectedGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/WeightedUndirectedConnectedGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/datastructure/graph/WeightedUndirectedConnectedGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/ABCSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/ABCSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Battle2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Battle2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/BattleWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/BattleWorld.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Birthday.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Birthday.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Evil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Evil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Fir.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Fir.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/First.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/First.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/FirstProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/FirstProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Five.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Five.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/HUAWEI1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/HUAWEI1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/HUAWEI2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/HUAWEI2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/HUAWEI3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/HUAWEI3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/PingDuoduo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/PingDuoduo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Pingduoduo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Pingduoduo2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Pingduoduo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Pingduoduo3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Pingduoduo3plus.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Pingduoduo3plus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/QiAnXin1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/QiAnXin1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/QiAnXin2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/QiAnXin2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/QuickSort2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/QuickSort2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Same.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Same.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/SameSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/SameSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Second.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Second.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Shopee1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Shopee1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/StringFuzzyMatching.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/StringFuzzyMatching.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/TestAddress$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/TestAddress$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/TestAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/TestAddress.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/VIP1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/VIP1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Xiaomei.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/Xiaomei.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/qin2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/qin2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/smallBall.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/smallBall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/testScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/interview2/testScanner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/search/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/search/BinarySearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/search/FibonacciSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/search/FibonacciSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/search/InterpolationSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/search/InterpolationSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/search/SequentialSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/search/SequentialSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/BubbleSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/BubbleSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/BucketSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/BucketSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/CountingSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/CountingSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/HeapSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/HeapSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/MergeSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/QuickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/RadixSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/RadixSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/ShellSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/ShellSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/StraightInsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/StraightInsertionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/StraightSelectSorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../dataStructure/target/classes/sort/StraightSelectSorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/剑指offer58题全攻略.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/剑指offer58题全攻略.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number14.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number16.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number17.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number18.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number20.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number21.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number21.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number22.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number22.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number23.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number23.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number24.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number24.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number25.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number25.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number26.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number26.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number27.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number27.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number30.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number30.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number36.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number36.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number37.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number37.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number38.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number38.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number39.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number39.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number44.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number44.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number55.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number55.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number56.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number56.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number57.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number57.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number58.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number58.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Number8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Number8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,16 +54,16 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Number70">
-    <configuration name="Number27" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Number27" />
+  <component name="RunManager" selected="Application.Number1">
+    <configuration name="Number1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Number1" />
       <module name="practice" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Number66" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Number66" />
+    <configuration name="Number27" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Number27" />
       <module name="practice" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -222,26 +90,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Number1" />
         <item itemvalue="Application.Number70" />
         <item itemvalue="Application.Number69" />
         <item itemvalue="Application.Number27" />
         <item itemvalue="Application.Number68" />
-        <item itemvalue="Application.Number66" />
       </list>
     </recent_temporary>
   </component>
@@ -262,6 +128,7 @@
       <workItem from="1584174587635" duration="14000" />
       <workItem from="1679793132225" duration="44386000" />
       <workItem from="1679929562919" duration="68158000" />
+      <workItem from="1680096579110" duration="32000" />
     </task>
     <servers />
   </component>
