@@ -1,14 +1,11 @@
-import com.sun.tools.classfile.Annotation;
-
-import java.util.ArrayList;
-
 /**
+ * JZ28 对称的二叉树
  * @author goodtime
  * @create 2020-01-28 9:23 下午
  */
 public class Number58 {
     public static void main(String[] args) {
-        Solution58 solution58 = new Solution58();
+        Solution58s solution58 = new Solution58s();
         boolean symmetrical = solution58.isSymmetrical(null);
         System.out.println(symmetrical);
     }
@@ -67,25 +64,27 @@ class TreeNode58 {
 //}
 
 
-//思路：分别遍历左右两个子树，左子树正常后序遍历，右子树按照右、左、中的顺序遍历，比较两者遍历得到的每个值是否相同。
-class Solution58 {
+//思路：分别遍历左右两个子树，左子树中左右遍历，右子树按照中右左的顺序遍历，比较两者遍历得到的每个值是否相同。
+//递归
+class Solution58s {
     boolean isSymmetrical(TreeNode58 pRoot) {
         if (pRoot == null) {
             return true;
         }
-        return postorderTraversal(pRoot.left,pRoot.right);
+        return traversal(pRoot.left,pRoot.right);
     }
-    private boolean postorderTraversal(TreeNode58 left,TreeNode58 right) {
-        if(left == null && right == null) {
-            return true;
-        }else if( left == null || right == null){
-            return false;
-        }
 
-        if(left.val == right.val){
-            return postorderTraversal(left.left,right.right) && postorderTraversal(left.right,right.left);
-        }else {
+    private boolean traversal(TreeNode58 left, TreeNode58 right) {
+
+        if (left == null && right == null) {
+            return true;
+        } else if (left == null || right == null) {
             return false;
+        } else if (left.val != right.val) {
+            return false;
+        } else {
+            return traversal(left.left,right.right) && traversal(left.right, right.left);
         }
     }
+
 }

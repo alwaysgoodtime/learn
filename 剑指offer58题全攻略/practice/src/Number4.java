@@ -1,6 +1,5 @@
-import javax.swing.tree.TreeNode;
-
 /**
+ * JZ7 重建二叉树
  * 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。
  * 假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
  * 例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。
@@ -10,161 +9,136 @@ import javax.swing.tree.TreeNode;
  */
 public class Number4 {
     public static void main(String[] args) {
-        Solution4 solution4 = new Solution4();
-        SolutionFromNet solutionFromNet = new SolutionFromNet();
+        Solution4 solution = new Solution4();
         int a[] = {1, 2, 4, 7, 3, 5, 6, 8};
         int b[] = {4, 7, 2, 1, 5, 3, 8, 6};
 
-//        TreeNod treeNod = solution4.reConstructBinaryTree(a, b);
-//        System.out.println(treeNod);
-        TreeNod treeNod1 = solutionFromNet.reConstructBinaryTree(a, b);
+        int c[] = {1, 2, 3, 4};
+        int d[] = {1, 2, 3, 4};
+
+        TreeNode4 treeNod1 = solution.reConstructBinaryTree(c, d);
         System.out.println(treeNod1);
     }
 }
 
-//    这里用TreeNode，是因为javax中有TreeNode这个类
-class TreeNod {
-    int val;
-    TreeNod left;
-    TreeNod right;
 
-    TreeNod(int x) {
+class TreeNode4 {
+    int val;
+    TreeNode4 left;
+    TreeNode4 right;
+
+    TreeNode4(int x) {
         val = x;
     }
-
 }
 
-//      我的不知道为什么无法通过测试，原因不明，可能是内存占用过多？
+
+// 前序遍历的每个子集合都是前序遍历，中序遍历的每个子集合也都是中序遍历，所以可以用递归
 class Solution4 {
-    public TreeNod reConstructBinaryTree(int[] pre, int[] in) {
-        TreeNod treeNod = new TreeNod(pre[0]);//初始根节点
+    public TreeNode4 reConstructBinaryTree(int[] pre, int[] vin) {
+
         if (pre.length == 0) {
             return null;
         }
-        int j = 0;
-        for (; pre[0] != in[j]; j++) {
-        }
 
-        int[] intl = new int[j];
-        int[] intl2 = new int[j];
-        int[] intr = new int[in.length - j - 1];
-        int[] intr2 = new int[in.length - j - 1];
+        return reConstructBinaryTree(pre, vin, new TreeNode4(pre[0]));
 
-        for (int i = 0; i < j; i++) {
-            intl[i] = pre[i + 1];
-            intl2[i] = in[i];
-        }
-        for (int l = ++j; j < in.length; j++) {
-            intr[j - l] = pre[j];
-            intr2[j - l] = in[j];
-        }
-
-        TreeNod recursionl = recursionl(intl, intl2, treeNod.left);
-        treeNod.left = recursionl;
-        TreeNod recursionr = recursionr(intr, intr2, treeNod.right);
-        treeNod.right = recursionr;
-        return treeNod;
     }
 
-    //                处理左子树
-    public TreeNod recursionl(int[] intl, int[] intl2, TreeNod treeNod) {
-        if (intl.length == 1) {
-            treeNod = new TreeNod(intl[0]);
-            return treeNod;
-        } else if (intl.length == 0) {
-            return null;
-        } else {
-            treeNod = new TreeNod(intl[0]);
-            int j = 0;
-            for (; intl[0] != intl2[j]; j++) {
-            }
-            int[] intl3 = new int[j];
-            int[] intl4 = new int[j];
-            int[] intr3 = new int[intl.length - j - 1];
-            int[] intr4 = new int[intl.length - j - 1];
-            for (int i = 0; i < j; i++) {
-                intl3[i] = intl[i + 1];
-                intl4[i] = intl2[i];
-            }
+    TreeNode4 reConstructBinaryTree(int[] pre, int[] vin, TreeNode4 middleNode) {
 
-            for (int l = ++j; j < intl.length; j++) {
-                intr3[l - j] = intl[j];
-                intr4[l - j] = intl2[j];
-            }
-            TreeNod recursionl = recursionl(intl3, intl4, treeNod.left);
-            treeNod.left = recursionl;
-            TreeNod recursion = recursionr(intr3, intr4, treeNod.right);
-            treeNod.right = recursion;
-            return treeNod;
+        if (pre.length == 1) {
+            return middleNode;
         }
+
+        int middle = pre[0];
+
+        //中间节点有左节点
+        if (vin[0] != middle) {
+
+            //重建左节点
+            //左节点，就是前序遍历的后一个节点
+            middleNode.left = new TreeNode4(pre[1]);
+            int[] leftVin = getLeftByMiddleNode(vin, pre[0]);
+            reConstructBinaryTree(getLeftByLength(pre, leftVin.length), leftVin, middleNode.left);
+
+        }
+
+        //中间节点有右节点
+        if (vin[vin.length - 1] != middle) {
+
+            //重建右节点
+            int[] rightVin = getRightByMiddleNode(vin, pre[0]);
+            //右节点，就是前序遍历除去左节点和中间节点的第一个节点
+            middleNode.right = new TreeNode4(pre[pre.length - rightVin.length]);
+            reConstructBinaryTree(getRightByLength(pre, rightVin.length), rightVin, middleNode.right);
+
+        }
+
+
+        return middleNode;
+
     }
 
-    public TreeNod recursionr(int[] intr, int[] intr2, TreeNod treeNod) {
-        if (intr.length == 1) {
-            treeNod = new TreeNod(intr[0]);
-            return treeNod;
-        } else if (intr.length == 0) {
-            return null;
-        } else {
-            treeNod = new TreeNod(intr[0]);
-            int j = 0;
-            for (; intr[0] != intr2[j]; j++) {
-            }
-            int[] intl3 = new int[j];
-            int[] intl4 = new int[j];
-            int[] intr3 = new int[intr.length - j - 1];
-            int[] intr4 = new int[intr.length - j - 1];
-            for (int i = 0; i < j; i++) {
-                intl3[i] = intr[i + 1];
-                intl4[i] = intr2[i];
-            }
-            for (int l = ++j; j < intr.length; j++) {
-                intr3[j - l] = intr[j];
-                intr4[j - l] = intr2[j];
-            }
-            TreeNod recursionl = recursionl(intl3, intl4, treeNod.left);
-            treeNod.left = recursionl;
-            TreeNod recursion = recursionr(intr3, intr4, treeNod.right);
-            treeNod.right = recursion;
-            return treeNod;
 
-        }
-    }
-}
+    private int[] getLeftByMiddleNode(int[] vin, int middle) {
 
-//网上找的方法
-class SolutionFromNet {
-    public TreeNod reConstructBinaryTree(int[] pre, int[] in) {
-        if (pre.length == 0) {
-            return null;
-        }
-        TreeNod root = find(pre, 0, pre.length - 1, in, 0, in.length - 1);
-        return root;
-    }
+        int index = 0;
 
-    public TreeNod find(int[] pre, int start, int end, int[] in, int start2, int end2) {
-        if (start > end || start2 > end2) {
-            return null;
-        }
-        TreeNod root = new TreeNod(pre[start]);
-        for (int i = start2; i < end2; i++) {
-            if (pre[start] == in[i]) {
-                root.left = find(pre, start + 1, start + i - start2, in, start2, i - 1);//srart+i-start2是相对的偏移量
-                root.right = find(pre, i - start2 + start + 1, end, in, i + 1, end2);//srart+1+i-start2是相对的偏移量，且不能简单改成i+1
+        for (int j = 0; j < vin.length; j++) {
+            if (vin[j] == middle) {
+                index = j;
                 break;
             }
         }
 
-        return root;
 
+        int[] leftVin = new int[index];
+        System.arraycopy(vin, 0, leftVin, 0, index);
+
+        return leftVin;
 
     }
 
-}
+    private int[] getLeftByLength(int[] pre, int length) {
 
-class Solution4s {
-    public TreeNod reConstructBinaryTree(int[] pre, int[] in) {
-        return null;//todo
+        int[] leftPre = new int[length];
+        //跳过第一个中间节点来复制
+        System.arraycopy(pre, 1, leftPre, 0, length);
+
+        return leftPre;
+
+    }
+
+    private int[] getRightByLength(int[] pre, int length) {
+
+        int[] rightPre = new int[length];
+
+        System.arraycopy(pre, pre.length - length, rightPre, 0, pre.length - (pre.length - length));
+
+        return rightPre;
+    }
+
+    private int[] getRightByMiddleNode(int[] vin, int middle) {
+
+        int index = 0;
+
+
+        for (int j = 0; j < vin.length; j++) {
+            if (vin[j] == middle) {
+                index = j;
+                break;
+            }
+        }
+
+
+        int[] right = new int[vin.length - index - 1];
+
+        for (int j = index + 1; j < vin.length; j++) {
+            right[j - index - 1] = vin[j];
+        }
+
+        return right;
     }
 }
 

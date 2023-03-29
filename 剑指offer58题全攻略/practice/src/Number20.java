@@ -1,4 +1,3 @@
-import java.util.List;
 import java.util.Stack;
 
 /**
@@ -7,7 +6,7 @@ import java.util.Stack;
  */
 public class Number20 {
     public static void main(String[] args) {
-        Solution20 solution20 = new Solution20();
+        Solution20s solution20 = new Solution20s();
         solution20.push(3);
         solution20.push(4);
         solution20.push(2);
@@ -21,7 +20,7 @@ public class Number20 {
     }
 }
 
-//造两个栈，一个栈有序，最上面是最大的。
+//造两个栈，一个栈有序，最上面是最小的。
 class Solution20 {
 
     private Stack<Integer> stack = new Stack<Integer>();
@@ -35,10 +34,12 @@ class Solution20 {
         }
         copyAndSort(stack, stack2);
     }
+
     public void pop() {
         stack.pop();
         copyAndSort(stack, stack2);
     }
+
     public int top() {
         return stack.peek();
     }
@@ -46,7 +47,8 @@ class Solution20 {
     public int min() {
         return stack2.peek();
     }
-//  封装了一下算法,不过封装后比封装前多耗了10ms，内存也多了几k
+
+    //  封装了一下算法,不过封装后比封装前多耗了10ms，内存也多了几k
     private void copyAndSort(Stack<Integer> stack, Stack<Integer> stack2) {
         int count = stack.size();
         int[] a = new int[count];
@@ -72,4 +74,83 @@ class Solution20 {
         }
     }
 }
+
+//造两个栈，一个栈有序，最上面是最小的。
+class Solution20s {
+
+    private Stack<Integer> stack = new Stack<Integer>();
+    private Stack<Integer> stack2 = new Stack<Integer>();
+
+    public void push(int node) {
+        stack.push(node);
+        sortPush(stack2, node);
+    }
+
+    public void pop() {
+        Integer node = stack.pop();
+        sortPop(stack2, node);
+    }
+
+    public int top() {
+        return stack.peek();
+    }
+
+    public int min() {
+        return stack2.peek();
+    }
+
+    void sortPush(Stack<Integer> stack, int node) {
+
+        int size = stack.size();
+
+        if (size == 0) {
+            stack.push(node);
+            return;
+        }
+
+        int[] tmp = new int[size];
+
+        for (int i = stack.size() - 1; i >= 0; i--) {
+            tmp[i] = stack.pop();
+        }
+
+        int flag = 0;
+
+        for (int i = 0; i <= size - 1; i++) {
+            if (tmp[i] <= node && flag == 0) {
+                stack.push(node);
+                flag = 1;
+            }
+            stack.push(tmp[i]);
+        }
+
+        if (flag == 0) {
+            stack.push(node);
+        }
+    }
+
+    private void sortPop(Stack<Integer> stack, Integer node) {
+
+        int size = stack.size();
+
+        int[] tmp = new int[size];
+
+        for (int i = stack.size() - 1; i >= 0; i--) {
+            tmp[i] = stack.pop();
+        }
+
+        int flag = 0;
+
+        for (int i = 0; i <= size - 1; i++) {
+
+            if (tmp[i] == node && flag == 0) {
+                flag = 1;
+            } else {
+                stack.push(tmp[i]);
+            }
+        }
+    }
+
+}
+
 

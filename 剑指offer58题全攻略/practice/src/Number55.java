@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
 /**
+ * JZ23 链表中环的入口结点
+ * 给一个长度为n链表，若其中包含环，请找出该链表的环的入口结点，否则，返回null。
+ * 要求：空间复杂度 O(1)，时间复杂度 O(n)
+ *
  * @author goodtime
  * @create 2020-01-28 5:14 下午
  */
@@ -50,7 +54,7 @@ class Solution55 {
     }
 }
 
-//思路：快慢指针方法，时间复杂度O（n）,空间复杂度可以忽略不计，多用了两个指针的空间
+//思路：快慢指针方法，时间复杂度O（n）,空间复杂度可以O(1)，多用了两个指针的空间
 
 /**
  * 1）选择快慢指针，让快指针每次走两步，慢指针每次走一步，若是单链表中有环的话，那么两个指针会相遇，即指向的相同的节点的值相等来判断。
@@ -65,29 +69,36 @@ class Solution55 {
  * 原文链接：https://blog.csdn.net/snow_7/article/details/52181049
  */
 
+/**
+ * 快慢指针
+ */
 class Solution55s {
     public ListNode55 EntryNodeOfLoop(ListNode55 pHead) {
         if (pHead == null) {
             return null;
         }
+
         ListNode55 slow = pHead;
         ListNode55 fast = pHead;
-        while (fast.next != null && fast.next.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-            if (slow == fast) {
-                break;
-            }
-        }
-        if (fast.next == null || fast.next.next == null) {
-            return null;
-        } else {
-            fast = pHead;
-            while (slow != fast) {
-                fast = fast.next;
+
+        while (true) {
+            if (fast.next != null && fast.next.next != null) {
                 slow = slow.next;
+                fast = fast.next.next;
+                if (slow == fast) {
+                    //把快指针放到初始位置，他们第二次相遇的位置就是入口
+                    fast = pHead;
+                    while (fast != slow) {
+                        fast = fast.next;
+                        slow = slow.next;
+                    }
+                    return fast;
+                }
+            } else {
+                return null;
             }
-            return slow;
         }
+
+
     }
 }

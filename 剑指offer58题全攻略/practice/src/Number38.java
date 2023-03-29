@@ -1,12 +1,16 @@
 import java.util.ArrayList;
 
 /**
+ * JZ55 二叉树的深度
+ * 输入一棵二叉树，求该树的深度。从根结点到叶结点依次经过的结点（含根、叶结点）形成树的一条路径，
+ * 最长路径的长度为树的深度，根节点的深度视为 1 。
+ *
  * @author goodtime
  * @create 2020-01-23 6:07 下午
  */
 public class Number38 {
     public static void main(String[] args) {
-        Solution38 solution38 = new Solution38();
+        Solution38ss solution38 = new Solution38ss();
         TreeNode38 root = new TreeNode38(1);
         TreeNode38 d = new TreeNode38(2);
         TreeNode38 c = new TreeNode38(3);
@@ -73,6 +77,74 @@ class Solution38 {
     }
 }
 
+//递归写法
+class Solution38s {
+    public int TreeDepth(TreeNode38 root) {
+        if (root == null) {
+            return 0;
+        }
+
+        //root是第一层
+        return count(root, 1);
+    }
+
+    private int count(TreeNode38 root, int count) {
+        if (root.left != null && root.right == null) {
+            return count(root.left, ++count);
+        } else if (root.left == null && root.right != null) {
+            return count(root.right, ++count);
+        } else if (root.left != null && root.right != null) {
+            int tmp = count;
+            int countLeft = count(root.left, ++tmp);
+            tmp = count;
+            int countRight = count(root.right, ++tmp);
+            return countLeft >= countRight ? countLeft : countRight;
+        } else {
+            return count;
+        }
+    }
+}
+
+//遍历
+class Solution38ss {
+    public int TreeDepth(TreeNode38 root) {
+        if (root == null) {
+            return 0;
+        }
+
+        ArrayList<TreeNode38> nodeList = new ArrayList<>();
+        nodeList.add(root);
+        //处理节点的下标
+        int dealIndex = 0;
+        //当前层的节点
+        int currentDepthNode = 1;
+        // 当前层深，处理完当前层节点后会+1
+        int currentDepth = 0;
+        //下一层节点个数
+        int nextDepthNode = 0;
+
+        for (TreeNode38 dealNode; nodeList.size() > dealIndex; dealIndex++) {
+
+            dealNode = nodeList.get(dealIndex);
+
+            if (dealNode.left != null) {
+                nodeList.add(dealNode.left);
+                nextDepthNode++;
+            }
+
+            if (dealNode.right != null) {
+                nodeList.add(dealNode.right);
+                nextDepthNode++;
+            }
+
+            if (--currentDepthNode == 0) {
+                currentDepth++;
+                currentDepthNode = nextDepthNode;
+                nextDepthNode = 0;
+            }
+        }
 
 
-
+        return currentDepth;
+    }
+}

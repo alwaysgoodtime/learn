@@ -1,6 +1,7 @@
-import javax.swing.tree.TreeNode;
 
-/**
+
+/**JZ27 二叉树的镜像
+ * 操作给定的二叉树，将其变换为源二叉树的镜像。
  * @author goodtime
  * @create 2020-01-20 12:44 上午
  */
@@ -36,7 +37,12 @@ class TreeNode3 {
 }
 //前序遍历时，把节点的左右子节点互换即可
 class Solution18 {
-    public void Mirror(TreeNode3 root) {
+    public TreeNode3 Mirror(TreeNode3 root) {
+        mirror(root);
+        return root;
+    }
+
+    private void mirror(TreeNode3 root) {
         if(root == null){
             return;
         }

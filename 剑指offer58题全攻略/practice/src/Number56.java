@@ -1,4 +1,10 @@
 /**
+ * JZ76 删除链表中重复的结点
+ * 在一个排序的链表中，存在重复的结点，请删除该链表中重复的结点，重复的结点不保留，返回链表头指针。
+ * 例如，链表 1->2->3->3->4->4->5  处理后为 1->2->5
+ * 链表中的值为0 <= val <= 1000
+ * 要求：空间复杂度 O(n)，时间复杂度 O(n)
+ *
  * @author goodtime
  * @create 2020-01-28 6:09 下午
  */
@@ -18,14 +24,14 @@ public class Number56 {
         ListNode56 listNode2 = new ListNode56(1);
         ListNode56 listNode3 = new ListNode56(2);
         ListNode56 listNode4 = new ListNode56(3);
-        ListNode56 listNode5 = new ListNode56(3);
+        ListNode56 listNode5 = new ListNode56(5);
         ListNode56 listNode6 = new ListNode56(4);
         listNode1.next = listNode2;
         listNode2.next = listNode3;
         listNode3.next = listNode4;
         listNode4.next = listNode5;
         listNode5.next = listNode6;
-        Solution56 solution56 = new Solution56();
+        Solution56s solution56 = new Solution56s();
         ListNode56 listNode56 = solution56.deleteDuplication(listNode1);
         System.out.println(listNode56.next.val);
     }
@@ -98,5 +104,39 @@ class Solution56 {
                 }
             }
         }
+    }
+}
+
+/**
+ * 思路还是快慢指针，为了简化第一个头节点是否会被消去的问题，引入了一个存储值为负数的哨兵，最后再把它消去
+ */
+class Solution56s {
+    public ListNode56 deleteDuplication(ListNode56 pHead) {
+
+        //预处理
+        if (pHead == null || pHead.next == null) {
+            return pHead;
+        }
+
+        //因为默认节点的值为0~1000，可以插入一个为负值的头结点，保证其不会被删去
+        ListNode56 preNode = new ListNode56(-1);
+        preNode.next = pHead;
+
+        for (ListNode56 lastNode = preNode; lastNode.next != null && lastNode.next.next != null; ) {
+
+            ListNode56 slow = lastNode.next;
+            ListNode56 fast = slow.next;
+
+            if (slow.val == fast.val) {
+                while (fast != null && slow.val == fast.val) {
+                    fast = fast.next;
+                }
+                lastNode.next = fast;
+            } else {
+                lastNode = lastNode.next;
+            }
+        }
+
+        return preNode.next;
     }
 }
