@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/dataStructure/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/剑指offer58题全攻略/practice/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
