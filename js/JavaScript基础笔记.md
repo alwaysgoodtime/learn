@@ -1,8 +1,8 @@
 # JS基础
 	1. JavaScript基础
 
-
 ## JavaScript：
+
 	* 概念：	一门客户端脚本语言
 		* 运行在客户端浏览器中的。每一个浏览器都有JavaScript的解析引擎
 		* 脚本语言：不需要编译，直接就可以被浏览器解析执行了
@@ -129,14 +129,15 @@
 			    <script>
 			
 			        document.write("<table  align='center'>");
-
+	
 	     			        //1.完成基本的for循环嵌套，展示乘法表
 				        for (var i = 1; i <= 9 ; i++) {
 				            document.write("<tr>");
 				            for (var j = 1; j <=i ; j++) {
 				                document.write("<td>");
-				
-	                   
+
+
+​	                   
 	                   //输出  1 * 1 = 1
 			                document.write(i + " * " + j + " = " + ( i*j) +"&nbsp;&nbsp;&nbsp;");
 			
