@@ -1,6 +1,6 @@
 package classic;
 
-import datastructure.graph.WeightedUndirectedConnectedGraph;
+import graph.WeightedUndirectedConnectedGraph;
 
 import java.util.ArrayList;
 

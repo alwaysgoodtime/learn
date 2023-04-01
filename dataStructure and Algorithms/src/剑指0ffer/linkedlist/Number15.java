@@ -38,13 +38,13 @@ class ListNode3 {
 class Solution15 {
 
     public ListNode3 ReverseList(ListNode3 head) {
-        if (head == null || head.next == null){
+        if (head == null || head.next == null) {
             return head;
         }
 
         ListNode3 lastNode = head;
 
-        for(ListNode3 nextNode = head.next; nextNode != null;){
+        for (ListNode3 nextNode = head.next; nextNode != null; ) {
             ListNode3 tmp = nextNode.next;
             nextNode.next = lastNode;
             lastNode = nextNode;
@@ -52,7 +52,7 @@ class Solution15 {
         }
         //将原链表第一节点的指针指向null
         head.next = null;
-        return  lastNode;
+        return lastNode;
     }
 
 }

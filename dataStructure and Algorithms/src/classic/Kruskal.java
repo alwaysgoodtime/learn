@@ -1,10 +1,7 @@
 package classic;
 
 
-import datastructure.graph.WeightedUndirectedConnectedGraph;
-
-import java.util.ArrayList;
-import java.util.concurrent.ArrayBlockingQueue;
+import graph.WeightedUndirectedConnectedGraph;
 
 /**
  * 这个也是在图中找最小树的问题，和prim不同的是，它以边为基础开始找，而prim以点为基础再找，它适合稀疏的图（点多边少）。

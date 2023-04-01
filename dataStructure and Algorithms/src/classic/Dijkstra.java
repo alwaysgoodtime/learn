@@ -1,7 +1,7 @@
 package classic;
 
 
-import datastructure.graph.WeightedUndirectedConnectedGraph;
+import graph.WeightedUndirectedConnectedGraph;
 
 /**
  * 迪杰斯特拉算法，用来得到带权（无负权）有向图中，某个顶点到其他所有顶点的所有最短路径。（也叫单源最短路径）
