@@ -9,7 +9,7 @@ package leetcode.src.main.java.dp;
 public class Number322 {
 
     public static void main(String[] args) {
-        System.out.println(new Solution322().coinChange(new int[]{1, 2, 5}, 11));
+        System.out.println(new Solution322().coinChange(new int[]{1, 5, 2}, 11));
     }
 
 }

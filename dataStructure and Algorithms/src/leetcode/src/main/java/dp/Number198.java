@@ -9,13 +9,12 @@ package leetcode.src.main.java.dp;
 public class Number198 {
     public static void main(String[] args) {
         System.out.println(new Solution198().rob(new int[]{
-                1, 2, 3, 1
+                1, 5, 3, 1, 3
         }));
     }
 }
 
 /**
- *
  * 打家劫舍
  *
  * 二维数组做法

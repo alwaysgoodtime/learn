@@ -2,6 +2,7 @@ package leetcode.src.main.java.greedy;
 
 /**
  * https://leetcode.cn/problems/jump-game/
+ *
  * @author goodtime
  * @create 2023-03-31 23:31
  */
@@ -18,14 +19,11 @@ public class Number55 {
  * 也就是说，这个坐标是"必经之路"
  *
  * 比如[5,1,4,3] 我们就先找到4，无论是5想直接到3，还是1先到4后到3，都得老老实实经过4，问题从是否能到3，转换为是否能到4
- *
- *
- *
  */
 class Solution55 {
     public boolean canJump(int[] nums) {
 
-        if(nums == null || nums.length == 0){
+        if (nums == null || nums.length == 0) {
             return true;
         }
 
@@ -35,12 +33,9 @@ class Solution55 {
         for (int i = nums.length - 2; i >= 0; i--) {
             if (nums[i] + i >= target) {
                 target = i;
-                if (i == 0) {
-                    return true;
-                }
             }
         }
 
-        return false;
+        return target == 0;
     }
 }

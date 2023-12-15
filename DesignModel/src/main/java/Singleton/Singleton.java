@@ -6,7 +6,6 @@ package Singleton;
  */
 enum Single {
     SINGLE;
-//    SINGLE2("2");测试枚举类用法
     private String name = "haha";
     private Single(){
         }
@@ -19,9 +18,7 @@ enum Single {
     public String getName(){
         return name;
     }
-//    private Singleton.Single(String string){
-//        this.name = string;
-//    }
+
 
 }
 

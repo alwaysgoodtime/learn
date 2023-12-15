@@ -15,9 +15,42 @@ public class Number139 {
         wordDict.add("leet");
         wordDict.add("code");
         System.out.println("codel".substring(1));
-        System.out.println(new Solution139().wordBreak("leetcode", wordDict));
+        System.out.println(new Solution399re().wordBreak("leetcode", wordDict));
     }
 }
+
+
+/**
+ * 递归解法
+ */
+class Solution399re {
+    public boolean wordBreak(String s, List<String> wordDict) {
+        if (null == s || s.length() == 0) {
+            return true;
+        }
+
+        if (wordDict == null) {
+            return false;
+        }
+
+        boolean canSpell = false;
+
+        for (int i = 0; i < wordDict.size(); i++) {
+            String word = wordDict.get(i);
+            if (s.contains(word)) {
+                String temp = s;
+                canSpell = wordBreak(temp.replace(word, ""), wordDict);
+                if (canSpell) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+
+    }
+}
+
 
 /**
  * 完全背包
@@ -29,7 +62,6 @@ public class Number139 {
  * 递推公式：dp[i] = dp[i - word.length()] (当dp[i]为false，且i >= word.length()，且i的最后word.length()长度的字符串可以被word表示)
  *
  * 遍历顺序：先遍历背包，后遍历物品，必须如此遍历，因为本题里求的是排列而非组合，wordDict的排列顺序对dp[i]的值有影响
- *
  */
 
 class Solution139 {
@@ -42,7 +74,7 @@ class Solution139 {
             return false;
         }
 
-        boolean[] dp  = new boolean[s.length()+1];
+        boolean[] dp = new boolean[s.length() + 1];
 
         //初始化
         dp[0] = true;

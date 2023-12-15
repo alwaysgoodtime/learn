@@ -27,19 +27,19 @@ Bootstrap：
 		    <link href="css/bootstrap.min.css" rel="stylesheet">
 
 
-​		
-		    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+​		    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 		    <script src="js/jquery-3.2.1.min.js"></script>
-		    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+​		    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
 		    <script src="js/bootstrap.min.js"></script>
-		</head>
-		<body>
+​		</head>
+​		<body>
 		<h1>你好，世界！</h1>
-		
+
 		</body>
 		</html>
 
 ## 响应式布局
+
 	* 同一套页面可以兼容不同分辨率的设备。
 	* 实现：依赖于栅格系统：将一行平均分成12个格子，可以指定元素占几个格子
 	* 步骤：
@@ -96,25 +96,25 @@ Bootstrap：
 
 
 ​	
-	    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-	    <script src="js/jquery-3.2.1.min.js"></script>
-	    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-	    <script src="js/bootstrap.min.js"></script>
-	    <style>
-	        .paddtop{
-	            padding-top: 10px;
-	        }
-	        .search-btn{
-	            float: left;
-	            border:1px solid #ffc900;
-	            width: 90px;
-	            height: 35px;
-	            background-color:#ffc900 ;
-	            text-align: center;
-	            line-height: 35px;
-	            margin-top: 15px;
-	        }
-	
+​	    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+​	    <script src="js/jquery-3.2.1.min.js"></script>
+​	    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+​	    <script src="js/bootstrap.min.js"></script>
+​	    <style>
+​	        .paddtop{
+​	            padding-top: 10px;
+​	        }
+​	        .search-btn{
+​	            float: left;
+​	            border:1px solid #ffc900;
+​	            width: 90px;
+​	            height: 35px;
+​	            background-color:#ffc900 ;
+​	            text-align: center;
+​	            line-height: 35px;
+​	            margin-top: 15px;
+​	        }
+​	
 	        .search-input{
 	            float: left;
 	            border:2px solid #ffc900;
@@ -227,8 +227,8 @@ Bootstrap：
 
 ​	
 ​	
-	       </div>
-	
+​	       </div>
+​	
 	   </header>
 	   <!-- 2.主体部分-->
 	   <div class="container">
@@ -272,31 +272,31 @@ Bootstrap：
 
 
 ​	
-	       </div>
-	       <div class="row jx">
-	           <img src="img/icon_6.jpg">
-	           <span>国内游</span>
-	       </div>
-	       <div class="row paddtop">
-	           <div class="col-md-4">
-	               <img src="img/guonei_1.jpg">
-	           </div>
-	           <div class="col-md-8">
-	               <div class="row">
-	                   <div class="col-md-4">
-	                       <div class="thumbnail">
-	                           <img src="img/jiangxuan_3.jpg" alt="">
-	                           <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
-	                           <font color="red">&yen; 699</font>
-	                       </div>
-	                   </div>
-	                   <div class="col-md-4">
-	                       <div class="thumbnail">
-	                           <img src="img/jiangxuan_3.jpg" alt="">
-	                           <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
-	                           <font color="red">&yen; 699</font>
-	                       </div>
-	
+​	       </div>
+​	       <div class="row jx">
+​	           <img src="img/icon_6.jpg">
+​	           <span>国内游</span>
+​	       </div>
+​	       <div class="row paddtop">
+​	           <div class="col-md-4">
+​	               <img src="img/guonei_1.jpg">
+​	           </div>
+​	           <div class="col-md-8">
+​	               <div class="row">
+​	                   <div class="col-md-4">
+​	                       <div class="thumbnail">
+​	                           <img src="img/jiangxuan_3.jpg" alt="">
+​	                           <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+​	                           <font color="red">&yen; 699</font>
+​	                       </div>
+​	                   </div>
+​	                   <div class="col-md-4">
+​	                       <div class="thumbnail">
+​	                           <img src="img/jiangxuan_3.jpg" alt="">
+​	                           <p>上海直飞三亚5天4晚自由行(春节预售+亲子/蜜月/休闲游首选+豪华酒店任选+接送机)</p>
+​	                           <font color="red">&yen; 699</font>
+​	                       </div>
+​	
 	                   </div>
 	                   <div class="col-md-4">
 	
@@ -335,8 +335,8 @@ Bootstrap：
 
 
 ​	
-	               </div>
-	
+​	               </div>
+​	
 	           </div>
 	
 	       </div>
@@ -354,5 +354,5 @@ Bootstrap：
 
 
 ​	
-	</body>
-	</html>
+​	</body>
+​	</html>

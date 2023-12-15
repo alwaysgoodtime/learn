@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class Number135 {
     public static void main(String[] args) {
-        System.out.println(new Solution135().candy(new int[]{1, 2, 2, 3, 1}));
+        System.out.println(new Solution135().candy(new int[]{1,2,87,87,87,2,1}));
     }
 }
 
@@ -28,6 +28,31 @@ public class Number135 {
  * 比如[3,3,2],第二个3只有1个，那么就需要补，而前面第一个3不需要补发
  *
  * 如果是后面孩子和前面孩子相当，不需要处理
+ *
+ *
+ *
+ *
+ * 思路2：
+ *
+ * 我们可以将「相邻的孩子中，评分高的孩子必须获得更多的糖果」这句话拆分为两个规则，分别处理。
+ *
+ * 左规则：当 ratings[i−1]<ratings[i]\textit{ratings}[i - 1] < \textit{ratings}[i]ratings[i−1]<ratings[i] 时，iii 号学生的糖果数量将比 i−1i - 1i−1 号孩子的糖果数量多。
+ *
+ * 右规则：当 ratings[i]>ratings[i+1]\textit{ratings}[i] > \textit{ratings}[i + 1]ratings[i]>ratings[i+1] 时，iii 号学生的糖果数量将比 i+1i + 1i+1 号孩子的糖果数量多。
+ *
+ * 作者：力扣官方题解
+ * 链接：https://leetcode.cn/problems/candy/
+ * 来源：力扣（LeetCode）
+ * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+ *
+ * 这样，用两个数组，让学生分别满足这两个规则，学生们满足这两个规则的两个值的最大值即可。
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  */
 class Solution135 {
 

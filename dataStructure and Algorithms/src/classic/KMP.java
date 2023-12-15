@@ -1,8 +1,9 @@
 package classic;
 
-import com.sun.management.VMOption;
 
 /**
+ *
+ * @see leetcode.src.main.java.array.Number28
  * 可以实现KMP算法的类
  * 方法名为KMPSearch,且为静态方法
  * @author goodtime

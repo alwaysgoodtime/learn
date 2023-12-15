@@ -1,29 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ab9b81e4-6951-4a36-b7f2-0a158575b18b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springMVC/springMVC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyTes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestVector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DesignModel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignModel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Singleton/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/DesignModel.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle$Inner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle$Inner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/Single.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/Single.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/SingleDouble.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/SingleDouble.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Singleton/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/Singleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bridge/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bridge/Apple.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bridge/Lenovo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bridge/Lenovo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dataStructure/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dataStructure/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/src/main/resources/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/src/main/resources/ApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/src/main/resources/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/classes/ApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/classes/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm.war" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/ApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/ApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/classes/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm/target/ssm/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/dataStructure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/cache/LRULinkedHashMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/cache/MyLRU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/cache/MyLRUtest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/cache/SimpleLRU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/classic/Broadcast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/classic/Dijkstra.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/classic/EightQueen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/classic/Floyd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/classic/HorseChessBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/classic/KMP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/classic/KnapsackProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/classic/Kruskal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/classic/Prim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/classic/TowerOfHanoi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/BSTNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/BinarySelfbalancedTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/BinarySortTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/BinarySortTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/BinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/BinaryTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/HuffmanTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/HuffmanTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/RedBlackTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/RedBlackTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/SkipList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/ThreadedBinaryTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/ThreadedBinaryTreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/UnweightedUndirectedConnectedGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/datastructure/graph/WeightedUndirectedConnectedGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/ABCSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Battle2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/BattleWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Birthday.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Evil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Fir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/First.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/FirstProject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Five.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/HUAWEI1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/HUAWEI2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/HUAWEI3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/PingDuoduo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Pingduoduo2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Pingduoduo3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Pingduoduo3plus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/QiAnXin1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/QiAnXin2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/QuickSort2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Same.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/SameSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Second.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Shopee1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/StringFuzzyMatching.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/TestAddress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/VIP1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/Xiaomei.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/qin2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/smallBall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/interview2/testScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/search/BinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/search/FibonacciSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/search/InterpolationSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/search/SequentialSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/sort/BubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/sort/BucketSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/sort/CountingSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/sort/HeapSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/sort/MergeSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/sort/QuickSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/sort/RadixSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/sort/ShellSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/sort/StraightInsertionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/src/main/java/sort/StraightSelectSorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/cache/LRULinkedHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/cache/MyLRU$CacheNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/cache/MyLRU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/cache/MyLRUtest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/cache/SimpleLRU$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/cache/SimpleLRU$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/cache/SimpleLRU.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/Broadcast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/Dijkstra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/EightQueen.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/Floyd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/HorseChessBoard$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/HorseChessBoard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/KMP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/KnapsackProblem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/Kruskal$EdgePlugin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/Kruskal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/Prim.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/classic/TowerOfHanoi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/BSTNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/BinarySelfbalancedTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/BinarySortTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/BinarySortTreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/BinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/BinaryTreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/HuffmanTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/HuffmanTreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/RedBlackTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/RedBlackTreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/SkipList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/SkipList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/ThreadedBinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/ThreadedBinaryTreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/UnweightedUndirectedConnectedGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/datastructure/graph/WeightedUndirectedConnectedGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/ABCSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Battle2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/BattleWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Birthday.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Evil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Fir.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/First.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/FirstProject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Five.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Graph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/HUAWEI1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/HUAWEI2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/HUAWEI3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/PingDuoduo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Pingduoduo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Pingduoduo3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Pingduoduo3plus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/QiAnXin1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/QiAnXin2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/QuickSort2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Same.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/SameSet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Second.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Shopee1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/StringFuzzyMatching.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/TestAddress$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/TestAddress.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/VIP1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/Xiaomei.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/qin2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/smallBall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/interview2/testScanner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/search/BinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/search/FibonacciSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/search/InterpolationSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/search/SequentialSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/sort/BubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/sort/BucketSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/sort/CountingSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/sort/HeapSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/sort/MergeSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/sort/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/sort/RadixSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/sort/ShellSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/sort/StraightInsertionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure/target/classes/sort/StraightSelectSorting.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,21 +212,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/String.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1YtqFYvAwk6mLBcSz4Yv80nkRwl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -78,27 +239,14 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="memento" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Singleton">
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="state.Client" />
-      <module name="DesignModel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="state.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TestVector">
     <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Strategy.Client" />
       <module name="DesignModel" />
@@ -126,19 +274,6 @@
       </method>
     </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PersonalityChain.Client" />
-      <module name="DesignModel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PersonalityChain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="explain.Client" />
       <module name="DesignModel" />
       <extension name="coverage">
@@ -147,6 +282,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyTes" />
+      <module name="DesignModel" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,16 +306,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestVector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestVector" />
+      <module name="DesignModel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestVector" />
+        <item itemvalue="Application.MyTes" />
         <item itemvalue="Application.Singleton" />
         <item itemvalue="Application.Client (3)" />
         <item itemvalue="Application.Client (2)" />
-        <item itemvalue="Application.Client (1)" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -189,61 +352,13 @@
       <workItem from="1584099718116" duration="63000" />
       <workItem from="1584518004638" duration="899000" />
       <workItem from="1584884699228" duration="906000" />
+      <workItem from="1681271901375" duration="2269000" />
+      <workItem from="1681469626981" duration="10511000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="571" y="73" key="#Project_Structure" timestamp="1583833629150">
-      <screen x="0" y="23" width="1680" height="932" />
-    </state>
-    <state x="571" y="73" key="#Project_Structure/0.23.1680.932@0.23.1680.932" timestamp="1583833629150" />
-    <state x="892" y="140" key="#com.intellij.ide.util.MemberChooser" timestamp="1583905434454">
-      <screen x="0" y="23" width="1680" height="932" />
-    </state>
-    <state x="892" y="140" key="#com.intellij.ide.util.MemberChooser/0.23.1680.932@0.23.1680.932" timestamp="1583905434454" />
-    <state width="1628" height="272" key="GridCell.Tab.0.bottom" timestamp="1584887445853">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1628" height="272" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584887445853" />
-    <state width="1229" height="226" key="GridCell.Tab.0.bottom/0.23.1680.932@0.23.1680.932" timestamp="1583906016395" />
-    <state width="1628" height="272" key="GridCell.Tab.0.center" timestamp="1584887445852">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1628" height="272" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584887445852" />
-    <state width="1229" height="226" key="GridCell.Tab.0.center/0.23.1680.932@0.23.1680.932" timestamp="1583906016395" />
-    <state width="1628" height="272" key="GridCell.Tab.0.left" timestamp="1584887445851">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1628" height="272" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584887445851" />
-    <state width="1229" height="226" key="GridCell.Tab.0.left/0.23.1680.932@0.23.1680.932" timestamp="1583906016395" />
-    <state width="1628" height="272" key="GridCell.Tab.0.right" timestamp="1584887445853">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1628" height="272" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584887445853" />
-    <state width="1229" height="226" key="GridCell.Tab.0.right/0.23.1680.932@0.23.1680.932" timestamp="1583906016395" />
-    <state width="1018" height="281" key="GridCell.Tab.1.bottom" timestamp="1583861412346">
-      <screen x="0" y="23" width="1680" height="932" />
-    </state>
-    <state width="1018" height="281" key="GridCell.Tab.1.bottom/0.23.1680.932@0.23.1680.932" timestamp="1583861412346" />
-    <state width="1018" height="281" key="GridCell.Tab.1.center" timestamp="1583861412346">
-      <screen x="0" y="23" width="1680" height="932" />
-    </state>
-    <state width="1018" height="281" key="GridCell.Tab.1.center/0.23.1680.932@0.23.1680.932" timestamp="1583861412346" />
-    <state width="1018" height="281" key="GridCell.Tab.1.left" timestamp="1583861412346">
-      <screen x="0" y="23" width="1680" height="932" />
-    </state>
-    <state width="1018" height="281" key="GridCell.Tab.1.left/0.23.1680.932@0.23.1680.932" timestamp="1583861412346" />
-    <state width="1018" height="281" key="GridCell.Tab.1.right" timestamp="1583861412346">
-      <screen x="0" y="23" width="1680" height="932" />
-    </state>
-    <state width="1018" height="281" key="GridCell.Tab.1.right/0.23.1680.932@0.23.1680.932" timestamp="1583861412346" />
-    <state x="704" y="23" width="838" height="932" key="search.everywhere.popup" timestamp="1583905266843">
-      <screen x="0" y="23" width="1680" height="932" />
-    </state>
-    <state x="704" y="23" width="838" height="932" key="search.everywhere.popup/0.23.1680.932@0.23.1680.932" timestamp="1583905266843" />
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -260,5 +375,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

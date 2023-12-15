@@ -2,6 +2,7 @@ package leetcode.src.main.java.greedy;
 
 /**
  * https://leetcode.cn/problems/jump-game-ii/
+ *
  * @author goodtime
  * @create 2023-03-31 23:52
  */
@@ -22,12 +23,11 @@ public class Number45 {
  * 为什么前面的路一定能到3？ 因为从前面能去1或更后面那个1的格子，一定会经过3，也就一定能到3
  * 从路数上来说，到3是最经济的，也是一定有解的。(当然，如果从第一个格子到不了最后的格子，那就没有
  * 解了。)
- *
  */
-class Solution45{
+class Solution45 {
     public int jump(int[] nums) {
 
-        if(nums == null || nums.length <= 1){
+        if (nums == null || nums.length <= 1) {
             return 0;
         }
 
@@ -47,6 +47,46 @@ class Solution45{
 
         return step;
 
+
+    }
+}
+
+/**
+ * 另一种解法，从前往后走，每一步都追求下一步能走最远，也是贪婪算法
+ */
+class Solution45s {
+    public int jump(int[] nums) {
+
+        if (nums == null || nums.length <= 1) {
+            return 0;
+        }
+
+        int minStepCount = 1;
+        int nextMaxStep = 0;
+        int nextIndex = 0;
+
+        for (int i = 0; i < nums.length; ) {
+
+            for (int j = i + 1; j <= nums[i] + i; j++) {
+
+                if (i + nums[i] >= nums.length - 1) {
+                    return minStepCount;
+                }
+
+                if (j + nums[j] > nextMaxStep) {
+                    nextMaxStep = j + nums[j];
+                    nextIndex = j;
+                }
+
+
+            }
+
+            minStepCount++;
+            i = nextIndex;
+            nextMaxStep = 0;
+        }
+
+        return 0;
 
     }
 }
