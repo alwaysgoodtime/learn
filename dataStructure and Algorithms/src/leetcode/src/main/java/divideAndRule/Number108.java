@@ -42,6 +42,7 @@ class Solution108 {
 
     /**
      * 注意对middle与边界值进行判等处理
+     *
      * @param nums
      * @return
      */
@@ -51,49 +52,20 @@ class Solution108 {
             return null;
         }
 
-        int middle = nums.length / 2;
-
-        TreeNode head = new TreeNode(nums[middle]);
-
-        if (middle != 0) {
-            divide(nums, 0, middle - 1, head, true);
-        }
-
-        if (middle != nums.length - 1 ) {
-            divide(nums, middle + 1, nums.length - 1, head, false);
-        }
-
-        return head;
+        return divide(nums, 0, nums.length - 1);
 
     }
 
-    private void divide(int[] nums, int l, int r, TreeNode head, boolean isLeft) {
+    private TreeNode divide(int[] nums, int l, int r) {
 
-        if (l == r) {
-            if (isLeft) {
-                head.left = new TreeNode(nums[l]);
-            } else {
-                head.right = new TreeNode(nums[l]);
-            }
-            return;
+        if (l > r) {
+            return null;
         }
 
-        int middle = (l + r) / 2;
-
-        TreeNode treeNode = new TreeNode(nums[middle]);
-        if (isLeft) {
-            head.left = treeNode;
-        } else {
-            head.right = treeNode;
-        }
-
-        if (middle != l) {
-            divide(nums, l, middle - 1, treeNode, true);
-        }
-
-        if (middle != r) {
-            divide(nums, middle + 1, r, treeNode, false);
-        }
-
+        int middle = l + (r - l) / 2;
+        TreeNode head = new TreeNode(nums[middle]);
+        head.left = divide(nums, l, middle - 1);
+        head.right = divide(nums, middle + 1, r);
+        return head;
     }
 }
