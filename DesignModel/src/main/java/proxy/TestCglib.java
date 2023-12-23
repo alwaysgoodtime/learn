@@ -54,6 +54,7 @@ public class TestCglib {
     public static void main(String[] args) {
         TeacherDao teacherDao = new TeacherDao();
         TeacherDao proxyInstance = (TeacherDao)new ProxyFactorys(teacherDao).getProxyInstance();
+        System.out.println("开始代理");
         proxyInstance.teach();
     }
 }

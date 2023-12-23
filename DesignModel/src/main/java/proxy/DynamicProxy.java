@@ -6,22 +6,24 @@ import java.lang.reflect.Proxy;
 
 /**
  * 动态代理的举例：没有原来的静态代理类，而是动态生成
+ *
  * @author goodtime
  * @create 2020-03-02 9:13 下午
  */
 
 interface Human {
     void eat(String food);
+
     void sleep();
 }
 
 //被代理类
 
-class SuperMan implements Human{
+class SuperMan implements Human {
 
     @Override
-    public void  eat(String food) {
-        System.out.println("吃神仙"+food);
+    public void eat(String food) {
+        System.out.println("吃神仙" + food);
     }
 
     @Override
@@ -52,11 +54,11 @@ class ProxyFactory {
 
 
 //当我们通过代理类的对象，调用方法a时，就会自动调用这个加强版的调用处理器中的invoke方法
-class MyInvocationHandler implements InvocationHandler{
+class MyInvocationHandler implements InvocationHandler {
 
     private Object obj = null;
 
-    public void bind(Object obj){
+    public void bind(Object obj) {
         this.obj = obj;
     }
 
@@ -74,6 +76,7 @@ class MyInvocationHandler implements InvocationHandler{
 
 public class DynamicProxy {
     public static void main(String[] args) {
+
         //1.如何根据加载到内存的对象，动态生成代理类的对象
         SuperMan superMan = new SuperMan();
 
@@ -88,9 +91,6 @@ public class DynamicProxy {
         //2.当通过代理类的对象调用方法时，如果动态地调用被代理类中的同名方法，通过invacationhandler实现
         proxyFactory.sleep();
         proxyFactory.eat("tomato");
-
-
-
 
 
     }

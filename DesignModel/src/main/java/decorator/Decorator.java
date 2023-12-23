@@ -4,7 +4,7 @@ package decorator;
  * @author goodtime
  * @create 2020-03-08 12:04 上午
  */
-public class Decorator extends Component {
+public abstract class Decorator extends Component {
 
     private Component component;
 

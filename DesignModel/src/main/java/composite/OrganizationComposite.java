@@ -1,38 +1,48 @@
 package composite;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author goodtime
  * @create 2020-03-08 1:13 上午
  */
-public class OrganizationComposite {
-    public static void main(String[] args) {
-        String a = "a";
-        String b = new String("b");
-        String c = "ab";
-        String d = "a" + b;
-        System.out.println(c.equals(d));
-        System.out.println(c == d);
-        String d1 = a + "b";
-        System.out.println(d1 == c);
-        System.out.println(d1 == d);
-        String e = a + b;
-        System.out.println(e == d);
-        System.out.println(e == d1);
-        String f = a + b;//注意：e和f也不相等
-        System.out.println(e == f);
-        System.out.println(e == d);
+public class OrganizationComposite extends OrganizationComponent {
 
+    List<OrganizationComponent> lists = new ArrayList<>();
 
-        Integer g = 127;
-        Integer h = Integer.valueOf(127);
-        Integer i = Integer.valueOf(127);
-        Integer j = new Integer(127);
-        System.out.println(i == h);
-        System.out.println(i == g);
-        System.out.println(h == j);
+    public OrganizationComposite(String name) {
+        super(name);
+    }
 
+    @Override
+    public OrganizationComponent getChild(String name) {
+        if (this.name.equals(name)) {
+            return this;
+        }
+        for (int i = 0; i < lists.size(); i++) {
+            OrganizationComponent child = lists.get(i).getChild(name);
+            if (child != null) {
+                return child;
+            }
+        }
+        return null;
+    }
 
+    @Override
+    public int getStaffCount() {
+        int sum = 0;
+        for (int i = 0; i < lists.size(); i++) {
+            OrganizationComponent child = lists.get(i);
+            if (child != null) {
+                sum += child.getStaffCount();
+            }
+        }
+        return sum;
+    }
 
-
+    @Override
+    public void add(OrganizationComponent organizationComponent) {
+        lists.add(organizationComponent);
     }
 }

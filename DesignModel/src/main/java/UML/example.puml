@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+List <|-- ArrayList
+
+
+abstract class List{
+    boolean add()
+}
+
+class ArrayList {
+    boolean add()
+}
+
+
+@enduml
