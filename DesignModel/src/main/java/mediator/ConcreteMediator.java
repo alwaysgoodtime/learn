@@ -15,30 +15,30 @@ import java.util.Map;
  */
 public class ConcreteMediator extends Mediator {
 
-    private Map<String,Colleague> colleagueList;
+    private Map<String,Colleague> colleagueMap;
 
     public ConcreteMediator(){
-        colleagueList = new HashMap<>();
+        colleagueMap = new HashMap<>();
     }
 
     @Override
     public void register(Colleague colleague, String name) {
-        colleagueList.put(name,colleague);
+        colleagueMap.put(name,colleague);
     }
 
     //这里就是中介者主要的业务处理，所有的College，都是根据operation进行处理
     @Override
     public void getMessage(Object name,Object operation) {
-        Colleague colleague = colleagueList.get((String) name);
+        Colleague colleague = colleagueMap.get((String) name);
         if(colleague instanceof Alarm){
-            Alarm a = (Alarm)colleague;
+            Alarm alarm = (Alarm)colleague;
             if((Integer) operation == 0){
-                a.startAlarm();
-                CofferMachine cofferMachine = (CofferMachine) colleagueList.get("咖啡机");
+                alarm.startAlarm();
+                CofferMachine cofferMachine = (CofferMachine) colleagueMap.get("咖啡机");
                 cofferMachine.startCofferMachine();
             }else if((Integer) operation == 1){
-                a.stopAlarm();
-                CofferMachine cofferMachine = (CofferMachine) colleagueList.get("咖啡机");
+                alarm.stopAlarm();
+                CofferMachine cofferMachine = (CofferMachine) colleagueMap.get("咖啡机");
                 cofferMachine.stopCoffeeMachine();
             }
         }else if(colleague instanceof CofferMachine){

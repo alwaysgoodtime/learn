@@ -25,5 +25,12 @@ public class Client {
         //待定
         Wait wait = new Wait();
         objectStructure.display(wait);
+
+
+        //第二个例子，老板和 PM 作为 visitor 巡视 程序员 与 设计师
+        CompanyStructure companyStructure = new CompanyStructure();
+        companyStructure.accept(new BossVisitor());
+        companyStructure.accept(new PMVisitor());
+
     }
 }

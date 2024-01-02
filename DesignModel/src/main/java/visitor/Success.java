@@ -13,6 +13,6 @@ public class Success extends  Operation {
 
     @Override
     public void getWomanResult(Woman man) {
-        System.out.println("女人认为失败了");
+        System.out.println("女人认为成功了");
     }
 }

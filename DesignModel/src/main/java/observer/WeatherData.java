@@ -7,6 +7,7 @@ import java.util.ArrayList;
  * 1.包含最新天气
  * 2.含有观察者集合，使用ArrayList管理
  * 3.当数据有更新时，就主动的调用ArrayList，通知所有的（接入方）就看到最新的消息
+ *
  * @author goodtime
  * @create 2020-03-10 3:15 下午
  */
@@ -17,7 +18,7 @@ public class WeatherData implements Subject {
     //观察者集合
     private ArrayList<Observer> observers;
 
-    public WeatherData(String temperature,String date){//初始化被观察者
+    public WeatherData(String temperature, String date) {//初始化被观察者
         this.temperature = temperature;
         this.date = date;
         observers = new ArrayList<Observer>();//构造器中初始化观察者集合
@@ -32,7 +33,7 @@ public class WeatherData implements Subject {
         return temperature;
     }
 
-    public void dataChange(String temperature,String date) {//数据一更新，就通知观察者
+    public void dataChange(String temperature, String date) {//数据一更新，就通知观察者
         this.temperature = temperature;
         this.date = date;
         notifyObserver();
@@ -50,8 +51,8 @@ public class WeatherData implements Subject {
 
     @Override
     public void notifyObserver() {
-        for (int i = 0; i < observers.size(); i++) {
-            observers.get(i).update(this.temperature,this.date);
+        for (Observer o : observers) {
+            o.update(this.temperature, this.date);
         }
     }
 }

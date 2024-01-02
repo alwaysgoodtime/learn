@@ -6,7 +6,7 @@ package leetcode.src.main.java.math;
  */
 public class Number69 {
     public static void main(String[] args) {
-        System.out.println(new Solution69().mySqrt(10));
+        System.out.println(new Solution69().mySqrt(8));
     }
 }
 
@@ -20,29 +20,21 @@ public class Number69 {
 class Solution69 {
     public int mySqrt(int x) {
 
-        if (x == 0 || x == 1) {
-            return x;
-        }
-
         int left = 1;
-        int right = x / 2;
-
-        while (left < right) {
-
-            int middle = left + (right - left + 1) / 2;
-
-            if (middle > x / middle) {
-                right = middle - 1;
-            } else if (middle == x / middle) {
-                return middle;
+        int right = x;
+        int ans = 0;
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            // upper bound的形式，因为我们要找的ans要是最接近于x的最大的数，利用upper bound
+            if (mid <= x / mid) {//核心在这里，mid*mid <= x 可能会超出运算范围
+                left = mid + 1;
+                ans = mid; // 只要mid <= x/mid，left左边界就会一直向右移动，ans就会一直更新（变大），直到不在满足mid <= x/mid的条件为止，ans就会停止更新，永远停在满足mid<=x/mid条件下面的最后一次更新，即满足ans * ans <= mid的最大值。
             } else {
-                left = middle;
+                right = mid - 1;
             }
-
         }
 
-        return left;
-
+        return ans;
 
     }
 }

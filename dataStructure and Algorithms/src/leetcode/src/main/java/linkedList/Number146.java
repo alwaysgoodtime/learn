@@ -25,8 +25,6 @@ class LRUCache {
         DLinkedNode prev;
         DLinkedNode next;
 
-        public DLinkedNode() {
-        }
 
         public DLinkedNode(int key, int value) {
             this.key = key;
@@ -72,62 +70,62 @@ class LRUCache {
             DLinkedNode node = map.get(key);
             node.value = value;
             updateNode(node);
+            return;
+        }
 
-        } else {
 
-            if (size == capacity) {
+        if (size == capacity) {
 
-                //弹出最久未使用的key
-                Integer uselessKey = head.key;
-                map.remove(uselessKey);
+            //弹出最久未使用的key
+            Integer uselessKey = head.key;
+            map.remove(uselessKey);
 
-                if (size == 1) {
-                    head = null;
-                    last = null;
-                } else {
-                    head = head.next;
-                }
-                size--;
-            }
-
-            DLinkedNode newNode = new DLinkedNode(key, value);
-
-            if (size == 0) {
-                head = newNode;
-                last = newNode;
+            if (size == 1) {
+                head = null;
+                last = null;
             } else {
-                newNode.prev = last;
-                last.next = newNode;
-                last = newNode;
-
+                head = head.next;
             }
+            size--;
+        }
 
-            //放入新key-value
-            map.put(key, newNode);
-            size++;
+        DLinkedNode newNode = new DLinkedNode(key, value);
+
+        if (size == 0) {
+            head = newNode;
+            last = newNode;
+        } else {
+            newNode.prev = last;
+            last.next = newNode;
+            last = newNode;
 
         }
+
+        //放入新key-value
+        map.put(key, newNode);
+        size++;
 
     }
 
     private void updateNode(DLinkedNode node) {
 
-        //更新节点先后顺序
-        if (node != last) {
-
-            if (node != head) {
-                DLinkedNode before = node.prev;
-                before.next = node.next;
-                node.next.prev = before;
-            } else {
-                head = node.next;
-            }
-
-            last.next = node;
-            node.prev = last;
-            node.next = null;
-            last = node;
-
+        if (node == last) {
+            return;
         }
+
+        //更新节点先后顺序
+        if (node != head) {
+            DLinkedNode before = node.prev;
+            before.next = node.next;
+            node.next.prev = before;
+        } else {
+            head = node.next;
+        }
+
+        last.next = node;
+        node.prev = last;
+        node.next = null;
+        last = node;
+
     }
 }

@@ -1,6 +1,9 @@
 package leetcode.src.main.java.graph;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Stack;
 
 /**
  * https://leetcode.cn/problems/course-schedule/description/
@@ -24,167 +27,60 @@ public class Number207 {
  */
 class Solution207 {
 
-    class Node {
-        int val;
-        List<Node> post;
-        int visited = 0;
-
-        Node(int val) {
-            this.val = val;
-            this.post = new ArrayList<>();
-        }
-    }
-
     public boolean canFinish(int numCourses, int[][] prerequisites) {
 
-        HashMap<Integer, Node> map = new HashMap<>();
-        HashMap<Node, Integer> startPoint = new HashMap<>();
+        //入度数组，index:课程编号，value:该课程的入度，即有多少课程在其前面
+        int[] inDegree = new int[numCourses];
+        //邻接表 key:课程编号 value:该课程的后继课程
+        HashMap<Integer, List<Integer>> sub = new HashMap<>();
 
-        //1.构成图
-        for (int i = 0; i < prerequisites.length; i++) {
-            int[] prerequisite = prerequisites[i];
-            int course = prerequisite[0];
-            int preCourse = prerequisite[1];
+        //1.遍历原数组，构成图
+        for (int[] relation : prerequisites) {
+            int course = relation[0];
+            int preCourse = relation[1];
 
-            Node courseNode = null;
-            Node preCourseNode = null;
+            //该课程入度+1
+            inDegree[course]++;
 
-            if (!map.containsKey(course)) {
-                courseNode = new Node(course);
-                map.put(course, courseNode);
-            } else {
-                courseNode = map.get(course);
-            }
+            //邻接表为前驱课程增加后继
+            ArrayList<Integer> postCourse = new ArrayList<>();
+            postCourse.add(course);
+            sub.merge(preCourse, postCourse, (o1, o2) -> {
+                o1.addAll(o2);
+                return o1;
+            });
+        }
 
-            if (!map.containsKey(preCourse)) {
-                preCourseNode = new Node(preCourse);
-                map.put(preCourse, preCourseNode);
-            } else {
-                preCourseNode = map.get(preCourse);
-            }
 
-            preCourseNode.post.add(courseNode);
-            startPoint.merge(courseNode, 1, Integer::sum);
+        //2.找到入度数组中入度为0的课程编号
+        Stack<Integer> stack = new Stack<>();
 
-            if (preCourseNode != courseNode) {
-                startPoint.merge(preCourseNode, 0, Integer::sum);
+        for (int i = 0; i < inDegree.length; i++) {
+            if (inDegree[i] == 0) {
+                stack.push(i);
             }
         }
 
-        //2.找到图中的每个入度为0的节点，放入nodes中遍历
-        Queue<Node> nodes = new ArrayDeque<>();
-        Iterator<Map.Entry<Node, Integer>> iterator = startPoint.entrySet().iterator();
-        while (iterator.hasNext()) {
-            Map.Entry<Node, Integer> next = iterator.next();
-            Integer value = next.getValue();
-            if (value.equals(0)) {
-                nodes.add(next.getKey());
+        int finish = 0;
+
+        //3.先将入度为0的课程编号一一处理，看最后是否可以全部处理完成
+        while (!stack.isEmpty()) {
+            Integer course = stack.pop();
+            finish++;
+            List<Integer> postCourses = sub.get(course);
+            if (postCourses == null) {
+                continue;
             }
-        }
-
-        int count = 0;
-        int num = startPoint.size();
-
-        while (nodes.size() != 0) {
-            Node poll = nodes.poll();
-            bfs(poll, startPoint, nodes);
-            count++;
-        }
-
-        return count == num;
-    }
-
-    /**
-     * 广度遍历
-     *
-     * @param key
-     * @param startPoint
-     * @param nodes
-     */
-    private void bfs(Node key, Map<Node, Integer> startPoint, Queue nodes) {
-
-        List<Node> post = key.post;
-        for (int i = 0; i < post.size(); i++) {
-            Node node = post.get(i);
-            Integer integer = startPoint.get(node);
-            if (integer == 1) {
-                nodes.add(node);
-            }
-            startPoint.put(node, integer - 1);
-        }
-    }
-
-
-    /**
-     * 深度遍历，把每个点设置为3个状态：未搜索、搜索中、已搜索
-     * @param numCourses
-     * @param prerequisites
-     * @return
-     */
-    public boolean canFinishDFS(int numCourses, int[][] prerequisites) {
-
-        HashMap<Integer, Node> map = new HashMap<>();
-
-        //1.构成图
-        for (int i = 0; i < prerequisites.length; i++) {
-            int[] prerequisite = prerequisites[i];
-            int course = prerequisite[0];
-            int preCourse = prerequisite[1];
-
-            Node courseNode = null;
-            Node preCourseNode = null;
-
-            if (!map.containsKey(course)) {
-                courseNode = new Node(course);
-                map.put(course, courseNode);
-            } else {
-                courseNode = map.get(course);
-            }
-
-            if (!map.containsKey(preCourse)) {
-                preCourseNode = new Node(preCourse);
-                map.put(preCourse, preCourseNode);
-            } else {
-                preCourseNode = map.get(preCourse);
-            }
-
-            preCourseNode.post.add(courseNode);
-        }
-
-        //2.深度遍历所有点
-        Iterator<Map.Entry<Integer, Node>> iterator = map.entrySet().iterator();
-
-        while (iterator.hasNext()) {
-            Map.Entry<Integer, Node> next = iterator.next();
-            Node value = next.getValue();
-            if (value.visited == 0 && !dfs(value)) {
-                return false;
-            }
-        }
-
-        return true;
-
-    }
-
-    /**
-     * 深度遍历，返回false的条件是，深度搜索时发现搜索中的后继节点，说明有环
-     */
-    private boolean dfs(Node key) {
-
-        key.visited = 1;
-        List<Node> post = key.post;
-        for (int i = 0; i < post.size(); i++) {
-            Node node = post.get(i);
-            if (node.visited == 0) {
-                if (!dfs(node)) {
-                    return false;
+            for (Integer c : postCourses) {
+                inDegree[c]--;
+                if (inDegree[c] == 0) {
+                    stack.push(c);
                 }
-            } else if (node.visited == 1) {
-                return false;
             }
         }
-        key.visited = 2;
-        return true;
+
+        return finish == numCourses;
+
     }
 
 

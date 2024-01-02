@@ -5,218 +5,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab9b81e4-6951-4a36-b7f2-0a158575b18b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Singleton/EnumSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Singleton/HungrySingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Singleton/InnerClassSingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Singleton/LazySingleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UML/example.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/abstractFactory/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/abstractFactory/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/abstractFactory/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/abstractFactory/HuaweiComputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/abstractFactory/HuaweiFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/abstractFactory/HuaweiPhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/abstractFactory/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/abstractFactory/XiaomiComputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/abstractFactory/XiaomiFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/abstractFactory/XiaomiPhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/Adaptee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/Adapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/adapter/LogFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bridge/Black.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bridge/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bridge/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bridge/Huawei.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bridge/Oppo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bridge/White.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/builder/Builder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/builder/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/builder/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/builder/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/builder/ManBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/builder/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/builder/RobotBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/DanceCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/Invoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/ManRobotReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/PlayPianoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/SingSongCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/WomanRobotReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/composite/OrganizationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/composite/OrganizationComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/composite/OrganizationLeaf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/facade/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/facade/Facade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/facade/SystemA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/facade/SystemB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factoryMethod/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factoryMethod/Factory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factoryMethod/HuaweiFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factoryMethod/HuaweiPhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factoryMethod/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factoryMethod/XiaomiFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factoryMethod/XiaomiPhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flyweight/BlackChess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flyweight/Chess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flyweight/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flyweight/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flyweight/Flyweight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flyweight/FlyweightFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flyweight/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/flyweight/WhiteChess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/prototype/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/prototype/Prototype.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/prototype/ReportPrototype.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/proxy/CglibClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/proxy/DynamicProxyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/simpleFactory/Bilibili.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/simpleFactory/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/simpleFactory/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/simpleFactory/VideoParseFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/simpleFactory/Youku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/simpleFactory/Youtube.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/state/Confirmed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/state/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/state/OrderState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/state/Payed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/state/UnPay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/templateMethod/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/templateMethod/DouyinLive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/templateMethod/Live.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/templateMethod/MeituanLive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Itertor/NewContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/BossHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/CTOHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/handler/ManagerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/TaxiStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/TravelStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/WalkStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/BossVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/CompanyStructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/DesignerElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/PMVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/ProgrammerElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/Visitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignModel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DesignModel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Itertor/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Itertor/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Itertor/College.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Itertor/College.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Itertor/ComputerCollege.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Itertor/ComputerCollege.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Itertor/ComputerCollegeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Itertor/ComputerCollegeIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Itertor/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Itertor/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Itertor/InfoCollege.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Itertor/InfoCollege.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Itertor/InfoCollegeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Itertor/InfoCollegeIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Itertor/OutputImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Itertor/OutputImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Baidu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/Baidu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/CurrentConditions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/CurrentConditions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/JDKclient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/JDKclient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/JDKobservable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/JDKobservable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/JDKobserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/JDKobserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/Observer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Observer/WeatherData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/WeatherData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalityChain/Approver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personalityChain/Approver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalityChain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personalityChain/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalityChain/CollegeApprover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personalityChain/CollegeApprover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalityChain/DepartmentApprover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personalityChain/DepartmentApprover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalityChain/MasterApprover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personalityChain/MasterApprover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalityChain/PurchaseRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/personalityChain/PurchaseRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/BadFlyBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/BadFlyBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/Duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/Duck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/FlyBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/FlyBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/GeGeQuackBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/GeGeQuackBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/GoodFlyBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/GoodFlyBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/NoFlyBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/NoFlyBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/NoQuackBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/NoQuackBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/PekingDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/PekingDuck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/QuackBehavior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/QuackBehavior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/ToyDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/ToyDuck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy/WildDuck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Strategy/WildDuck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bridge/Apple.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bridge/Brand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bridge/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bridge/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bridge/Computer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bridge/Lenovo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/explain/AddExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/explain/AddExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/explain/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/explain/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/explain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/explain/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/explain/Expression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/explain/Expression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/explain/SubExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/explain/SubExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/explain/SymbolExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/explain/SymbolExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/explain/VarExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/explain/VarExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Clone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Clone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestVector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/composite/OrganizationComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/composite/OrganizationComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/decorator/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorator/Coffee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/decorator/Decorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorator/Decorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/decorator/Milk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorator/Milk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/decorator/TesyDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorator/TestDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/principle/segregation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/DynamicProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/StaticProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/StaticProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/proxy/TestCglib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/proxy/TestCglib.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mediator/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediator/Alarm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mediator/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediator/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mediator/CofferMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediator/CofferMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mediator/Colleague.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediator/Colleague.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mediator/ConcreteMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediator/ConcreteMediator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mediator/Mediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediator/Mediator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/memento/Caretaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memento/Caretaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/memento/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memento/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/memento/Memento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memento/Memento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/memento/Originator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memento/Originator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/CanRaffleState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/CanRaffleState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/DispenseOutState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/DispenseOutState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/DispensePrizeState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/DispensePrizeState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/NoRaffleState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/NoRaffleState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/state/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/Fail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Fail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/Man.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Man.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/ObjectStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/ObjectStructure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/Success.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Success.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/Wait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Wait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visitor/Woman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Woman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Clone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Clone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observer/Baidu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/Baidu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observer/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observer/CurrentConditions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/CurrentConditions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Itertor/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Itertor/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/EnumSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/singleton/EnumSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/HungrySingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/singleton/HungrySingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/InnerClassSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/singleton/InnerClassSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/LazySingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/singleton/LazySingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/singleton/Singleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/BadFlyBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/Duck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/FlyBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/GeGeQuackBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/GoodFlyBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/NoFlyBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/NoQuackBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/PekingDuck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/QuackBehavior.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/ToyDuck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/WildDuck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mediator/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediator/Alarm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mediator/ConcreteMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediator/ConcreteMediator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/memento/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memento/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/memento/Originator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memento/Originator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observer/JDKclient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/JDKclient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observer/WeatherData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/WeatherData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/visitor/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/visitor/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/visitor/Success.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Success.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Itertor/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Itertor/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Observer/JDKclient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/JDKclient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observer/JDKobservable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/JDKobservable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observer/JDKobserver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/JDKobserver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observer/Observer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/Observer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observer/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/Subject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Observer/WeatherData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/WeatherData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PersonalityChain/Approver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PersonalityChain/Approver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PersonalityChain/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PersonalityChain/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PersonalityChain/CollegeApprover.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PersonalityChain/CollegeApprover.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PersonalityChain/DepartmentApprover.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PersonalityChain/DepartmentApprover.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PersonalityChain/MasterApprover.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PersonalityChain/MasterApprover.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PersonalityChain/PurchaseRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PersonalityChain/PurchaseRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bridge/Apple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bridge/Brand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bridge/Brand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bridge/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bridge/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bridge/Computer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bridge/Desktop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bridge/Laptop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bridge/Lenovo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/composite/OrganizationComposite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/composite/OrganizationComposite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/decorator/Coffee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decorator/Coffee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/decorator/Decorator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decorator/Decorator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/decorator/Milk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decorator/Milk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/decorator/TesyDecorator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/principle/C.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/principle/D.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/principle/Impl1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/principle/Impl2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/principle/Interface1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/principle/segregation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/DynamicProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proxy/DynamicProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/MyInvocationHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proxy/MyInvocationHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/NikeFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proxy/NikeFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/ProxyClotheFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proxy/ProxyClotheFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/ProxyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proxy/ProxyFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/SuperMan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proxy/SuperMan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proxy/TestCglib.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proxy/TestCglib.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/state/DispensePrizeState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/state/DispensePrizeState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/state/NoRaffleState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/state/NoRaffleState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle$Inner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle$Inner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/Single.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/Single.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/SingleDouble.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/SingleDouble.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/Singleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/BadFlyBehavior.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Strategy/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/Duck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/FlyBehavior.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/GeGeQuackBehavior.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/GoodFlyBehavior.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/NoFlyBehavior.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/NoQuackBehavior.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/PekingDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/QuackBehavior.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/ToyDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/WildDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/memento/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/memento/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/memento/Originator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/memento/Originator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/visitor/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/visitor/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/visitor/Operation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/visitor/Operation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/visitor/Success.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/visitor/Success.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +137,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/factoryMethod" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -299,13 +160,13 @@
       <recent name="builder" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client (2)">
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="templateMethod.Client" />
+  <component name="RunManager" selected="Application.TestDecorator">
+    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="visitor.Client" />
       <module name="DesignModel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="templateMethod.*" />
+          <option name="PATTERN" value="visitor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -313,12 +174,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="state.Client" />
+    <configuration name="Client (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="handler.Client" />
       <module name="DesignModel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="state.*" />
+          <option name="PATTERN" value="handler.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -327,11 +188,11 @@
       </method>
     </configuration>
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="command.Client" />
+      <option name="MAIN_CLASS_NAME" value="explain.Client" />
       <module name="DesignModel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="command.*" />
+          <option name="PATTERN" value="explain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -352,40 +213,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Clone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Clone" />
+    <configuration name="JDKclient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="observer.JDKclient" />
       <module name="DesignModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="observer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyTes" />
+    <configuration name="TestDecorator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="decorator.TestDecorator" />
       <module name="DesignModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="decorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestDecorator" />
         <item itemvalue="Application.Client (2)" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.MyTes" />
-        <item itemvalue="Application.Clone" />
-        <item itemvalue="Application.Client (1)" />
+        <item itemvalue="Application.Client (4)" />
+        <item itemvalue="Application.JDKclient" />
       </list>
     </recent_temporary>
   </component>
@@ -410,7 +281,8 @@
       <workItem from="1703176075106" duration="2257000" />
       <workItem from="1703185437543" duration="973000" />
       <workItem from="1703232140047" duration="22432000" />
-      <workItem from="1703272798634" duration="29976000" />
+      <workItem from="1703272798634" duration="44780000" />
+      <workItem from="1703687846153" duration="4188000" />
     </task>
     <servers />
   </component>
@@ -421,22 +293,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/explain/AddExpression.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/util/ArrayList.java</url>
-          <line>362</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/src/main/java/Itertor/NewContainer.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/src.zip!/java/lang/Object.java</url>
-          <line>211</line>
-          <properties class="java.lang.Object" method="clone">
+          <url>file://$PROJECT_DIR$/src/main/java/Itertor/NewContainer.java</url>
+          <line>39</line>
+          <properties class="Itertor.NewContainer.NewContainerIterator" method="hasNext">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -15,6 +15,7 @@ public class Number200 {
 /**
  * 参考一篇高质量题解：https://leetcode.cn/problems/number-of-islands/solutions/211211/dao-yu-lei-wen-ti-de-tong-yong-jie-fa-dfs-bian-li-/
  * DFS
+ * @see Solution463
  */
 class Solution200 {
     public int numIslands(char[][] grid) {

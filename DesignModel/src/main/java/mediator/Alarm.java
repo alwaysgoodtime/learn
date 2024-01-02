@@ -29,7 +29,6 @@ public class Alarm extends Colleague {
         //发消息给中介，我是谁，我的下一步指令是什么
         //这里不要传咖啡机的名字，因为具体指令的业务是由中介者负责，后期进行改动的时候，如果
         //指定对应的行为发生改变，不用动咖啡机和闹钟，只用修改中介者收到的指令对应的行为即可
-
         mediator.getMessage(name,operation);
     }
 

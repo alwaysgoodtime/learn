@@ -3,7 +3,6 @@ package leetcode.src.main.java.dictionaryTree;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.HashMap;
-import java.util.Queue;
 
 /**
  * https://leetcode.cn/problems/implement-trie-prefix-tree/

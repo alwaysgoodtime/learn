@@ -43,31 +43,40 @@ class Solution162 {
         }
 
 
-        int l = -1, r = nums.length;
+        int left = 0;
+        int right = nums.length;
 
+        //左闭右开
+        while (left < right) {
+            int middle = left + (right - left) / 2;
 
-        while (l + 1 != r) {
-
-            int m = (l + r) / 2;
-
-            //此种情况下，一定已经验证过了nums.length-2才到达这里，而该点一定>右边的值，所以他就是要求的峰值点
-            if (m == nums.length - 1) {
-                return m;
-            }
-
-            if (nums[m] > nums[m + 1] && (m == 0 || nums[m] > nums[m - 1])) {
-                return m;
-            }
-
-            if (nums[m] < nums[m + 1]) {
-                l = m;
+            //边界情况
+            if (middle == nums.length - 1) {
+                if (nums[middle - 1] < nums[middle]) {
+                    return middle;
+                } else {
+                    right = middle;
+                }
+            } else if (middle == 0) {
+                //边界情况
+                if (nums[middle] <= nums[middle + 1]) {
+                    left = middle + 1;
+                } else {
+                    return middle;
+                }
+            } else if (nums[middle] > nums[middle - 1] && nums[middle] > nums[middle + 1]) {
+                //middle就满足条件
+                return middle;
+            } else if (nums[middle + 1] > nums[middle]) {
+                //此种情况向右走
+                left = middle + 1;
             } else {
-                r = m;
+                //向左走
+                right = middle;
             }
 
         }
 
-        //一个数组一定有峰值点，所以这里是不可能抵达的地方
         return -1;
 
     }
