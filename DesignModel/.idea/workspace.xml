@@ -5,78 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab9b81e4-6951-4a36-b7f2-0a158575b18b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Itertor/NewContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/BossHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/CTOHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/handler/ManagerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/TaxiStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/TravelStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/WalkStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/BossVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/CompanyStructure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/DesignerElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/PMVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/ProgrammerElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/visitor/Visitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TestStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Itertor/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Itertor/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/EnumSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/singleton/EnumSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/HungrySingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/singleton/HungrySingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/InnerClassSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/singleton/InnerClassSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/LazySingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/singleton/LazySingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Singleton/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/singleton/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/BadFlyBehavior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/Duck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/FlyBehavior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/GeGeQuackBehavior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/GoodFlyBehavior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/NoFlyBehavior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/NoQuackBehavior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/PekingDuck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/QuackBehavior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/ToyDuck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Strategy/WildDuck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mediator/Alarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediator/Alarm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mediator/ConcreteMediator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mediator/ConcreteMediator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/memento/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memento/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/memento/Originator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/memento/Originator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/observer/JDKclient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/JDKclient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/observer/WeatherData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/WeatherData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/visitor/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/visitor/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/visitor/Success.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visitor/Success.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Itertor/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Itertor/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observer/JDKclient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/JDKclient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Observer/WeatherData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer/WeatherData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle$Inner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle$Inner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/InnerClassSingle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/Single.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/Single.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/SingleDouble.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/SingleDouble.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Singleton/Singleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Singleton/Singleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/BadFlyBehavior.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Strategy/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/Duck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/FlyBehavior.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/GeGeQuackBehavior.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/GoodFlyBehavior.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/NoFlyBehavior.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/NoQuackBehavior.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/PekingDuck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/QuackBehavior.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/ToyDuck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Strategy/WildDuck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/memento/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/memento/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/memento/Originator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/memento/Originator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/visitor/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/visitor/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/visitor/Operation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/visitor/Operation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/visitor/Success.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/visitor/Success.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyTes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyTes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/huawei/src/main/java/合并表记录.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/ms/Number84.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/ms/Number84.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +93,7 @@
       <recent name="builder" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestDecorator">
+  <component name="RunManager" selected="Application.TestStream">
     <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="visitor.Client" />
       <module name="DesignModel" />
@@ -213,19 +146,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDKclient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="observer.JDKclient" />
-      <module name="DesignModel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="observer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestDecorator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="decorator.TestDecorator" />
       <module name="DesignModel" />
@@ -239,24 +159,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="TestStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestStream" />
+      <module name="DesignModel" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestStream" />
         <item itemvalue="Application.TestDecorator" />
         <item itemvalue="Application.Client (2)" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.Client (4)" />
-        <item itemvalue="Application.JDKclient" />
       </list>
     </recent_temporary>
   </component>
@@ -283,6 +199,8 @@
       <workItem from="1703232140047" duration="22432000" />
       <workItem from="1703272798634" duration="44780000" />
       <workItem from="1703687846153" duration="4188000" />
+      <workItem from="1704177639102" duration="9666000" />
+      <workItem from="1704193081411" duration="954000" />
     </task>
     <servers />
   </component>

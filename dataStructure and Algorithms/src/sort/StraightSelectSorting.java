@@ -10,6 +10,7 @@ public class StraightSelectSorting {
 
         int min;//存放最小值
         int minindex = 0;//存放最小值所在的下标，方便交换
+
         for (int i = 0; i < array.length; i++) {
             min = array[i];
             for (int j = i+1; j < array.length; j++) {

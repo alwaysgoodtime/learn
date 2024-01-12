@@ -10,7 +10,7 @@ import java.util.Stack;
  */
 public class Number84 {
     public static void main(String[] args) {
-        System.out.println(new Solution84().largestRectangleArea(new int[]{2, 1, 0, 2}));
+        System.out.println(new Solution84().largestRectangleArea2(new int[]{1,1}));
     }
 }
 
@@ -18,6 +18,58 @@ public class Number84 {
  * 单调栈
  */
 class Solution84 {
+
+    public int largestRectangleArea2(int[] heights) {
+
+        if (heights == null || heights.length == 0) {
+            return 0;
+        }
+
+        if (heights.length == 1) {
+            return heights[0];
+        }
+
+        //其中存放的是柱子下标
+        Stack<Integer> stack = new Stack<>();
+
+        //首尾添加高度为0的柱子
+        int[] handledHeights = new int[heights.length + 2];
+
+        handledHeights[0] = 0;
+
+        for (int i = 0; i < heights.length; i++) {
+            handledHeights[i + 1] = heights[i];
+        }
+
+        handledHeights[handledHeights.length - 1] = 0;
+
+        stack.push(0);
+
+        int result = 0;
+
+        for (int i = 1; i < handledHeights.length; i++) {
+
+            int curHigh = handledHeights[i];
+            int beforeIndex = stack.peek();
+            int beforeHigh = handledHeights[beforeIndex];
+
+            while (!stack.isEmpty() && beforeHigh > curHigh) {
+                Integer targetHigh = handledHeights[stack.pop()];
+                Integer targetBeforeIndex = stack.peek();
+                int maxArea = targetHigh * (i - targetBeforeIndex - 1);
+                result = Math.max(maxArea, result);
+                beforeHigh = handledHeights[targetBeforeIndex];
+            }
+
+            stack.push(i);
+        }
+
+        return result;
+
+
+    }
+
+
     public int largestRectangleArea(int[] heights) {
 
         if (heights == null || heights.length == 0) {
@@ -66,10 +118,10 @@ class Solution84 {
         //某些柱子还未弹出栈，说明在其右边的柱子都比它们高，为了避免这种情况，可以提前在heights的尾部加个0
         while (!ms.empty()) {
             Integer pop = ms.pop();
-            if(!ms.empty()) {
+            if (!ms.empty()) {
                 int left = ms.peek();
                 max = Math.max(max, (heights.length - left - 1) * heights[pop]);
-            }else {
+            } else {
                 //最后一个元素是整个柱状图最矮的柱子
                 max = Math.max(max, heights.length * heights[pop]);
             }

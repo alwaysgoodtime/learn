@@ -19,7 +19,7 @@ public class Number64 {
  *
  * 初始化：dp[0][0]为该点的值
  *
- * 递推公式：dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1])+
+ * 递推公式：dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1])+ num[i][j]
  *
  * 遍历顺序:从左到右，从上到下
  */

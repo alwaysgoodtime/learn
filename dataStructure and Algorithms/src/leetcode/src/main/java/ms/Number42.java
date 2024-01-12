@@ -11,7 +11,7 @@ import java.util.Stack;
  */
 public class Number42 {
     public static void main(String[] args) {
-        System.out.println(new Solution42().trap2(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
+        System.out.println(new Solution42().trap3(new int[]{4,2,0,3,2,5}));
     }
 }
 
@@ -61,8 +61,8 @@ class Solution42 {
 
             //再考虑左大右小的情况,只需做一次即可，有时候删完左小右大的情况，还需考虑一下左大右小的情况，故引入preHeight考虑
             if (stack.size() != 0 && preHeight < height[i]) {
-                    int preIndex = stack.peek();
-                    water += (i - preIndex - 1) * (height[i] - preHeight);
+                int preIndex = stack.peek();
+                water += (i - preIndex - 1) * (height[i] - preHeight);
             }
 
             stack.push(i);
@@ -96,7 +96,7 @@ class Solution42 {
 
                     if (!ms.empty()) {
                         int before = ms.peek();
-                        rain += (i - before - 1) * ( Math.min(height[before], height[i]) - height[mid]);
+                        rain += (i - before - 1) * (Math.min(height[before], height[i]) - height[mid]);
                     }
                 } else {
                     break;
@@ -110,4 +110,48 @@ class Solution42 {
 
         return rain;
     }
+
+    public int trap3(int[] height) {
+
+        //stack里存的是柱子下标，而非柱子高度，栈中的柱子高度单调递减
+        Stack<Integer> stack = new Stack();
+        int water = 0;
+
+        for (int i = 0; i < height.length; i++) {
+
+            int curHigh = height[i];
+
+            //高度为0的柱子忽视，无需进入栈计算
+            if (curHigh == 0) {
+                continue;
+            }
+
+            //已处理的高度，防止重复计算面积
+            int handledHeight = 0;
+
+            //新柱子有三种情况，一种是比前一个柱子高或相等，一种是比前一个柱子矮
+            //如果比前面柱子高，开始结算，直到栈为空或者比前面柱子矮
+
+            while (!stack.isEmpty() && height[stack.peek()] <= height[i]) {
+                int index = stack.pop();
+                water += (i - index - 1) * (height[index] - handledHeight);
+                handledHeight = height[index];
+            }
+
+            //此时在处理前柱子比后面柱子高的情况
+            if (!stack.isEmpty()) {
+                int preIndex = stack.peek();
+                //提前将高低柱子间接到的雨水算到面积中，后续就无需关心
+                water += (i - preIndex - 1) * (height[i] - handledHeight);
+            }
+
+
+            //新柱子入栈
+            stack.push(i);
+        }
+
+        return water;
+    }
+
+
 }

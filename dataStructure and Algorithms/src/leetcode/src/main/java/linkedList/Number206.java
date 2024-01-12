@@ -2,6 +2,7 @@ package leetcode.src.main.java.linkedList;
 
 /**
  * https://leetcode.cn/problems/reverse-linked-list/
+ *
  * @author goodtime
  * @create 2023-12-04 23:51
  */
@@ -17,6 +18,28 @@ public class Number206 {
  * 反转链表，从前到后一个个处理过去
  */
 class Solution206 {
+
+    public ListNode reverseList2(ListNode head) {
+
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode preNode = head;
+        ListNode nextNode = head.next;
+        //头结点需要特殊处理
+        head.next = null;
+
+        while (nextNode != null) {
+            ListNode tmp = nextNode.next;
+            nextNode.next = preNode;
+            preNode = nextNode;
+            nextNode = tmp;
+        }
+
+        return preNode;
+
+    }
 
     public ListNode reverseList(ListNode head) {
 
@@ -46,7 +69,7 @@ class Solution206 {
         headNext.next = head;
 
         //处理下一个节点
-        return reverse(headNext,tmpNext);
+        return reverse(headNext, tmpNext);
 
     }
 

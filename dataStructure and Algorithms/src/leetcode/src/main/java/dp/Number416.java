@@ -18,7 +18,9 @@ public class Number416 {
 
 /**
  * 关键是要想到，可以把数字分成两堆，看一些数字的组合是否能组成数字总和的一半
- * <p>
+ *
+ * dp[i][j]，用前[0,i]个数是否能装满[j]
+ *
  * 二维数组解法
  */
 class Solution416 {
@@ -30,8 +32,8 @@ class Solution416 {
 
         int allCount = 0;
 
-        for (int i = 0; i < nums.length; i++) {
-            allCount += nums[i];
+        for (int num : nums) {
+            allCount += num;
         }
 
         if (allCount % 2 != 0) {
@@ -42,38 +44,28 @@ class Solution416 {
 
         int[][] dp = new int[nums.length][count + 1];
 
-        //初始化第一列
-        for (int i = 0; i < nums.length; i++) {
-            dp[i][0] = 0;
-
-        }
-
-        //初始化第一行
+        //初始化
         for (int i = 1; i <= count; i++) {
             dp[0][i] = i >= nums[0] ? nums[0] : 0;
         }
 
-        //递推
+
+        //物品的重量和价值是相等的，所以对于[1,5,11,1]来说，问题转化成，容量为11的背包，每个物品只能装1次，在给定容量里能装的最大价值
+        //是否为11
         for (int i = 1; i < nums.length; i++) {//物品
             for (int j = 1; j <= count; j++) {//背包
-
-                int noPut = dp[i - 1][j];
-                int put = -1;
-                if (j >= nums[i]) {
-                    put = dp[i - 1][j - nums[i]] + nums[i];
+                if (nums[i] > j) {
+                    dp[i][j] = dp[i - 1][j];
+                } else {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - nums[i]] + nums[i]);
+                    if (dp[i][j] == count) {
+                        return true;
+                    }
                 }
-
-                dp[i][j] = Math.max(noPut, put);
-
-                if (dp[i][j] == count) {
-                    return true;
-                }
-
             }
         }
 
         return false;
-
     }
 }
 

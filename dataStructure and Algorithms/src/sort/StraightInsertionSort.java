@@ -10,16 +10,21 @@ package sort;
 public class StraightInsertionSort {
 
     public static int[] sort(int[] array) {
+
         int currentValue;
+
         for (int i = 1; i < array.length; i++) {
+
             currentValue = array[i];
-            int j = i-1;
-            while(j >= 0 && currentValue < array[j]) {
-                    array[j + 1] = array[j];
-                    j--;
-                }//退出条件要么是j<0,要么是currentValue >= array[j]
-                array[j+1] = currentValue;
-            }
+            int j = i - 1;
+
+            while (j >= 0 && currentValue < array[j]) {
+                array[j + 1] = array[j];
+                j--;
+            }//退出条件要么是j<0,要么是currentValue >= array[j]
+
+            array[j + 1] = currentValue;
+        }
         return array;
     }
 }

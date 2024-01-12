@@ -1,5 +1,7 @@
 package leetcode.src.main.java.dp;
 
+import sun.misc.Unsafe;
+
 /**
  * https://leetcode.cn/problems/interleaving-string/description/
  *
@@ -26,6 +28,9 @@ public class Number97 {
  */
 class Solution97 {
     public boolean isInterleave(String s1, String s2, String s3) {
+
+        Unsafe unsafe = Unsafe.getUnsafe();
+
 
         if (s3 == null || s3.length() == 0) {
             return true;

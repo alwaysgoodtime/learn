@@ -1,7 +1,7 @@
 package graph;
 
 /**
- * 红黑树的节点，比一般的树多了一个
+ * 红黑树的节点，比一般的树多了一个color
  * @author goodtime
  * @create 2020-02-10 2:32 下午
  */

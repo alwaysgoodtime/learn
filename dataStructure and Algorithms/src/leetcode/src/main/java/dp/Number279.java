@@ -8,12 +8,15 @@ package leetcode.src.main.java.dp;
  */
 public class Number279 {
     public static void main(String[] args) {
-        System.out.println(new Solution279().numSquares(800));
+        System.out.println(new Solution279().numSquares(12));
     }
 
 }
 
 /**
+ *
+ * @see Number322
+ *
  * 完全背包（和number322基本一致）
  * 一维dp[j]含义：获得j的和，至少需要的完全平方数个数
  */
@@ -31,6 +34,7 @@ class Solution279 {
 
         //初始化
         dp[0] = 0;
+        //其他都为最大值
         for (int i = 1; i <= n; i++) {
             dp[i] = Integer.MAX_VALUE;
         }

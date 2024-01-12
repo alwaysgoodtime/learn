@@ -105,6 +105,7 @@ class Solution399 {
             if (x != parent[x]) {
                 int originParent = parent[x];
                 parent[x] = findRoot(parent[x]);
+                //更新当前节点自身的权重
                 weight[x] = weight[originParent] * weight[x];
             }
             return parent[x];

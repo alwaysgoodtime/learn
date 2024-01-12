@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-
 /**
  * @author goodtime
  * @create 2023-04-14 19:13
@@ -20,7 +17,7 @@ public class MyTes {
         a.hashCode();
         String eeee = new String("\uD834\uDD1E");
         System.out.println(eeee.length());
-        System.out.println(eeee.codePointCount(0,eeee.length()));
+        System.out.println(eeee.codePointCount(0, eeee.length()));
         System.out.println(eeee);
 
     }

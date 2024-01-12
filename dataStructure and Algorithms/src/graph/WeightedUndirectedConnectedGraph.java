@@ -39,7 +39,7 @@ public class WeightedUndirectedConnectedGraph {
         edgesNum = edgesNum/2;
     }
 
-    public void insertEdge(int v1, int v2, int weight) {//单个插入边，因为是无向连通图，所以两个方向的领接矩阵都变为相应权值
+    public void insertEdge(int v1, int v2,int weight) {//单个插入边，因为是无向连通图，所以两个方向的领接矩阵都变为相应权值
         //未做输入数据校验
         edges[v1][v2] = weight;
         edges[v2][v1] = weight;
