@@ -1,9 +1,3 @@
-import com.sun.org.apache.xalan.internal.lib.ExsltStrings;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * @author goodtime
  * @create 2020-01-22 3:32 下午
@@ -11,7 +5,7 @@ import java.util.List;
 public class Number32 {
     public static void main(String[] args) {
         Solution32 solution32 = new Solution32();
-        int[] a = {3,32,321};
+        int[] a = {3, 32, 321};
         String s = solution32.PrintMinNumber(a);
         System.out.println(s);
     }
@@ -44,7 +38,7 @@ class Solution32 {
         String middle = strings[head];//中间值选定为数组第一个值
         out:
         for (int i = head, j = end; i < j; ) {
-            while (compareTo(strings[j],middle) > 0) {
+            while (compareTo(strings[j], middle) > 0) {
                 j--;
             }
             strings[i] = strings[j];
@@ -54,7 +48,7 @@ class Solution32 {
                 QuickSort32(j + 1, end, strings);
                 break;
             }
-            while (compareTo(strings[i],middle) <= 0) {
+            while (compareTo(strings[i], middle) <= 0) {
                 i++;
                 if (j == i) {
                     strings[i] = middle;
@@ -67,7 +61,7 @@ class Solution32 {
         }
     }
 
-    public int compareTo(String a,String b){
+    public int compareTo(String a, String b) {
         int len1 = a.length();
         int len2 = b.length();
         int lim = len1 > len2 ? len2 : len1;
@@ -84,21 +78,18 @@ class Solution32 {
             k++;
         }
 
-        while((len1 > len2 && k < len1-1 && v1[k] == v1[0]) ||(len2 > len1 && k < len2-1 && v2[k] == v1[0])){
+        while ((len1 > len2 && k < len1 - 1 && v1[k] == v1[0]) || (len2 > len1 && k < len2 - 1 && v2[k] == v1[0])) {
             k++;
         }
 
 
-        if((len1 > len2  && v1[k] < v1[0]) || (len2 > len1 && v2[k] < v2[0])){
-                return len2 - len1;
+        if ((len1 > len2 && v1[k] < v1[0]) || (len2 > len1 && v2[k] < v2[0])) {
+            return len2 - len1;
         }
 
         return len1 - len2;
     }
 }
-
-
-
 
 
 //需要写个新的compare方法,否则用例:

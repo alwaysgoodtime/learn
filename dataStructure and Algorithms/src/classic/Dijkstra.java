@@ -2,7 +2,6 @@ package classic;
 
 
 import graph.WeightedUndirectedConnectedGraph;
-import javafx.util.Pair;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
@@ -16,6 +15,28 @@ import java.util.PriorityQueue;
  * @author goodtime
  * @create 2020-02-07 11:25 下午
  */
+
+class Pair<T, V> {
+
+    T first;
+    V second;
+
+    Pair(T first, V second) {
+        this.first = first;
+        this.second = second;
+    }
+
+    public T getKey() {
+        return first;
+    }
+
+    public V getValue() {
+        return second;
+    }
+
+}
+
+
 public class Dijkstra {
 
     public static void main(String[] args) {

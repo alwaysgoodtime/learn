@@ -5,11 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab9b81e4-6951-4a36-b7f2-0a158575b18b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MyTes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyTes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/huawei/src/main/java/合并表记录.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/ms/Number84.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/ms/Number84.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVM/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVM/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVM/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVM/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVM/src/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVM/src/main/java/JHSDB_TestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JVM/src/main/java/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/dataStructure and Algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/dataStructure and Algorithms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/classic/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/src/classic/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/binaryTree/Number114.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/binaryTree/Number114.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/dp/Number97.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/dp/Number97.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/graph/Number127.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/graph/Number127.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/graph/Number403.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/graph/Number403.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/graph/Number498.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/graph/Number498.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/graph/Number994.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/src/leetcode/src/main/java/graph/Number994.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dataStructure and Algorithms/src/剑指0ffer/Number32.java" beforeDir="false" afterPath="$PROJECT_DIR$/../dataStructure and Algorithms/src/剑指0ffer/Number32.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,6 +217,7 @@
       <workItem from="1703687846153" duration="4188000" />
       <workItem from="1704177639102" duration="9666000" />
       <workItem from="1704193081411" duration="954000" />
+      <workItem from="1705205220171" duration="136000" />
     </task>
     <servers />
   </component>

@@ -1,11 +1,6 @@
 package leetcode.src.main.java.graph;
 
-import javafx.util.Pair;
-
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * https://leetcode.cn/problems/word-ladder/

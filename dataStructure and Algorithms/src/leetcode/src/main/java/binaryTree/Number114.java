@@ -1,7 +1,5 @@
 package leetcode.src.main.java.binaryTree;
 
-import sun.plugin2.message.HeartbeatMessage;
-
 import java.util.ArrayList;
 
 /**
@@ -64,7 +62,7 @@ class Solution114 {
 
         while (root != null) {
 
-            if(root.left != null) {
+            if (root.left != null) {
                 TreeNode left = root.left;
 
                 while (left.right != null) {
@@ -76,9 +74,9 @@ class Solution114 {
                 TreeNode tmp = root.left;
                 root.left = null;
                 root = tmp;
-            }else if(root.right != null) {
+            } else if (root.right != null) {
                 root = root.right;
-            }else {
+            } else {
                 break;
             }
         }

@@ -1,7 +1,5 @@
 package leetcode.src.main.java.graph;
 
-import javafx.util.Pair;
-
 import java.util.ArrayDeque;
 import java.util.Queue;
 
@@ -18,6 +16,28 @@ public class Number994 {
 
     }
 }
+
+
+class Pair<T, V> {
+
+    T first;
+    V second;
+
+    Pair(T first, V second) {
+        this.first = first;
+        this.second = second;
+    }
+
+    public T getKey() {
+        return first;
+    }
+
+    public V getValue() {
+        return second;
+    }
+
+}
+
 
 /**
  * 多源层序遍历，把每个烂橘子视为一个遍历源头，从所有腐烂的橘子出发，一层一层遍历下去即可
@@ -65,7 +85,7 @@ class Solution994 {
 
     }
 
-    private int handle(int[][] grid, Pair<Integer, Integer> pair, int goodOrangesCount, Queue queue) {
+    private int handle(int[][] grid, Pair<Integer, Integer> pair, int goodOrangesCount, Queue<Pair<Integer, Integer>> queue) {
 
         int i = pair.getKey();
         int j = pair.getValue();
@@ -74,7 +94,7 @@ class Solution994 {
     }
 
 
-    private int bfs(int[][] grid, int i, int j, Queue queue) {
+    private int bfs(int[][] grid, int i, int j, Queue<Pair<Integer, Integer>> queue) {
 
         if (!inArea(i, j, grid) || grid[i][j] != 1) {
             return 0;
