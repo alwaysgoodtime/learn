@@ -4,27 +4,27 @@
 */
 #include <stdio.h>
 #include <math.h>
-int main(void)
-{
-	int x = -3;
 
-	// if (x >= 0)
-	// {
-	// 	if (x > 0)
-	// 	printf("%d\n",1);
-	// }	
-	// else
-	// printf("%d\n",0);//else和第一个if成对
+int main(void) {
+    int x = -3;
 
-	if (x >= 0)
-	if (x > 0)
-	printf("%d\n",1);
-	else
-	printf("%d\n",0);//不加括号，else默认和最近的if成对。 
-					 //而且ifelse算一个语句，第一个if不加括号也不会出错。
+    // if (x >= 0)
+    // {
+    // 	if (x > 0)
+    // 	printf("%d\n",1);
+    // }
+    // else
+    // printf("%d\n",0);//else和第一个if成对
+
+    if (x >= 0)
+        if (x > 0)
+            printf("%d\n", 1);
+        else
+            printf("%d\n", 0);//不加括号，else默认和最近的if成对。
+    //而且ifelse算一个语句，第一个if不加括号也不会出错。
 
 
-	return 0;
+    return 0;
 }
 
 /*

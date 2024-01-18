@@ -1,6 +1,6 @@
 package leetcode.src.main.java.linkedList;
 
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * @author goodtime
@@ -9,7 +9,12 @@ import java.util.HashMap;
 public class Number146 {
 
     public static void main(String[] args) {
-        System.out.println("test");
+        LRUCache lruCache = new LRUCache(1);
+        lruCache.put(2,1);
+        lruCache.get(2);
+        lruCache.put(3,2);
+        lruCache.get(2);
+        lruCache.get(3);
     }
 }
 
@@ -25,7 +30,6 @@ class LRUCache {
         DLinkedNode prev;
         DLinkedNode next;
 
-
         public DLinkedNode(int key, int value) {
             this.key = key;
             this.value = value;
@@ -33,7 +37,6 @@ class LRUCache {
     }
 
     DLinkedNode head;
-
     DLinkedNode last;
 
     /**
@@ -51,81 +54,81 @@ class LRUCache {
 
     public int get(int key) {
 
-        DLinkedNode node = map.get(key);
+        DLinkedNode dLinkedNode = map.get(key);
 
-        if (node == null) {
+        if (dLinkedNode == null) {
             return -1;
-        } else {
-            updateNode(node);
-            return node.value;
         }
+
+        //查到dLinkedNode后，将其放到head
+        putToHead(dLinkedNode);
+
+        return dLinkedNode.value;
+
+    }
+
+    private void putToHead(DLinkedNode dLinkedNode) {
+
+        if (head == null) {
+            head = dLinkedNode;
+            last = dLinkedNode;
+            return;
+        }
+
+        if (head == dLinkedNode) {
+            return;
+        }
+
+        if (last == dLinkedNode) {
+            //前一节点变为last
+            dLinkedNode.prev.next = null;
+            last = dLinkedNode.prev;
+        } else if (dLinkedNode.prev != null && dLinkedNode.next != null) {
+            //表示dLinkedNode原先就在链中，先从链中摘除
+            dLinkedNode.prev.next = dLinkedNode.next;
+            dLinkedNode.next.prev = dLinkedNode.prev;
+        } else {
+            //dLinkedNode为新节点，等待后续处理
+        }
+
+        //当前节点变为head,原head变为head.next
+        dLinkedNode.prev = null;
+        dLinkedNode.next = head;
+        head.prev = dLinkedNode;
+        head = dLinkedNode;
+
     }
 
     public void put(int key, int value) {
 
+        DLinkedNode dLinkedNode = map.get(key);
 
-        //更新值
-        if (map.get(key) != null) {
-
-            DLinkedNode node = map.get(key);
-            node.value = value;
-            updateNode(node);
+        if (dLinkedNode != null) {
+            dLinkedNode.value = value;
+            putToHead(dLinkedNode);
             return;
         }
 
+        DLinkedNode node = new DLinkedNode(key, value);
+        map.put(key, node);
 
-        if (size == capacity) {
-
-            //弹出最久未使用的key
-            Integer uselessKey = head.key;
-            map.remove(uselessKey);
-
-            if (size == 1) {
+        //需要放入新节点
+        if (size < capacity) {
+            putToHead(node);
+            size++;
+        } else {
+            //将最后一个节点去掉
+            map.remove(last.key);
+            if (last.prev == null) {
                 head = null;
                 last = null;
             } else {
-                head = head.next;
+                last = last.prev;
+                last.next = null;
             }
-            size--;
+
+            //将新节点放到第一个节点
+            putToHead(node);
         }
-
-        DLinkedNode newNode = new DLinkedNode(key, value);
-
-        if (size == 0) {
-            head = newNode;
-            last = newNode;
-        } else {
-            newNode.prev = last;
-            last.next = newNode;
-            last = newNode;
-
-        }
-
-        //放入新key-value
-        map.put(key, newNode);
-        size++;
-
-    }
-
-    private void updateNode(DLinkedNode node) {
-
-        if (node == last) {
-            return;
-        }
-
-        //更新节点先后顺序
-        if (node != head) {
-            DLinkedNode before = node.prev;
-            before.next = node.next;
-            node.next.prev = before;
-        } else {
-            head = node.next;
-        }
-
-        last.next = node;
-        node.prev = last;
-        node.next = null;
-        last = node;
-
     }
 }

@@ -5,22 +5,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void g(int * p)
-{
-	*p = 20;
-	free(p);
+void g(int *p) {
+    *p = 20;
+    free(p);
 }
 
-int main(void)
-{
-    int * q = (int*) malloc(sizeof(int));
+int main(void) {
+    int *q = (int *) malloc(sizeof(int));
 
     *q = 10;
-    printf("%d\n",*q);
+    printf("%d\n", *q);
     g(q);
-    printf("%d\n",*q);
+    printf("%d\n", *q);
     free(q);
-    printf("%d\n",*q);
+    printf("%d\n", *q);
     return 0;
 }
 
