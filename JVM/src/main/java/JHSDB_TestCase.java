@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 /**
- * VM参数配置 -Xms:10m -Xmx:20m -XX:+UseSerialGC
+ * VM参数配置 -Xms10m -Xmx20m -XX:+UseSerialGC
  * @author goodtime
  * @create 2024-01-14 00:45
  */

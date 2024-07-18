@@ -2,7 +2,8 @@ class TextInstance{
 	public static void main(String[] args) {
 
 	Test2 a = new Test2();
-	Test b = (Test)a;
+	Test b = a;
+	System.out.println( b instanceof Test2 );
 	System.out.println( b instanceof Test );
 		
 	}
